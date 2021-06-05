@@ -1,5 +1,9 @@
 # Pytorch Playground
 
+<p align="center">
+  <img width="500" height="250" src="pytorch.jpeg">
+</p>  
+
 
 ## Tutorials 
 - [Github: Pytorch Tutorials](https://github.com/pytorch/tutorials)
