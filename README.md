@@ -1,6 +1,8 @@
-# PytorchPro
+# Pytorch Playground
 
 
-# References 
-- https://github.com/pytorch/tutorials/blob/master/beginner_source
-- https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html
+## Tutorials 
+- [Github: Pytorch Tutorials](https://github.com/pytorch/tutorials)
+- [Github: Pytorch Examples](https://github.com/pytorch/examples)
+- [Github: Pytorch Tutorials in Korean](https://github.com/9bow/PyTorch-tutorials-kr)
+- [Pytorch Cheatsheet](https://tutorials.pytorch.kr/beginner/ptcheat.html)
