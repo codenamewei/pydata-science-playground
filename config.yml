@@ -1,0 +1,16 @@
+name: carplate-dev-env
+channels:
+  - anaconda
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.8
+  - pillow=8.2.*
+  - pandas=1.2.*
+  - matplotlib=3.4.*
+  - scikit-learn=0.24.*
+  - jupyterlab=3.0.*
+  - seaborn=0.11.*
+  - pytorch=1.8.*
+  - torchvision=0.9.*
+  - pip=20.2.*
