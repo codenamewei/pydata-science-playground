@@ -1,4 +1,4 @@
-name: carplate-dev-env
+name: pytorch-playground
 channels:
   - anaconda
   - conda-forge
