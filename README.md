@@ -6,7 +6,8 @@
 
 ## Important Module
 - [Pytorch _Tensor Computation & Deep Learning Framework_](https://github.com/pytorch/pytorch)
-- [TorchVision Dataset, Model Architecture & Common Transformations_](https://github.com/pytorch/vision)
+- [TorchVision Dataset, Model Architecture & Common Transformations_](https://github.com/pytorch/vision)  
+  - [Dataset](https://pytorch.org/vision/stable/datasets.html) 
 - [PytorchVideo _Video Understanding_ ](https://github.com/facebookresearch/pytorchvideo)
 
 
