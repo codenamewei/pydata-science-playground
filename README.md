@@ -1,7 +1,7 @@
 # Pytorch Playground
 
 <p align="center">
-  <img width="500" height="250" src="pytorch.jpeg">
+  <img width="500" height="250" src="metadata/pytorch.jpeg">
 </p>  
 
 ## Important Module
