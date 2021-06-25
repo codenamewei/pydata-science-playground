@@ -1,0 +1,31 @@
+,country,price,province,region_1,variety
+0,Italy,,Sicily & Sardinia,Etna,White Blend
+1,Portugal,15.0,Douro,,Portuguese Red
+2,US,14.0,Oregon,Willamette Valley,Pinot Gris
+3,US,13.0,Michigan,Lake Michigan Shore,Riesling
+4,US,65.0,Oregon,Willamette Valley,Pinot Noir
+5,Spain,15.0,Northern Spain,Navarra,Tempranillo-Merlot
+6,Italy,16.0,Sicily & Sardinia,Vittoria,Frappato
+7,France,24.0,Alsace,Alsace,Gewürztraminer
+8,Germany,12.0,Rheinhessen,,Gewürztraminer
+9,France,27.0,Alsace,Alsace,Pinot Gris
+10,US,19.0,California,Napa Valley,Cabernet Sauvignon
+11,France,30.0,Alsace,Alsace,Gewürztraminer
+12,US,34.0,California,Alexander Valley,Cabernet Sauvignon
+13,Italy,,Sicily & Sardinia,Etna,Nerello Mascalese
+14,US,12.0,California,Central Coast,Chardonnay
+15,Germany,24.0,Mosel,,Riesling
+16,Argentina,30.0,Other,Cafayate,Malbec
+17,Argentina,13.0,Mendoza Province,Mendoza,Malbec
+18,Spain,28.0,Northern Spain,Ribera del Duero,Tempranillo Blend
+19,US,32.0,Virginia,Virginia,Meritage
+20,US,23.0,Virginia,Virginia,Red Blend
+21,US,20.0,Oregon,Oregon,Pinot Noir
+22,Italy,19.0,Sicily & Sardinia,Sicilia,White Blend
+23,US,22.0,California,Paso Robles,Merlot
+24,Italy,35.0,Sicily & Sardinia,Sicilia,Nero d'Avola
+25,US,69.0,California,Sonoma Coast,Pinot Noir
+26,Italy,13.0,Sicily & Sardinia,Terre Siciliane,White Blend
+27,Italy,10.0,Sicily & Sardinia,Terre Siciliane,Nero d'Avola
+28,Italy,17.0,Sicily & Sardinia,Cerasuolo di Vittoria,Red Blend
+29,US,16.0,California,Clarksburg,Chenin Blanc
