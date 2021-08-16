@@ -1,11 +1,5 @@
 # Data Science Playground
 
-## Pytorch Playground
-
-<p align="center">
-  <img width="500" height="250" src="metadata/pytorch.jpeg">
-</p>  
-
 #### Pytorch Important Modules
 - [Pytorch _Tensor Computation & Deep Learning Framework_](https://github.com/pytorch/pytorch)
 - [TorchVision Dataset, Model Architecture & Common Transformations for Image_](https://github.com/pytorch/vision)
