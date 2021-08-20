@@ -1,5 +1,10 @@
 # Data Science Playground
 
+### Environment Setup
+```
+conda env create -f config-cpu.yml
+```
+
 #### Pytorch Important Modules
 - [Pytorch _Tensor Computation & Deep Learning Framework_](https://github.com/pytorch/pytorch)
 - [TorchVision Dataset, Model Architecture & Common Transformations for Image_](https://github.com/pytorch/vision)
