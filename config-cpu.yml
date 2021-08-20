@@ -1,4 +1,4 @@
-name: pytorch-playground
+name: data-science-playground
 channels:
   - anaconda
   - conda-forge
