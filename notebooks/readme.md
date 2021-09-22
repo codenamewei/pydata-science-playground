@@ -14,6 +14,7 @@
     - Get # rows and columns
     - Get column name
     - Get summary/infos about dataframe
+- Remove duplicates: [duplicate.ipynb](pandas/duplicate.ipynb)
 - Referring to dataframe column by key or by string: [refer_column_name.ipynb](pandas/refer_column_name.ipynb)
 - Rename column name if exist: [rename_column.ipynb](pandas/rename_column.ipynb)
 - Change column type: [change_column_type.ipynb](pandas/change_column_type.ipynb)
@@ -21,4 +22,6 @@
     - Sample by percentage
     - Sample by # of rows specified
     - Sample by matching to a value
+- Concatenate dataframe: [concat_df.ipynb](pandas/concat_df.ipynb)
+    - Concatenate by adding rows
 - Save to csv: [save_to_csv.ipynb](pandas/save_to_csv.ipynb)
