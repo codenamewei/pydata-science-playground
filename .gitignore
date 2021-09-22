@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#pandas output
+notebooks/filesystem/pandas/output/*
