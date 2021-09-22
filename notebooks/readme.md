@@ -2,8 +2,15 @@
 ## Math
 - Define Nan, Infinite: [define_nan_infinite.ipynb](math/define_nan_infinite.ipynb)
 
-## Pandas
+## [Pandas](https://pandas.pydata.org/docs/reference/)
 
-- Select rows where values in certain column = **preferred_value**: [select_column.ipynb](pandas/select_column.ipynb)
+- Dataframe basic: [dataframe_must_know.ipynb](pandas/dataframe_must_know.ipynb)
+    - Get # rows and columns
+    - Get column name
+- Referring to dataframe column by key or by string: [refer_column_name.ipynb](pandas/refer_column_name.ipynb)
 - Rename column name if exist: [rename_column.ipynb](pandas/rename_column.ipynb)
 - Change column type: [change_column_type.ipynb](pandas/change_column_type.ipynb)
+- Get subset of dataframe, sample columns with specific criteria: [sample_df.ipynb](pandas/sample_df.ipynb)
+    - Sample by percentage
+    - Sample by # of rows specified
+    - Sample by matching to a value

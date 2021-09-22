@@ -4,7 +4,7 @@ channels:
   - conda-forge
   - pytorch
 dependencies:
-  - python=3.8
+  - python=3.9.*
   - pillow=8.2.*
   - pandas=1.2.*
   - matplotlib=3.4.*
