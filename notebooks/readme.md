@@ -14,7 +14,7 @@
     - Get # rows and columns
     - Get column name
     - Get summary/infos about dataframe
-- Remove duplicates: [duplicate.ipynb](pandas/duplicate.ipynb)
+- Remove duplicates: [drop_duplicate.ipynb](pandas/drop_duplicate.ipynb)
 - Referring to dataframe column by key or by string: [refer_column_name.ipynb](pandas/refer_column_name.ipynb)
 - Rename column name if exist: [rename_column.ipynb](pandas/rename_column.ipynb)
 - Change column type: [change_column_type.ipynb](pandas/change_column_type.ipynb)
