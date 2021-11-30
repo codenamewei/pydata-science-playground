@@ -15,8 +15,11 @@
     - Get # rows and columns
     - Get column name
     - Get summary/infos about dataframe
+- Get subset of a dataframe [by rows/by columns](pandas/df_subset.ipynb)
 - Get # of duplicates of an array of value(pandas/find_duplicate.ipynb)
 - Remove duplicates: [drop_duplicate.ipynb](pandas/drop_duplicate.ipynb)
+- Drop NaN by rows/by columns - tbd
+- Create new column and assign value according to another column - tbd
 - Referring to dataframe column by key or by string: [refer_column_name.ipynb](pandas/refer_column_name.ipynb)
 - Rename column name if exist: [rename_column.ipynb](pandas/rename_column.ipynb)
 - Change column type: [change_column_type.ipynb](pandas/change_column_type.ipynb)
