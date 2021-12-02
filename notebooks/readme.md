@@ -23,10 +23,12 @@
     - Concatenate by adding rows
 - Save to csv: [save_to_csv.ipynb](pandas/save_to_csv.ipynb)
 
+<<<<<<< HEAD
 ### Infos
 - [Dataframe basic](pandas/info_basic.ipynb)
     - Get # rows and columns
     - Get summary/infos about dataframe
+- [Dataframe/Series Min, Max, Median, General Description](pandas/series_min_max.ipynb)
 - [Get rows name (index) and columns name (column)](pandas/info_rows_columns.ipynb)
 - [Get a glimpse of dataframe](pandas/info_glimpse.ipynb)
 - [Get subset of a dataframe by rows/by columns](pandas/df_subset.ipynb)
