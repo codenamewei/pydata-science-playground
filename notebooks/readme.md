@@ -31,3 +31,5 @@
     - Concatenate by adding rows
 - Save to csv: [save_to_csv.ipynb](pandas/save_to_csv.ipynb)
 
+### Series
+- Infos about series: [Min, Max, Median, General](pandas/series_min_max.ipynb)
