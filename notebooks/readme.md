@@ -23,11 +23,11 @@
     - Concatenate by adding rows
 - Save to csv: [save_to_csv.ipynb](pandas/save_to_csv.ipynb)
 
-<<<<<<< HEAD
 ### Infos
 - [Dataframe basic](pandas/info_basic.ipynb)
     - Get # rows and columns
     - Get summary/infos about dataframe
+= [Get data types](pandas/column_types.ipynb)
 - [Dataframe/Series Min, Max, Median, General Description](pandas/series_min_max.ipynb)
 - [Get rows name (index) and columns name (column)](pandas/info_rows_columns.ipynb)
 - [Get a glimpse of dataframe](pandas/info_glimpse.ipynb)
@@ -36,7 +36,7 @@
 
 ### Change type
 - [Series to value](pandas/series_to_values.ipynb)
-- [Change column type](pandas/change_column_type.ipynb)  - tbd: add change to float, to string
+- [Change column type](pandas/change_column_type.ipynb)
 - [Rename column name if exist](pandas/rename_column.ipynb)
 
 ### Assign values
