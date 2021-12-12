@@ -1,6 +1,21 @@
+## Data Structure 
+
+### List 
+- List of str to int: ```list(map(int, arr))```
+- Split str to list of str: ```arr.split(" ")```
+- Sort an array in place: ```arr.sort()```
+- Get index of a value: ```arr.index(value)```
+
+### Dictionary
+- Get keys as list: ```list(lut.keys())```
+- Get values as list: ```list(lut.values())```
+- Create dict from list: ```{i: 0 for i in arr}```
+- Find if key exists in existing dict: ```if k in lut```
 
 ## Math
 - Define Nan, Infinite: [define_nan_infinite.ipynb](math/define_nan_infinite.ipynb)
+- Sum up an array: ```sum(arr)```
+- Round up a number to a certain decimal point: ```round(value, 1)``` 
 
 ## File System
 - os.walk: [filesystem/os_walk.ipynb](filesystem/os_walk.ipynb)
@@ -23,7 +38,6 @@
     - Concatenate by adding rows
 - Save to csv: [save_to_csv.ipynb](pandas/save_to_csv.ipynb)
 
-<<<<<<< HEAD
 ### Infos
 - [Dataframe basic](pandas/info_basic.ipynb)
     - Get # rows and columns
