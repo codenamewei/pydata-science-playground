@@ -1,6 +1,21 @@
+## Data Structure 
+
+### List 
+- List of str to int: ```list(map(int, arr))```
+- Split str to list of str: ```arr.split(" ")```
+- Sort an array in place: ```arr.sort()```
+- Get index of a value: ```arr.index(value)```
+
+### Dictionary
+- Get keys as list: ```list(lut.keys())```
+- Get values as list: ```list(lut.values())```
+- Create dict from list: ```{i: 0 for i in arr}```
+- Find if key exists in existing dict: ```if k in lut```
 
 ## Math
 - Define Nan, Infinite: [define_nan_infinite.ipynb](math/define_nan_infinite.ipynb)
+- Sum up an array: ```sum(arr)```
+- Round up a number to a certain decimal point: ```round(value, 1)``` 
 
 ## File System
 - os.walk: [filesystem/os_walk.ipynb](filesystem/os_walk.ipynb)
@@ -55,10 +70,14 @@
 - pivot table - tbd
 - group by - tbd
 
+### CSV In/Out
+- Save to csv ```df.to_csv('file name', index = False```
+    - Note: Put ```index = False``` is important to prevent an extra column of index being saved.
+
 ### Excel In/Out
 - Read in excel as a whole, get sheet names
 - Read in excel with speciic sheet name
-- Save excel
+- Save excel ```df.to_excel('file_name', index = False) ```
 
 ### Others
 - df.loc - tbd
