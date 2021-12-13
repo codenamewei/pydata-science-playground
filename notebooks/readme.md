@@ -40,7 +40,7 @@
     - Sample by matching to a value
 - Concatenate dataframe: [concat_df.ipynb](pandas/concat_df.ipynb)
     - Concatenate by adding rows
-- Save to csv: [save_to_csv.ipynb](pandas/save_to_csv.ipynb)
+- Drop rows/columns with np.NaN: ```df3 = df3.dropna(axis = 0) #column```
 
 ### Infos
 - [Dataframe basic](pandas/info_basic.ipynb)
