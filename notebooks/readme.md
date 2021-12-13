@@ -18,10 +18,14 @@
 - Round up a number to a certain decimal point: ```round(value, 1)``` 
 
 ## File System
-- os.walk: [filesystem/os_walk.ipynb](filesystem/os_walk.ipynb)
+- Iterate through a path to get files/folders : [filesystem/os_walk.ipynb](filesystem/os_walk.ipynb)
+- Check if path exist: ```os.path.exists('designated_path')```
 
 ## String
 - Check file extension: [string/check_file_extension.ipynb](string/check_file_extension.ipynb)
+
+## Numpy
+- Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: ```np.NaN / np.nan / np.NAN```
 
 ## [Pandas](https://pandas.pydata.org/docs/reference/)
 
