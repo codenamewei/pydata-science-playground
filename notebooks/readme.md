@@ -18,10 +18,14 @@
 - Round up a number to a certain decimal point: ```round(value, 1)``` 
 
 ## File System
-- os.walk: [filesystem/os_walk.ipynb](filesystem/os_walk.ipynb)
+- Iterate through a path to get files/folders : [filesystem/os_walk.ipynb](filesystem/os_walk.ipynb)
+- Check if path exist: ```os.path.exists('designated_path')```
 
 ## String
 - Check file extension: [string/check_file_extension.ipynb](string/check_file_extension.ipynb)
+
+## Numpy
+- Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: ```np.NaN / np.nan / np.NAN```
 
 ## [Pandas](https://pandas.pydata.org/docs/reference/)
 
@@ -36,7 +40,7 @@
     - Sample by matching to a value
 - Concatenate dataframe: [concat_df.ipynb](pandas/concat_df.ipynb)
     - Concatenate by adding rows
-- Save to csv: [save_to_csv.ipynb](pandas/save_to_csv.ipynb)
+- Drop rows/columns with np.NaN: ```df3 = df3.dropna(axis = 0) #column```
 
 ### Infos
 - [Dataframe basic](pandas/info_basic.ipynb)
@@ -51,6 +55,7 @@
 
 ### Change type
 - [Series to value](pandas/series_to_values.ipynb)
+- Series to numpy array - ```input.to_numpy()```
 - [Change column type](pandas/change_column_type.ipynb)
 - [Rename column name if exist](pandas/rename_column.ipynb)
 
