@@ -55,6 +55,7 @@
 
 ### Change type
 - [Series to value](pandas/series_to_values.ipynb)
+- Series to numpy array - ```input.to_numpy()```
 - [Change column type](pandas/change_column_type.ipynb)
 - [Rename column name if exist](pandas/rename_column.ipynb)
 
