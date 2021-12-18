@@ -71,3 +71,8 @@
 ## Pytorch
 
 - Check if cuda is available - ```import torch; torch.cuda.is_available()``` 
+
+
+## Huggingface
+
+- Allow model to train on gpu - ```model = model.to('cuda:0')```
