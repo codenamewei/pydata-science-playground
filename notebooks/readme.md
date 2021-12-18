@@ -66,3 +66,8 @@
 
 ### Iloc 
 - Get a subset of dataframe by rows - ```df.iloc[<from_rows>:<to_rows>, :]```
+
+
+## Pytorch
+
+- Check if cuda is available - ```import torch; torch.cuda.is_available()``` 
