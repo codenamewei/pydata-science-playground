@@ -75,4 +75,4 @@
 
 ## Huggingface
 
-- Allow model to train on gpu - ```model = model.to('cuda:0')```
+- Send model to cuda - ```model = model.to('cuda:0')```
