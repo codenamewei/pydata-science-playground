@@ -62,7 +62,7 @@
 ### Assign values
 - [Dataframe append columns](pandas/df_append_column.ipynb)
 - Dataframe append rows - tbd
-- [Assign value to specific column(s) by matching value](pandas/df_assign_col_values.ipynb)
+
 - Assign values by index
 - Assign values by lambda - tbd - https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.assign.html
 
@@ -84,6 +84,19 @@
 - Read in excel with speciic sheet name
 - Save excel ```df.to_excel('file_name', index = False) ```
 
-### Others
-- df.loc - tbd
-- df.iloc - tbd
+### Loc
+- Find rows based on specific column(s) matching value - ```df.loc[df['address'].eq('johndoe@gmail.com')]```
+- [Assign value to specific column(s) by matching value](pandas/df_assign_col_values.ipynb)
+
+### Iloc 
+- Get a subset of dataframe by rows - ```df.iloc[<from_rows>:<to_rows>, :]```
+
+
+## Pytorch
+
+- Check if cuda is available - ```import torch; torch.cuda.is_available()``` 
+
+
+## Huggingface
+
+- Send model to cuda - ```model = model.to('cuda:0')```
