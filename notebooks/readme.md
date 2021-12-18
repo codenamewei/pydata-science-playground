@@ -1,12 +1,31 @@
+## Data Structure 
+
+### List 
+- List of str to int: ```list(map(int, arr))```
+- Split str to list of str: ```arr.split(" ")```
+- Sort an array in place: ```arr.sort()```
+- Get index of a value: ```arr.index(value)```
+
+### Dictionary
+- Get keys as list: ```list(lut.keys())```
+- Get values as list: ```list(lut.values())```
+- Create dict from list: ```{i: 0 for i in arr}```
+- Find if key exists in existing dict: ```if k in lut```
 
 ## Math
 - Define Nan, Infinite: [define_nan_infinite.ipynb](math/define_nan_infinite.ipynb)
+- Sum up an array: ```sum(arr)```
+- Round up a number to a certain decimal point: ```round(value, 1)``` 
 
 ## File System
-- os.walk: [filesystem/os_walk.ipynb](filesystem/os_walk.ipynb)
+- Iterate through a path to get files/folders : [filesystem/os_walk.ipynb](filesystem/os_walk.ipynb)
+- Check if path exist: ```os.path.exists('designated_path')```
 
 ## String
 - Check file extension: [string/check_file_extension.ipynb](string/check_file_extension.ipynb)
+
+## Numpy
+- Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: ```np.NaN / np.nan / np.NAN```
 
 ## [Pandas](https://pandas.pydata.org/docs/reference/)
 
@@ -21,7 +40,7 @@
     - Sample by matching to a value
 - Concatenate dataframe: [concat_df.ipynb](pandas/concat_df.ipynb)
     - Concatenate by adding rows
-- Save to csv: [save_to_csv.ipynb](pandas/save_to_csv.ipynb)
+- Drop rows/columns with np.NaN: ```df3 = df3.dropna(axis = 0) #column```
 
 ### Infos
 - [Dataframe basic](pandas/info_basic.ipynb)
@@ -36,6 +55,7 @@
 
 ### Change type
 - [Series to value](pandas/series_to_values.ipynb)
+- Series to numpy array - ```input.to_numpy()```
 - [Change column type](pandas/change_column_type.ipynb)
 - [Rename column name if exist](pandas/rename_column.ipynb)
 
@@ -55,10 +75,14 @@
 - pivot table - tbd
 - group by - tbd
 
+### CSV In/Out
+- Save to csv ```df.to_csv('file name', index = False```
+    - Note: Put ```index = False``` is important to prevent an extra column of index being saved.
+
 ### Excel In/Out
 - Read in excel as a whole, get sheet names
 - Read in excel with speciic sheet name
-- Save excel
+- Save excel ```df.to_excel('file_name', index = False) ```
 
 ### Loc
 - Find rows based on specific column(s) matching value - ```df.loc[df['address'].eq('johndoe@gmail.com')]```
