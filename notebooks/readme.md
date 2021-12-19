@@ -94,7 +94,8 @@
 
 
 ## Pytorch
-
+- Given torch.tensor ```buffer = tensor(4)```, get the value by - ```id = buffer.item()```
+- Given torch.tensor, get the argmax of each row - ```torch.argmax(buffer, dim=<(int)dimension_to_reduce>)```
 - Check if cuda is available - ```import torch; torch.cuda.is_available()``` 
 
 
