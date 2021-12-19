@@ -84,9 +84,8 @@
     - Note: Put ```index = False``` is important to prevent an extra column of index being saved.
 
 ### Excel In/Out
-- Read in excel as a whole, get sheet names
-- Read in excel with speciic sheet name
-- Save excel ```df.to_excel('file_name', index = False) ```
+- Read in excel with specific sheet name: ```pd.read_excel(<url>, sheet_name = "Sheet1", engine = "openpyxl")```
+- Save excel: ```df.to_excel('file_name', index = False) ```
 
 ### Loc
 - Find rows based on specific column(s) matching value - ```df.loc[df['address'].eq('johndoe@gmail.com')]```
