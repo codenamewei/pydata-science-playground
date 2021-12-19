@@ -21,6 +21,9 @@
 ## File System
 - Iterate through a path to get files/folders : [filesystem/os_walk.ipynb](filesystem/os_walk.ipynb)
 - Check if path exist: ```os.path.exists('designated_path')```
+- Remove a file: ```os.remove()```
+- Removes an empty directory: ```os.rmdir()```
+- Deletes a directory and all its contents: ```shutil.rmtree()```
 
 ## String
 - Check file extension: [string/check_file_extension.ipynb](string/check_file_extension.ipynb)
