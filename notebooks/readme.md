@@ -3,7 +3,7 @@
 ### List 
 - List of str to int: ```list(map(int, arr))```
 - Split str to list of str: ```arr.split(" ")```
-- Sort an array in place: ```arr.sort()```
+- Sort an array in place: ```arr.sort()``` / Return a sorted array: ```sorted(arr)```
 - Get index of a value: ```arr.index(value)```
 
 ### Dictionary
