@@ -24,6 +24,7 @@
 - Remove a file: ```os.remove()```
 - Removes an empty directory: ```os.rmdir()```
 - Deletes a directory and all its contents: ```shutil.rmtree()```
+- Copy a file to another path: ```from shutil import copy2; copy2('config.ini', path/path_file)```
 
 ## String
 - Check file extension: [string/check_file_extension.ipynb](string/check_file_extension.ipynb)
