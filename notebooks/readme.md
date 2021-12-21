@@ -8,6 +8,7 @@
 - Split str to list of str: ```arr.split(" ")```
 - Sort an array in place: ```arr.sort()``` / Return a sorted array: ```sorted(arr)```
 - Get index of a value: ```arr.index(value)```
+- Extend list with values in another list: ```arr.extend(arr2)```
 
 ### Dictionary
 - Get keys as list: ```list(lut.keys())```
@@ -34,6 +35,9 @@
 
 ## Numpy
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: ```np.NaN / np.nan / np.NAN```
+
+## ConfigParser
+- Read from config file: [configparser/testconfig.ipynb](configparser/testconfig.ipynb)
 
 ## [Pandas](https://pandas.pydata.org/docs/reference/)
 
