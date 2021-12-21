@@ -1,3 +1,6 @@
+## Formatting
+- datetime:  [datetime.ipynb](formatting/datetime.ipynb)
+
 ## Data Structure 
 
 ### List 
