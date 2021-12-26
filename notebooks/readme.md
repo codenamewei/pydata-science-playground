@@ -73,7 +73,7 @@
 - [Rename column name if exist](pandas/rename_column.ipynb)
 
 ### Assign values
-- [Dataframe append columns](pandas/df_append_column.ipynb)
+- [Dataframe append columns](pandas/assign_column.ipynb)
 - Dataframe append rows - tbd
 
 - Assign values by index
