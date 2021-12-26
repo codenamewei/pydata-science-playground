@@ -1,3 +1,7 @@
+## Input
+
+- [Get system input](input/sysinput.py)
+
 ## Formatting
 - datetime:  [datetime.ipynb](formatting/datetime.ipynb)
 
