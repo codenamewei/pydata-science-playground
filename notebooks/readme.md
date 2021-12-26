@@ -27,10 +27,11 @@
 - Round up a number to a certain decimal point: ```round(value, 1)``` 
 
 ## File System
+- The character used by the operating system to separate pathname components: ```os.sep```
 - Iterate through a path to get files/folders : [filesystem/os_walk.ipynb](filesystem/os_walk.ipynb)
-- Get current path: ```import os;os.getcwd()```
-- Append certain path: ```import sys;sys.path.append(<path>)```
-- Check if path exist: ```os.path.exists('designated_path')```
+- Get current path: ```os.getcwd()```
+- Append certain path: ```sys.path.append(<path>)```
+- Check if path exist: ```os.path.exists(<path>)```
 - Remove a file: ```os.remove()```
 - Removes an empty directory: ```os.rmdir()```
 - Deletes a directory and all its contents: ```shutil.rmtree()```
