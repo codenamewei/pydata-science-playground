@@ -42,8 +42,6 @@
 ## [Pandas](https://pandas.pydata.org/docs/reference/)
 
 - Sort rows: ```df.sample(frac=1)```
-- Create new column and assign value according to another column - tbd
-
 - Referring to dataframe column by key or by string: [refer_column_name.ipynb](pandas/refer_column_name.ipynb)
 
 - Get subset of dataframe, sample columns with specific criteria: [sample_df.ipynb](pandas/sample_df.ipynb)
@@ -73,9 +71,8 @@
 - [Rename column name if exist](pandas/rename_column.ipynb)
 
 ### Assign values
-- [Dataframe append columns](pandas/assign_column.ipynb)
+- [Create new column and assign value according to another column](pandas/assign_column.ipynb)
 - Dataframe append rows - tbd
-
 - Assign values by index
 - Assign values by lambda - tbd - https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.assign.html
 
