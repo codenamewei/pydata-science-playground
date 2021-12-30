@@ -120,9 +120,13 @@
 - Send model to cuda - ```model = model.to('cuda:0')```
 
 ## Logging 
+### Built-In Logging
 - Basic: 
   ```
   import logging
   logger = logging.getLogger(__name__)
   logging.basicConfig(stream=sys.stdout, level=logging.INFO)
   ```
+- [Advanced configuration log to stdout](logging/builtinlogging/log2stdout.ipynb)
+- [Advanced configuration log to file](logging/builtinlogging/log2file.ipynb)
+### Ice cream
