@@ -118,3 +118,11 @@
 ## Huggingface
 
 - Send model to cuda - ```model = model.to('cuda:0')```
+
+## Logging 
+- Basic: 
+  ```
+  import logging
+  logger = logging.getLogger(__name__)
+  logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+  ```
