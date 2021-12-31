@@ -130,4 +130,7 @@
   ```
 - [Advanced configuration log to stdout](logging/builtinlogging/log2stdout.ipynb)
 - [Advanced configuration log to file](logging/builtinlogging/log2file.ipynb)
+
 ### Ice cream
+
+- [Logging walkthrough](logging/icecream/summary.ipynb)
