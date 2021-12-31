@@ -30,6 +30,8 @@
 - The character used by the operating system to separate pathname components: ```os.sep```
 - Iterate through a path to get files/folders : [filesystem/os_walk.ipynb](filesystem/os_walk.ipynb)
 - Check if path is a folder: ```os.path.isdir(<path>)```
+- Create folder: ```os.mkdir(<path>```
+- Create folders recursively: ```os.makedirs(<path>)```
 - Get current running script path: ```os.getcwd()```
 - Get current file path (getcwd will point to the running script(main) path, this will get individually py path): ```os.path.dirname(os.path.abspath(__file__))```
 - Append certain path: ```sys.path.append(<path>)```
