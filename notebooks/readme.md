@@ -71,6 +71,7 @@
 - [Get subset of a dataframe by rows/by columns](pandas/df_subset.ipynb)
 - [Get rows by finding matching values from a specific column](pandas/df_find_rows.ipynb)
 - Check if a column name exist in dataframe - ```if 'code' in df.columns:```
+- [Iteration of each rows in a dataframe](pandas\iterrows.ipynb)
 
 ### Change type
 - [Series to value](pandas/series_to_values.ipynb)
