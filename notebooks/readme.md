@@ -43,6 +43,9 @@
 
 ## String
 - Check file extension: [string/check_file_extension.ipynb](string/check_file_extension.ipynb)
+- Capitalize a string: ```strvar.capitalize()```
+- Split a string based on character: ```strvar.split(<char>)```
+- 
 
 ## Numpy
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: ```np.NaN / np.nan / np.NAN```
