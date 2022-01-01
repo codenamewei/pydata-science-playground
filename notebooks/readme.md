@@ -107,6 +107,11 @@
 - Read in excel with specific sheet name: ```pd.read_excel(<url>, sheet_name = "Sheet1", engine = "openpyxl")```
 - Save excel: ```df.to_excel('file_name', index = False) ```
 
+### Pickle In/Out 
+**Note: Pickle have security risk and slow in serialization (even to csv and json). Dont use**
+- Read in pickle to dataframe: ```df = pd.read_pickle(<file_name>) # ends with .pkl```
+- Save to pickle: ```df.to_pickle(<file_name>)```
+
 ### Loc
 - Find rows based on specific column(s) matching value - ```df.loc[df['address'].eq('johndoe@gmail.com')]```
 - [Assign value to specific column(s) by matching value](pandas/df_assign_col_values.ipynb)
