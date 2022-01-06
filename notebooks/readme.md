@@ -29,6 +29,10 @@
 ## File System
 - The character used by the operating system to separate pathname components: ```os.sep```
 - Iterate through a path to get files/folders : [filesystem/os_walk.ipynb](filesystem/os_walk.ipynb)
+- Check if path is a folder: ```os.path.isdir(<path>)```
+- Create folder: ```os.mkdir(<path>```
+- Create folders recursively: ```os.makedirs(<path>)```
+- Get home directory: ```os.path.expanduser('~')```
 - Get current running script path: ```os.getcwd()```
 - Get current file path (getcwd will point to the running script(main) path, this will get individually py path): ```os.path.dirname(os.path.abspath(__file__))```
 - Append certain path: ```sys.path.append(<path>)```
@@ -40,6 +44,9 @@
 
 ## String
 - Check file extension: [string/check_file_extension.ipynb](string/check_file_extension.ipynb)
+- Capitalize a string: ```strvar.capitalize()```
+- Split a string based on character: ```strvar.split(<char>)```
+- Check if string ends with a substring: ```strvar.endswith(<substring>)```
 
 ## Numpy
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: ```np.NaN / np.nan / np.NAN```
@@ -71,6 +78,7 @@
 - [Get subset of a dataframe by rows/by columns](pandas/df_subset.ipynb)
 - [Get rows by finding matching values from a specific column](pandas/df_find_rows.ipynb)
 - Check if a column name exist in dataframe - ```if 'code' in df.columns:```
+- [Iteration of each rows in a dataframe](pandas\iterrows.ipynb)
 
 ### Change type
 - [Series to value](pandas/series_to_values.ipynb)
@@ -101,6 +109,11 @@
 - Read in excel with specific sheet name: ```pd.read_excel(<url>, sheet_name = "Sheet1", engine = "openpyxl")```
 - Save excel: ```df.to_excel('file_name', index = False) ```
 
+### Pickle In/Out 
+**Note: Pickle have security risk and slow in serialization (even to csv and json). Dont use**
+- Read in pickle to dataframe: ```df = pd.read_pickle(<file_name>) # ends with .pkl```
+- Save to pickle: ```df.to_pickle(<file_name>)```
+
 ### Loc
 - Find rows based on specific column(s) matching value - ```df.loc[df['address'].eq('johndoe@gmail.com')]```
 - [Assign value to specific column(s) by matching value](pandas/df_assign_col_values.ipynb)
@@ -129,4 +142,7 @@
   ```
 - [Advanced configuration log to stdout](logging/builtinlogging/log2stdout.ipynb)
 - [Advanced configuration log to file](logging/builtinlogging/log2file.ipynb)
+
 ### Ice cream
+
+- [Logging walkthrough](logging/icecream/summary.ipynb)
