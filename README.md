@@ -3,7 +3,7 @@
 
 
 <div align="center">
-  <img alt="datascienceplaygronud" src="metadata/datascienceplayground.png"><br>
+  <img alt="datascienceplaygronud" src="metadata/pydatascienceplayground.png"><br>
 </div>
 
 <p>
@@ -58,7 +58,7 @@ conda env create -f config.yml
 - [Create new column and assign value according to another column](notebooks/pandas/assign_column.ipynb)
 - [Dataframe append rows](notebooks/pandas/df_append_rows.ipynb)
 - Assign values by index - tbd
-- Assign values by lambda - tbd - https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.assign.html
+- Assign values by lambda - [tbd]( https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.assign.html)
 
 ### Remove/drop values
 - [Drop duplicates](notebooks/pandas/drop_duplicate.ipynb)
@@ -176,3 +176,11 @@ conda env create -f config.yml
 ### Ice cream
 
 - [Logging walkthrough](notebooks/logging/icecream/summary.ipynb)
+
+
+## Medium Posts
+- [Ctrl + c, Ctrl + v — Replicating Data Science Conda Environment](https://codenamewei.medium.com/ctrl-c-ctrl-v-replicating-data-science-conda-environment-c190ad0d93fd)
+  - [Conda Commands Cheatsheet](miniconda-guidelines.md)
+- [Displaying visuals with Markdown](https://medium.com/geekculture/displaying-visuals-with-markdown-c39f2495e146)
+  - [Examples of displaying image in readme.md](https://github.com/codenamewei/pydata-science-playground/blob/main/notebooks/markdown/readme.md)
+  - [Examples of displaying image in Jupyter](https://github.com/codenamewei/pydata-science-playground/blob/main/notebooks/markdown/markdown_guidelines.ipynb) 
