@@ -14,3 +14,5 @@ dependencies:
   - pytorch=1.8.*
   - torchvision=0.9.*
   - pip=20.2.*
+  - pip:
+    - openpyxl
