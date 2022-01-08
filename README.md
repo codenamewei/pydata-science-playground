@@ -1,4 +1,4 @@
-# Snippets of Code for Data Science Operations 
+# Snippets of Code for Data Science Operations in Python
 
 
 
