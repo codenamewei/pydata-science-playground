@@ -24,17 +24,6 @@ conda env create -f config.yml
 
 ## [Pandas](https://pandas.pydata.org/docs/reference/)
 
-- Sort rows: ```df.sample(frac=1)```
-- Referring to dataframe column by key or by string: [refer_column_name.ipynb](notebooks/pandas/refer_column_name.ipynb)
-
-- Get subset of dataframe, sample columns with specific criteria: [sample_df.ipynb](notebooks/pandas/sample_df.ipynb)
-    - Sample by percentage
-    - Sample by # of rows specified
-    - Sample by matching to a value
-- Concatenate dataframe: [concat_df.ipynb](notebooks/pandas/concat_df.ipynb)
-    - Concatenate by adding rows
-- Drop rows/columns with np.NaN: ```df3 = df3.dropna(axis = 0) #column```
-
 ### Infos
 - [Dataframe basic](notebooks/pandas/info_basic.ipynb)
     - Get # rows and columns
@@ -48,6 +37,17 @@ conda env create -f config.yml
 - Check if a column name exist in dataframe - ```if 'code' in df.columns:```
 - [Iteration of each rows in a dataframe](notebooks/pandas/iterrows.ipynb)
 
+### Operations
+- [Get dataframe from list](notebooks/pandas/list2df.ipynb)
+- [Get subset of dataframe, sample columns with specific criteria](notebooks/pandas/sample_df.ipynb)
+    - Sample by percentage
+    - Sample by # of rows specified
+    - Sample by matching to a value
+- Sort rows: ```df.sample(frac=1)```
+- [Referring to dataframe column by key or by string](notebooks/pandas/refer_column_name.ipynb)
+- [Concatenate dataframe](notebooks/pandas/concat_df.ipynb)
+    - Concatenate by adding rows
+
 ### Change type
 - [Series to value](notebooks/pandas/series_to_values.ipynb)
 - Series to numpy array - ```input.to_numpy()```
@@ -56,25 +56,30 @@ conda env create -f config.yml
 
 ### Assign values
 - [Create new column and assign value according to another column](notebooks/pandas/assign_column.ipynb)
-- Dataframe append rows - tbd
-- Assign values by index
+- [Dataframe append rows](notebooks/pandas/df_append_rows.ipynb)
+- Assign values by index - tbd
 - Assign values by lambda - tbd - https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.assign.html
 
 ### Remove/drop values
 - [Drop duplicates](notebooks/pandas/drop_duplicate.ipynb)
 - [Remove/drop rows where specific column matched value](notebooks/pandas/remove_with_matching_value.ipynb)
 - [Remove specific columns with column name](notebooks/pandas/remove_column.ipynb)
+- Drop rows/columns with np.NaN: ```df3 = df3.dropna(axis = 0) #column```
 
 ### Excel like functions
 - pivot table - tbd
 - group by - tbd
 
 ### CSV In/Out
+- Read csv with other delimiter ```pd.read_csv(<path-to-file>, delimiter = '\x01')```
+- Read csv with bad lines ```pd.read_csv(<path-to-file>, on_bad_lines='skip')```
+  - Note: ```pd.read_csv(<path>, error_bad_lines = False)``` deprecated
 - Save to csv ```df.to_csv('file name', index = False```
-    - Note: Put ```index = False``` is important to prevent an extra column of index being saved.
+  - Note: Put ```index = False``` is important to prevent an extra column of index being saved.
 
 ### Excel In/Out
 - Read in excel with specific sheet name: ```pd.read_excel(<url>, sheet_name = "Sheet1", engine = "openpyxl")```
+  - Note: Install engine by ```pip install openpyxl```
 - Save excel: ```df.to_excel('file_name', index = False) ```
 
 ### Pickle In/Out 
@@ -115,6 +120,7 @@ conda env create -f config.yml
 - Split str to list of str: ```arr.split(" ")```
 - Sort an array in place: ```arr.sort()``` / Return a sorted array: ```sorted(arr)```
 - Get index of a value: ```arr.index(value)```
+- Add one more value to existing list: ```arr.append(value)```
 - Extend list with values in another list: ```arr.extend(arr2)```
 
 ### Dictionary
@@ -149,6 +155,7 @@ conda env create -f config.yml
 - Check file extension: [string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
 - Capitalize a string: ```strvar.capitalize()```
 - Split a string based on character: ```strvar.split(<char>)```
+  - Note: if split with every character, do this instead: ```[i for i in "ABCDE"]```
 - Check if string ends with a substring: ```strvar.endswith(<substring>)```
 
 ## ConfigParser
