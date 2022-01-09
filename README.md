@@ -57,7 +57,6 @@ conda env create -f config.yml
 ### Assign values
 - [Create new column and assign value according to another column](notebooks/pandas/assign_column.ipynb)
 - [Dataframe append rows](notebooks/pandas/df_append_rows.ipynb)
-- Assign values by index - tbd
 - Assign values by lambda - [tbd]( https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.assign.html)
 
 ### Remove/drop values
