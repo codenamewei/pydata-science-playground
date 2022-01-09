@@ -131,13 +131,13 @@ conda env create -f config.yml
 - Save/load dictionary to/from a file: [saveloaddict.ipynb](notebooks/dictionary/saveloaddict.ipynb)
 
 ## Math
-- Define Nan, Infinite: [define_nan_infinite.ipynb](notebooks/math/define_nan_infinite.ipynb)
+- [Define Nan, Infinite](notebooks/math/define_nan_infinite.ipynb)
 - Sum up an array: ```sum(arr)```
 - Round up a number to a certain decimal point: ```round(value, 1)``` 
 
 ## File System
 - The character used by the operating system to separate pathname components: ```os.sep```
-- Iterate through a path to get files/folders : [filesystem/os_walk.ipynb](notebooks/filesystem/os_walk.ipynb)
+- [Iterate through a path to get files/folders of all the subpaths](notebooks/filesystem/filewalk.ipynb)
 - Check if path is a folder: ```os.path.isdir(<path>)```
 - Create folder: ```os.mkdir(<path>```
 - Create folders recursively: ```os.makedirs(<path>)```
@@ -149,7 +149,7 @@ conda env create -f config.yml
 - Remove a file: ```os.remove()```
 - Removes an empty directory: ```os.rmdir()```
 - Deletes a directory and all its contents: ```shutil.rmtree()```
-- Copy a file to another path: [filesystem/copyfile.ipynb](notebooks/filesystem/copyfile.ipynb)
+- [Copy a file to another path](notebooks/filesystem/copyfile.ipynb)
 
 ## String
 - Check file extension: [string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
