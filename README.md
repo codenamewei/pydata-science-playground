@@ -105,6 +105,9 @@ conda env create -f config.yml
 
 - Send model to cuda - ```model = model.to('cuda:0')```
 
+## Audio 
+- [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
+
 ## Input
 
 - [Get system input](notebooks/input/sysinput.py)
