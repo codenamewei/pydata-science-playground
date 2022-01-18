@@ -159,6 +159,7 @@ conda env create -f config.yml
 - Split a string based on character: ```strvar.split(<char>)```
   - Note: if split with every character, do this instead: ```[i for i in "ABCDE"]```
 - Check if string ends with a substring: ```strvar.endswith(<substring>)```
+- Replace string/character with intended string/character: ```strout = strin.replace(" ", "_")```
 
 ## ConfigParser
 - Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
