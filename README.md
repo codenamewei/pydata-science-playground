@@ -159,6 +159,8 @@ conda env create -f config.yml
 - Split a string based on character: ```strvar.split(<char>)```
   - Note: if split with every character, do this instead: ```[i for i in "ABCDE"]```
 - Check if string ends with a substring: ```strvar.endswith(<substring>)```
+- Check if string have substring/specific character. Returns -1 if not found. : ```strvar.find(<substring>)```
+- String get substring with index: ```str[startindex:endindex]```
 - Replace string/character with intended string/character: ```strout = strin.replace(" ", "_")```
 
 ## ConfigParser
