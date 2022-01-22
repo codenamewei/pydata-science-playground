@@ -47,6 +47,7 @@ conda env create -f config.yml
 - [Referring to dataframe column by key or by string](notebooks/pandas/refer_column_name.ipynb)
 - [Concatenate dataframe](notebooks/pandas/concat_df.ipynb)
     - Concatenate by adding rows
+- [Append string to all rows of a column](notebooks/pandas/append_value_to_rows.ipynb)
 
 ### Change type
 - [Series to value](notebooks/pandas/series_to_values.ipynb)
