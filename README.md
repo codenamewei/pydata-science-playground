@@ -47,6 +47,7 @@ conda env create -f config.yml
 - [Referring to dataframe column by key or by string](notebooks/pandas/refer_column_name.ipynb)
 - [Concatenate dataframe](notebooks/pandas/concat_df.ipynb)
     - Concatenate by adding rows
+- [Append string to all rows of a column](notebooks/pandas/append_value_to_rows.ipynb)
 
 ### Change type
 - [Series to value](notebooks/pandas/series_to_values.ipynb)
@@ -57,7 +58,6 @@ conda env create -f config.yml
 ### Assign values
 - [Create new column and assign value according to another column](notebooks/pandas/assign_column.ipynb)
 - [Dataframe append rows](notebooks/pandas/df_append_rows.ipynb)
-- Assign values by index - tbd
 - Assign values by lambda - [tbd]( https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.assign.html)
 
 ### Remove/drop values
@@ -106,6 +106,9 @@ conda env create -f config.yml
 
 - Send model to cuda - ```model = model.to('cuda:0')```
 
+## Audio 
+- [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
+
 ## Input
 
 - [Get system input](notebooks/input/sysinput.py)
@@ -131,13 +134,13 @@ conda env create -f config.yml
 - Save/load dictionary to/from a file: [saveloaddict.ipynb](notebooks/dictionary/saveloaddict.ipynb)
 
 ## Math
-- Define Nan, Infinite: [define_nan_infinite.ipynb](notebooks/math/define_nan_infinite.ipynb)
+- [Define Nan, Infinite](notebooks/math/define_nan_infinite.ipynb)
 - Sum up an array: ```sum(arr)```
 - Round up a number to a certain decimal point: ```round(value, 1)``` 
 
 ## File System
 - The character used by the operating system to separate pathname components: ```os.sep```
-- Iterate through a path to get files/folders : [filesystem/os_walk.ipynb](notebooks/filesystem/os_walk.ipynb)
+- [Iterate through a path to get files/folders of all the subpaths](notebooks/filesystem/filewalk.ipynb)
 - Check if path is a folder: ```os.path.isdir(<path>)```
 - Create folder: ```os.mkdir(<path>```
 - Create folders recursively: ```os.makedirs(<path>)```
@@ -149,7 +152,7 @@ conda env create -f config.yml
 - Remove a file: ```os.remove()```
 - Removes an empty directory: ```os.rmdir()```
 - Deletes a directory and all its contents: ```shutil.rmtree()```
-- Copy a file to another path: [filesystem/copyfile.ipynb](notebooks/filesystem/copyfile.ipynb)
+- [Copy a file to another path](notebooks/filesystem/copyfile.ipynb)
 
 ## String
 - Check file extension: [string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
@@ -157,6 +160,9 @@ conda env create -f config.yml
 - Split a string based on character: ```strvar.split(<char>)```
   - Note: if split with every character, do this instead: ```[i for i in "ABCDE"]```
 - Check if string ends with a substring: ```strvar.endswith(<substring>)```
+- Check if string have substring/specific character. Returns -1 if not found. : ```strvar.find(<substring>)```
+- String get substring with index: ```str[startindex:endindex]```
+- Replace string/character with intended string/character: ```strout = strin.replace(" ", "_")```
 
 ## ConfigParser
 - Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
