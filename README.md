@@ -163,6 +163,7 @@ conda env create -f config.yml
 - Check if string have substring/specific character. Returns -1 if not found. : ```strvar.find(<substring>)```
 - String get substring with index: ```str[startindex:endindex]```
 - Replace string/character with intended string/character: ```strout = strin.replace(" ", "_")```
+- [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
 
 ## ConfigParser
 - Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
