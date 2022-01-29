@@ -108,6 +108,7 @@ conda env create -f config.yml
 
 ## Audio 
 - [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
+- [Get sampling rate of an audio file)(notebooks/audio/getsamplingrate.ipynb)
 
 ## Input
 
