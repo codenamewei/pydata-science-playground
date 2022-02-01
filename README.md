@@ -105,9 +105,11 @@ conda env create -f config.yml
 ## Huggingface
 
 - Send model to cuda - ```model = model.to('cuda:0')```
+- [Overview of DatasetDict](notebooks/huggingface/DatasetDict_Overview.ipynb)
 
 ## Audio 
 - [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
+- [Get sampling rate of an audio file](notebooks/audio/getsamplingrate.ipynb)
 
 ## Input
 
@@ -163,6 +165,7 @@ conda env create -f config.yml
 - Check if string have substring/specific character. Returns -1 if not found. : ```strvar.find(<substring>)```
 - String get substring with index: ```str[startindex:endindex]```
 - Replace string/character with intended string/character: ```strout = strin.replace(" ", "_")```
+- [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
 
 ## ConfigParser
 - Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
