@@ -110,7 +110,7 @@ conda env create -f config.yml
 ## Audio 
 - [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
 - [Get sampling rate of an audio file](notebooks/audio/getsamplingrate.ipynb)
-
+- [Audio file <> Numpy Array](notebooks/audio/audiofile2array.ipynb)
 ## Input
 
 - [Get system input](notebooks/input/sysinput.py)
