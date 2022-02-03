@@ -43,7 +43,7 @@ conda env create -f config.yml
     - Sample by percentage
     - Sample by # of rows specified
     - Sample by matching to a value
-- Sort rows: ```df.sample(frac=1)```
+- Sample rows: ```df = df.sample(frac=1).reset_index(drop=True) ```
 - [Referring to dataframe column by key or by string](notebooks/pandas/refer_column_name.ipynb)
 - [Concatenate dataframe](notebooks/pandas/concat_df.ipynb)
     - Concatenate by adding rows
@@ -110,7 +110,7 @@ conda env create -f config.yml
 ## Audio 
 - [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
 - [Get sampling rate of an audio file](notebooks/audio/getsamplingrate.ipynb)
-
+- [Audio file <> Numpy Array](notebooks/audio/audiofile2array.ipynb)
 ## Input
 
 - [Get system input](notebooks/input/sysinput.py)
