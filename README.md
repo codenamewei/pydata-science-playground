@@ -96,6 +96,8 @@ conda env create -f config.yml
 
 ## Numpy
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: ```np.NaN / np.nan / np.NAN```
+- [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
+- [Numpy <> Bytes](notebooks/numpy/np2bytes.ipynb)
 
 ## Pytorch
 - Given torch.tensor ```buffer = tensor(4)```, get the value by - ```id = buffer.item()```
