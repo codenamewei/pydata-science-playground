@@ -131,6 +131,7 @@ conda env create -f config.yml
 - Get index of a value: ```arr.index(value)```
 - Add one more value to existing list: ```arr.append(value)```
 - Extend list with values in another list: ```arr.extend(arr2)```
+- Check for empty list: ```arr = []; if not arr: #empty list```
 
 ### Dictionary
 - Get keys as list: ```list(lut.keys())```
