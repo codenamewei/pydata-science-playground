@@ -74,8 +74,10 @@ conda env create -f config.yml
 - Read csv with other delimiter ```pd.read_csv(<path-to-file>, delimiter = '\x01')```
 - Read csv with bad lines ```pd.read_csv(<path-to-file>, on_bad_lines='skip')```
   - Note: ```pd.read_csv(<path>, error_bad_lines = False)``` deprecated
-- Save to csv ```df.to_csv('file name', index = False```
+- Read csv with encoding ```pd.read_csv('file name', encoding = 'utf-8')```
+- Save to csv ```df.to_csv('file name', index = False)```
   - Note: Put ```index = False``` is important to prevent an extra column of index being saved.
+- Save to csv with encoding ```df.to_csv('file name', encoding = 'utf-8')```
 
 ### Excel In/Out
 - Read in excel with specific sheet name: ```pd.read_excel(<url>, sheet_name = "Sheet1", engine = "openpyxl")```
