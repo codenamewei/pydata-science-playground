@@ -69,7 +69,10 @@ conda env create -f config.yml
 
 ### Excel like functions
 - pivot table - tbd
-- group by - tbd
+
+
+### Maths
+- [Exclude Outliers](notebooks/pandas/excludeoutliers.ipynb)
 
 ### Filtering
 - [Filter with function isin()](notebooks/pandas/isin.ipynb)
