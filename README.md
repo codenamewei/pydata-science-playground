@@ -78,6 +78,7 @@ conda env create -f config.yml
 - [Assign value to specific column(s) by matching value](notebooks/pandas/df_assign_col_values.ipynb)
 - Get a subset of dataframe by rows - ```df.iloc[<from_rows>:<to_rows>, :]```
 - [Count items and filter by counter values](notebooks/pandas/filter&valuecount.ipynb)
+- [Retrieve columns name which match specific str](notebooks/pandas/filterbysubsetname.ipynb)
 
 ### CSV In/Out
 - Read csv with other delimiter ```pd.read_csv(<path-to-file>, delimiter = '\x01')```
