@@ -70,6 +70,13 @@ conda env create -f config.yml
 - pivot table - tbd
 - group by - tbd
 
+### Filtering
+- [Filter with function isin()](notebooks/pandas/isin.ipynb)
+- [Filter with function query()](notebooks/pandas/query.ipynb)
+- Find with loc - ```df.loc[df['address'].eq('johndoe@gmail.com')]``` ```df.loc[df.a.eq(123) & df.b.eq("helloworld")]```
+- [Assign value to specific column(s) by matching value](notebooks/pandas/df_assign_col_values.ipynb)
+- Get a subset of dataframe by rows - ```df.iloc[<from_rows>:<to_rows>, :]```
+
 ### CSV In/Out
 - Read csv with other delimiter ```pd.read_csv(<path-to-file>, delimiter = '\x01')```
 - Read csv with bad lines ```pd.read_csv(<path-to-file>, on_bad_lines='skip')```
@@ -88,13 +95,6 @@ conda env create -f config.yml
 **Note: Pickle have security risk and slow in serialization (even to csv and json). Dont use**
 - Read in pickle to dataframe: ```df = pd.read_pickle(<file_name>) # ends with .pkl```
 - Save to pickle: ```df.to_pickle(<file_name>)```
-
-### Loc
-- Find rows based on specific column(s) matching value - ```df.loc[df['address'].eq('johndoe@gmail.com')]```
-- [Assign value to specific column(s) by matching value](notebooks/pandas/df_assign_col_values.ipynb)
-
-### Iloc 
-- Get a subset of dataframe by rows - ```df.iloc[<from_rows>:<to_rows>, :]```
 
 ## Numpy
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: ```np.NaN / np.nan / np.NAN```
@@ -198,3 +198,4 @@ conda env create -f config.yml
 - [Displaying visuals with Markdown](https://medium.com/geekculture/displaying-visuals-with-markdown-c39f2495e146)
   - [Examples of displaying image in readme.md](https://github.com/codenamewei/pydata-science-playground/blob/main/notebooks/markdown/readme.md)
   - [Examples of displaying image in Jupyter](https://github.com/codenamewei/pydata-science-playground/blob/main/notebooks/markdown/markdown_guidelines.ipynb) 
+
