@@ -77,6 +77,7 @@ conda env create -f config.yml
 - Find with loc - ```df.loc[df['address'].eq('johndoe@gmail.com')]``` ```df.loc[df.a.eq(123) & df.b.eq("helloworld")]```
 - [Assign value to specific column(s) by matching value](notebooks/pandas/df_assign_col_values.ipynb)
 - Get a subset of dataframe by rows - ```df.iloc[<from_rows>:<to_rows>, :]```
+- [Count items and filter by counter values](notebooks/pandas/filter&valuecount.ipynb)
 
 ### CSV In/Out
 - Read csv with other delimiter ```pd.read_csv(<path-to-file>, delimiter = '\x01')```
