@@ -62,7 +62,7 @@ conda env create -f config.yml
 - Assign values by lambda - [tbd]( https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.assign.html)
 
 ### Remove/drop values
-- [Drop duplicates](notebooks/pandas/drop_duplicate.ipynb)
+- [Drop duplicates for df / subset, keep one copy and remove all](notebooks/pandas/drop_duplicate.ipynb)
 - [Remove/drop rows where specific column matched value](notebooks/pandas/remove_with_matching_value.ipynb)
 - [Remove specific columns with column name](notebooks/pandas/remove_column.ipynb)
 - Drop rows/columns with np.NaN: ```df3 = df3.dropna(axis = 0) #column```
