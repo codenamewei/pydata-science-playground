@@ -48,6 +48,7 @@ conda env create -f config.yml
 - [Concatenate dataframe](notebooks/pandas/concat_df.ipynb)
     - Concatenate by adding rows
 - [Append string to all rows of a column](notebooks/pandas/append_value_to_rows.ipynb)
+- Reset index without creating new (index) column - ```df.reset_index(drop=True)```
 
 ### Change type
 - [Series to value](notebooks/pandas/series_to_values.ipynb)
@@ -61,21 +62,35 @@ conda env create -f config.yml
 - Assign values by lambda - [tbd]( https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.assign.html)
 
 ### Remove/drop values
-- [Drop duplicates](notebooks/pandas/drop_duplicate.ipynb)
+- [Drop duplicates for df / subset, keep one copy and remove all](notebooks/pandas/drop_duplicate.ipynb)
 - [Remove/drop rows where specific column matched value](notebooks/pandas/remove_with_matching_value.ipynb)
 - [Remove specific columns with column name](notebooks/pandas/remove_column.ipynb)
 - Drop rows/columns with np.NaN: ```df3 = df3.dropna(axis = 0) #column```
 
 ### Excel like functions
 - pivot table - tbd
-- group by - tbd
+
+
+### Maths
+- [Exclude Outliers](notebooks/pandas/excludeoutliers.ipynb)
+
+### Filtering
+- [Filter with function isin()](notebooks/pandas/isin.ipynb)
+- [Filter with function query()](notebooks/pandas/query.ipynb)
+- Find with loc - ```df.loc[df['address'].eq('johndoe@gmail.com')]``` ```df.loc[df.a.eq(123) & df.b.eq("helloworld")]```
+- [Assign value to specific column(s) by matching value](notebooks/pandas/df_assign_col_values.ipynb)
+- Get a subset of dataframe by rows - ```df.iloc[<from_rows>:<to_rows>, :]```
+- [Count items and filter by counter values](notebooks/pandas/filter&valuecount.ipynb)
+- [Retrieve columns name which match specific str](notebooks/pandas/filterbysubsetname.ipynb)
 
 ### CSV In/Out
 - Read csv with other delimiter ```pd.read_csv(<path-to-file>, delimiter = '\x01')```
 - Read csv with bad lines ```pd.read_csv(<path-to-file>, on_bad_lines='skip')```
   - Note: ```pd.read_csv(<path>, error_bad_lines = False)``` deprecated
-- Save to csv ```df.to_csv('file name', index = False```
+- Read csv with encoding ```pd.read_csv('file name', encoding = 'utf-8')```
+- Save to csv ```df.to_csv('file name', index = False)```
   - Note: Put ```index = False``` is important to prevent an extra column of index being saved.
+- Save to csv with encoding ```df.to_csv('file name', encoding = 'utf-8')```
 
 ### Excel In/Out
 - Read in excel with specific sheet name: ```pd.read_excel(<url>, sheet_name = "Sheet1", engine = "openpyxl")```
@@ -87,15 +102,10 @@ conda env create -f config.yml
 - Read in pickle to dataframe: ```df = pd.read_pickle(<file_name>) # ends with .pkl```
 - Save to pickle: ```df.to_pickle(<file_name>)```
 
-### Loc
-- Find rows based on specific column(s) matching value - ```df.loc[df['address'].eq('johndoe@gmail.com')]```
-- [Assign value to specific column(s) by matching value](notebooks/pandas/df_assign_col_values.ipynb)
-
-### Iloc 
-- Get a subset of dataframe by rows - ```df.iloc[<from_rows>:<to_rows>, :]```
-
 ## Numpy
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: ```np.NaN / np.nan / np.NAN```
+- [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
+- [Numpy <> Bytes](notebooks/numpy/np2bytes.ipynb)
 
 ## Pytorch
 - Given torch.tensor ```buffer = tensor(4)```, get the value by - ```id = buffer.item()```
@@ -127,6 +137,7 @@ conda env create -f config.yml
 - Get index of a value: ```arr.index(value)```
 - Add one more value to existing list: ```arr.append(value)```
 - Extend list with values in another list: ```arr.extend(arr2)```
+- Check for empty list: ```arr = []; if not arr: #empty list```
 
 ### Dictionary
 - Get keys as list: ```list(lut.keys())```
@@ -193,3 +204,4 @@ conda env create -f config.yml
 - [Displaying visuals with Markdown](https://medium.com/geekculture/displaying-visuals-with-markdown-c39f2495e146)
   - [Examples of displaying image in readme.md](https://github.com/codenamewei/pydata-science-playground/blob/main/notebooks/markdown/readme.md)
   - [Examples of displaying image in Jupyter](https://github.com/codenamewei/pydata-science-playground/blob/main/notebooks/markdown/markdown_guidelines.ipynb) 
+
