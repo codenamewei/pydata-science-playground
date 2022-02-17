@@ -50,6 +50,7 @@ conda env create -f config.yml
     - Concatenate by adding rows
 - [Append string to all rows of a column](notebooks/pandas/append_value_to_rows.ipynb)
 - Reset index without creating new (index) column - ```df.reset_index(drop=True)```
+- Assign df by copy instead of reference - [```df.copy()```](notebooks/pandas/copybyvalue.ipynb)
 
 ### Change type
 - [Series to value](notebooks/pandas/series_to_values.ipynb)
