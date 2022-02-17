@@ -43,6 +43,7 @@ conda env create -f config.yml
     - Sample by percentage
     - Sample by # of rows specified
     - Sample by matching to a value
+- Column to list: [```df['sample_column'].tolist()```](notebooks/pandas/columns2list.ipynb)  
 - Sample rows: ```df = df.sample(frac=1).reset_index(drop=True) ```
 - [Referring to dataframe column by key or by string](notebooks/pandas/refer_column_name.ipynb)
 - [Concatenate dataframe](notebooks/pandas/concat_df.ipynb)
