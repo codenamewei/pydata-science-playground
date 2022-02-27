@@ -43,12 +43,14 @@ conda env create -f config.yml
     - Sample by percentage
     - Sample by # of rows specified
     - Sample by matching to a value
+- Column to list: [```df['sample_column'].tolist()```](notebooks/pandas/columns2list.ipynb)  
 - Sample rows: ```df = df.sample(frac=1).reset_index(drop=True) ```
 - [Referring to dataframe column by key or by string](notebooks/pandas/refer_column_name.ipynb)
 - [Concatenate dataframe](notebooks/pandas/concat_df.ipynb)
     - Concatenate by adding rows
 - [Append string to all rows of a column](notebooks/pandas/append_value_to_rows.ipynb)
 - Reset index without creating new (index) column - ```df.reset_index(drop=True)```
+- Assign df by copy instead of reference - [```df.copy()```](notebooks/pandas/copybyvalue.ipynb)
 
 ### Change type
 - [Series to value](notebooks/pandas/series_to_values.ipynb)
@@ -76,6 +78,7 @@ conda env create -f config.yml
 
 ### Filtering
 - [Filter with function isin()](notebooks/pandas/isin.ipynb)
+- [Filter df with item not in list](notebooks/pandas/filtervaluenotinlist.ipynb)
 - [Filter with function query()](notebooks/pandas/query.ipynb)
 - Find with loc - ```df.loc[df['address'].eq('johndoe@gmail.com')]``` ```df.loc[df.a.eq(123) & df.b.eq("helloworld")]```
 - [Assign value to specific column(s) by matching value](notebooks/pandas/df_assign_col_values.ipynb)
