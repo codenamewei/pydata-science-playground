@@ -169,6 +169,7 @@ conda env create -f config.yml
 - Removes an empty directory: ```os.rmdir()```
 - Deletes a directory and all its contents: ```shutil.rmtree()```
 - [Copy a file to another path](notebooks/filesystem/copyfile.ipynb)
+- [Unzip file](notebooks/filesystem/uncompresszip.ipynb)
 
 ## String
 - Check file extension: [string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
