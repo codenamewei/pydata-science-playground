@@ -186,6 +186,8 @@ conda env create -f config.yml
 ## ConfigParser
 - Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
 
+## URL
+- [Download URL to local file](url/downloadurl.ipynb)
 
 ## Logging 
 ### Built-In Logging
