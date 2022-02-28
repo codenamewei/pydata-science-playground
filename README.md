@@ -52,11 +52,12 @@ conda env create -f config.yml
 - Reset index without creating new (index) column - ```df.reset_index(drop=True)```
 - Assign df by copy instead of reference - [```df.copy()```](notebooks/pandas/copybyvalue.ipynb)
 
-### Change type
+### Type
 - [Series to value](notebooks/pandas/series_to_values.ipynb)
 - Series to numpy array - ```input.to_numpy()```
 - [Change column type](notebooks/pandas/change_column_type.ipynb)
 - [Rename column name if exist](notebooks/pandas/rename_column.ipynb)
+- [Compare column type](notebooks/pandas/comparecoltype.ipynb)
 
 ### Assign values
 - [Create new column and assign value according to another column](notebooks/pandas/assign_column.ipynb)
