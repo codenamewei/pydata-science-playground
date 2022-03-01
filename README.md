@@ -142,7 +142,7 @@ conda env create -f config.yml
 - Add one more value to existing list: ```arr.append(value)```
 - Extend list with values in another list: ```arr.extend(arr2)```
 - Check for empty list: ```arr = []; if not arr: #empty list```
-- Check all items in a list(subset) if exist in another list: ```set(b).issubset(v)```
+- Check all items in a list(subset) if exist in another list, returns boolean: ```set(b).issubset(v)```
 
 ### Dictionary
 - Get keys as list: ```list(lut.keys())```
