@@ -38,6 +38,7 @@ conda env create -f config.yml
 - [Iteration of each rows in a dataframe](notebooks/pandas/iterrows.ipynb)
 
 ### Operations
+- Check if dataframe is empty - ```df.empty #return boolean```
 - [Get dataframe from list](notebooks/pandas/list2df.ipynb)
 - [Get subset of dataframe, sample columns with specific criteria](notebooks/pandas/sample_df.ipynb)
     - Sample by percentage
@@ -72,7 +73,6 @@ conda env create -f config.yml
 
 ### Excel like functions
 - pivot table - tbd
-
 
 ### Maths
 - [Exclude Outliers](notebooks/pandas/excludeoutliers.ipynb)
@@ -125,6 +125,7 @@ conda env create -f config.yml
 - [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
 - [Get sampling rate of an audio file](notebooks/audio/getsamplingrate.ipynb)
 - [Audio file <> Numpy Array](notebooks/audio/audiofile2array.ipynb)
+
 ## Input
 
 - [Get system input](notebooks/input/sysinput.py)
@@ -142,6 +143,7 @@ conda env create -f config.yml
 - Add one more value to existing list: ```arr.append(value)```
 - Extend list with values in another list: ```arr.extend(arr2)```
 - Check for empty list: ```arr = []; if not arr: #empty list```
+- Check all items in a list(subset) if exist in another list, returns boolean: ```set(b).issubset(v)```
 
 ### Dictionary
 - Get keys as list: ```list(lut.keys())```
@@ -175,6 +177,7 @@ conda env create -f config.yml
 ## String
 - Check file extension: [string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
 - Capitalize a string: ```strvar.capitalize()```
+- Lowercase a string: ```strvar.lower()```
 - Split a string based on character: ```strvar.split(<char>)```
   - Note: if split with every character, do this instead: ```[i for i in "ABCDE"]```
 - Check if string ends with a substring: ```strvar.endswith(<substring>)```
@@ -182,10 +185,13 @@ conda env create -f config.yml
 - String get substring with index: ```str[startindex:endindex]```
 - Replace string/character with intended string/character: ```strout = strin.replace(" ", "_")```
 - [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
+- [Generate random string](https://pynative.com/python-generate-random-string/)
 
 ## ConfigParser
 - Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
 
+## URL
+- [Download URL to local file and checksum](url/downloadurl.ipynb)
 
 ## Logging 
 ### Built-In Logging
