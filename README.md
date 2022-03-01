@@ -38,6 +38,7 @@ conda env create -f config.yml
 - [Iteration of each rows in a dataframe](notebooks/pandas/iterrows.ipynb)
 
 ### Operations
+- Check if dataframe is empty - ```df.empty #return boolean```
 - [Get dataframe from list](notebooks/pandas/list2df.ipynb)
 - [Get subset of dataframe, sample columns with specific criteria](notebooks/pandas/sample_df.ipynb)
     - Sample by percentage
