@@ -73,7 +73,6 @@ conda env create -f config.yml
 ### Excel like functions
 - pivot table - tbd
 
-
 ### Maths
 - [Exclude Outliers](notebooks/pandas/excludeoutliers.ipynb)
 
@@ -125,6 +124,7 @@ conda env create -f config.yml
 - [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
 - [Get sampling rate of an audio file](notebooks/audio/getsamplingrate.ipynb)
 - [Audio file <> Numpy Array](notebooks/audio/audiofile2array.ipynb)
+
 ## Input
 
 - [Get system input](notebooks/input/sysinput.py)
@@ -184,6 +184,7 @@ conda env create -f config.yml
 - String get substring with index: ```str[startindex:endindex]```
 - Replace string/character with intended string/character: ```strout = strin.replace(" ", "_")```
 - [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
+- [Generate random string](https://pynative.com/python-generate-random-string/)
 
 ## ConfigParser
 - Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
