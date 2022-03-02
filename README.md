@@ -73,6 +73,7 @@ conda env create -f config.yml
 
 ### Excel like functions
 - pivot table - tbd
+- [Merge two dataframes based on certain column values](notebooks/pandas/pdmerge.ipynb)
 
 ### Maths
 - [Exclude Outliers](notebooks/pandas/excludeoutliers.ipynb)
