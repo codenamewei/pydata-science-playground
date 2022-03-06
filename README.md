@@ -152,6 +152,7 @@ conda env create -f config.yml
 - Get values as list: ```list(lut.values())```
 - Create dict from list: ```{i: 0 for i in arr}```
 - Find if key exists in existing dict: ```if k in lut```
+- [Iteration to dict to get keys and values](notebooks/dictionary/dict_iteration.ipynb)
 - Save/load dictionary to/from a file: [saveloaddict.ipynb](notebooks/dictionary/saveloaddict.ipynb)
 
 ## Math
