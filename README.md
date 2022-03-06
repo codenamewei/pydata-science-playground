@@ -145,6 +145,7 @@ conda env create -f config.yml
 - Extend list with values in another list: ```arr.extend(arr2)```
 - Check for empty list: ```arr = []; if not arr: #empty list```
 - Check all items in a list(subset) if exist in another list, returns boolean: ```set(b).issubset(v)```
+- [Get items of list not exist in another list](notebooks/list/filteritemsnotinlist.ipynb)
 
 ### Dictionary
 - Get keys as list: ```list(lut.keys())```
