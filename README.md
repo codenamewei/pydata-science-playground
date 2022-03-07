@@ -144,6 +144,7 @@ conda env create -f config.yml
 - Extend list with values in another list: ```arr.extend(arr2)```
 - Check for empty list: ```arr = []; if not arr: #empty list```
 - Check all items in a list(subset) if exist in another list, returns boolean: ```set(b).issubset(v)```
+- Build list of same values: ```['100'] * 20 # 20 items of the value '100'```
 
 ### Dictionary
 - Get keys as list: ```list(lut.keys())```
