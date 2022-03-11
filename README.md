@@ -28,7 +28,7 @@ conda env create -f config.yml
 - [Dataframe basic](notebooks/pandas/info_basic.ipynb)
     - Get # rows and columns
     - Get summary/infos about dataframe
-= [Get data types](notebooks/pandas/column_types.ipynb)
+- [Get data types](notebooks/pandas/column_types.ipynb)
 - [Dataframe/Series Min, Max, Median, General Description](notebooks/pandas/series_min_max.ipynb)
 - [Get rows name (index) and columns name (column)](notebooks/pandas/info_rows_columns.ipynb)
 - [Get a glimpse of dataframe](notebooks/pandas/info_glimpse.ipynb)
@@ -71,9 +71,10 @@ conda env create -f config.yml
 - [Remove specific columns with column name](notebooks/pandas/remove_column.ipynb)
 - Drop rows/columns with np.NaN: ```df3 = df3.dropna(axis = 0) #column```
 
-### SQL like functions
+### SQL-like functions
 - pivot table - tbd
-- Merge two dataframe - tbd
+  - Drawback: Not able to do filtering selection
+- [Merge two dataframes based on certain column values](notebooks/pandas/pdmerge.ipynb)
 
 ### Maths
 - [Exclude Outliers](notebooks/pandas/excludeoutliers.ipynb)
@@ -145,6 +146,7 @@ conda env create -f config.yml
 - Extend list with values in another list: ```arr.extend(arr2)```
 - Check for empty list: ```arr = []; if not arr: #empty list```
 - Check all items in a list(subset) if exist in another list, returns boolean: ```set(b).issubset(v)```
+- [Get items of list not exist in another list](notebooks/list/filteritemsnotinlist.ipynb)
 - Build list of same values: ```['100'] * 20 # 20 items of the value '100'```
 
 ### Dictionary
@@ -152,6 +154,7 @@ conda env create -f config.yml
 - Get values as list: ```list(lut.values())```
 - Create dict from list: ```{i: 0 for i in arr}```
 - Find if key exists in existing dict: ```if k in lut```
+- [Iteration to dict to get keys and values](notebooks/dictionary/dict_iteration.ipynb)
 - Save/load dictionary to/from a file: [saveloaddict.ipynb](notebooks/dictionary/saveloaddict.ipynb)
 
 ## Math
