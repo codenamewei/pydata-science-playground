@@ -181,6 +181,7 @@ conda env create -f config.yml
 - Lowercase a string: ```strvar.lower()```
 - Split a string based on character: ```strvar.split(<char>)```
   - Note: if split with every character, do this instead: ```[i for i in "ABCDE"]```
+- Check if string starts with a substring: ```strvar.startswith(<substring>)```
 - Check if string ends with a substring: ```strvar.endswith(<substring>)```
 - Check if string have substring/specific character. Returns -1 if not found. : ```strvar.find(<substring>)```
 - String get substring with index: ```str[startindex:endindex]```
