@@ -71,8 +71,9 @@ conda env create -f config.yml
 - [Remove specific columns with column name](notebooks/pandas/remove_column.ipynb)
 - Drop rows/columns with np.NaN: ```df3 = df3.dropna(axis = 0) #column```
 
-### Excel like functions
+### SQL like functions
 - pivot table - tbd
+- Merge two dataframe - tbd
 
 ### Maths
 - [Exclude Outliers](notebooks/pandas/excludeoutliers.ipynb)
