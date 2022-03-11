@@ -28,7 +28,7 @@ conda env create -f config.yml
 - [Dataframe basic](notebooks/pandas/info_basic.ipynb)
     - Get # rows and columns
     - Get summary/infos about dataframe
-= [Get data types](notebooks/pandas/column_types.ipynb)
+- [Get data types](notebooks/pandas/column_types.ipynb)
 - [Dataframe/Series Min, Max, Median, General Description](notebooks/pandas/series_min_max.ipynb)
 - [Get rows name (index) and columns name (column)](notebooks/pandas/info_rows_columns.ipynb)
 - [Get a glimpse of dataframe](notebooks/pandas/info_glimpse.ipynb)
@@ -147,6 +147,7 @@ conda env create -f config.yml
 - Check for empty list: ```arr = []; if not arr: #empty list```
 - Check all items in a list(subset) if exist in another list, returns boolean: ```set(b).issubset(v)```
 - [Get items of list not exist in another list](notebooks/list/filteritemsnotinlist.ipynb)
+- Build list of same values: ```['100'] * 20 # 20 items of the value '100'```
 
 ### Dictionary
 - Get keys as list: ```list(lut.keys())```
@@ -184,6 +185,7 @@ conda env create -f config.yml
 - Lowercase a string: ```strvar.lower()```
 - Split a string based on character: ```strvar.split(<char>)```
   - Note: if split with every character, do this instead: ```[i for i in "ABCDE"]```
+- Check if string starts with a substring: ```strvar.startswith(<substring>)```
 - Check if string ends with a substring: ```strvar.endswith(<substring>)```
 - Check if string have substring/specific character. Returns -1 if not found. : ```strvar.find(<substring>)```
 - String get substring with index: ```str[startindex:endindex]```
