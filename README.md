@@ -102,6 +102,7 @@ conda env create -f config.yml
 - Read in excel with specific sheet name: ```pd.read_excel(<url>, sheet_name = "Sheet1", engine = "openpyxl")```
   - Note: Install engine by ```pip install openpyxl```
 - Save excel: ```df.to_excel('file_name', index = False) ```
+- [Write to multiple sheets](notebooks/pandas/write_to_multiple_sheets_excel.ipynb)
 
 ### Pickle In/Out 
 **Note: Pickle have security risk and slow in serialization (even to csv and json). Dont use**
