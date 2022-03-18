@@ -1,7 +1,5 @@
 # Snippets of Code for Data Science Operations in Python
 
-
-
 <div align="center">
   <img alt="datascienceplaygronud" src="metadata/pydatascienceplayground.png"><br>
 </div>
@@ -11,8 +9,6 @@
 <img alt="project status: active" src="https://img.shields.io/badge/Project%20Status-%F0%9F%94%A5Active-brightgreen"> 
 
 </p>
-
-
 
 # Environment Setup
 ```
@@ -140,6 +136,7 @@ conda env create -f config.yml
 
 ### List 
 - List of str to int: ```list(map(int, arr))```
+- List with range of values: ```list(range(...))```
 - Split str to list of str: ```arr.split(" ")```
 - Sort an array in place: ```arr.sort()``` / Return a sorted array: ```sorted(arr)```
 - Get index of a value: ```arr.index(value)```
