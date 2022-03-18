@@ -1,7 +1,5 @@
 # Snippets of Code for Data Science Operations in Python
 
-
-
 <div align="center">
   <img alt="datascienceplaygronud" src="metadata/pydatascienceplayground.png"><br>
 </div>
@@ -11,8 +9,6 @@
 <img alt="project status: active" src="https://img.shields.io/badge/Project%20Status-%F0%9F%94%A5Active-brightgreen"> 
 
 </p>
-
-
 
 # Environment Setup
 ```
@@ -102,6 +98,7 @@ conda env create -f config.yml
 - Read in excel with specific sheet name: ```pd.read_excel(<url>, sheet_name = "Sheet1", engine = "openpyxl")```
   - Note: Install engine by ```pip install openpyxl```
 - Save excel: ```df.to_excel('file_name', index = False) ```
+- [Write to multiple sheets](notebooks/pandas/write_to_multiple_sheets_excel.ipynb)
 
 ### Pickle In/Out 
 **Note: Pickle have security risk and slow in serialization (even to csv and json). Dont use**
@@ -139,6 +136,7 @@ conda env create -f config.yml
 
 ### List 
 - List of str to int: ```list(map(int, arr))```
+- List with range of values: ```list(range(...))```
 - Split str to list of str: ```arr.split(" ")```
 - Sort an array in place: ```arr.sort()``` / Return a sorted array: ```sorted(arr)```
 - Get index of a value: ```arr.index(value)```
