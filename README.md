@@ -72,9 +72,6 @@ conda env create -f config.yml
   - Drawback: Not able to do filtering selection
 - [Merge two dataframes based on certain column values](notebooks/pandas/pdmerge.ipynb)
 
-### Maths
-- [Exclude Outliers](notebooks/pandas/excludeoutliers.ipynb)
-
 ### Filtering
 - [Filter with function isin()](notebooks/pandas/isin.ipynb)
 - [Filter df with item not in list](notebooks/pandas/filtervaluenotinlist.ipynb)
@@ -155,10 +152,11 @@ conda env create -f config.yml
 - [Iteration to dict to get keys and values](notebooks/dictionary/dict_iteration.ipynb)
 - Save/load dictionary to/from a file: [saveloaddict.ipynb](notebooks/dictionary/saveloaddict.ipynb)
 
-## Math
+## Maths
 - [Define Nan, Infinite](notebooks/math/define_nan_infinite.ipynb)
 - Sum up an array: ```sum(arr)```
 - Round up a number to a certain decimal point: ```round(value, 1)``` 
+- [Calculate percentile](notebooks/math/percentile.ipynb)
 
 ## File System
 - The character used by the operating system to separate pathname components: ```os.sep```
