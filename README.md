@@ -36,6 +36,7 @@ conda env create -f config.yml
 ### Operations
 - Check if dataframe is empty - ```df.empty #return boolean```
 - [Get dataframe from list](notebooks/pandas/list2df.ipynb)
+- Build dataframe with columns name - ```column_list = ["a", "b"] df = pd.DataFrame(columns = column_list)```
 - [Get subset of dataframe, sample columns with specific criteria](notebooks/pandas/sample_df.ipynb)
     - Sample by percentage
     - Sample by # of rows specified
