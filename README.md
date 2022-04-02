@@ -145,6 +145,8 @@ conda env create -f config.yml
 - Build list of same values: ```['100'] * 20 # 20 items of the value '100'```
 
 ### Dictionary
+- Define dict: ```dict(key = "value") / dict = {"key":"value"}```
+- Add new key value pair: ```dict.update({"key2":"value2"})```
 - Get keys as list: ```list(lut.keys())```
 - Get values as list: ```list(lut.values())```
 - Create dict from list: ```{i: 0 for i in arr}```
