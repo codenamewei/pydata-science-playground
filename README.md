@@ -160,6 +160,7 @@ conda env create -f config.yml
 - Sum up an array: ```sum(arr)```
 - Round up a number to a certain decimal point: ```round(value, 1)``` 
 - [Calculate percentile](notebooks/math/percentile.ipynb)
+- Randomly choosing an item out from a list: ```import random; random.choice([123, 456, 378])```
 
 ## File System
 - The character used by the operating system to separate pathname components: ```os.sep```
