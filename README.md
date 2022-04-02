@@ -193,6 +193,9 @@ conda env create -f config.yml
 - [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
 - [Generate random string](https://pynative.com/python-generate-random-string/)
 
+## Class
+- [Reserved methods in class](class/reservedMethod.py)
+
 ## ConfigParser
 - Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
 
