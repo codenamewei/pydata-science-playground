@@ -194,8 +194,8 @@ conda env create -f config.yml
 - [Generate random string](https://pynative.com/python-generate-random-string/)
 
 ## Class
-- [Reserved methods in class](class/reservedMethod.py)
-- [The magic variable *args and **kwargs](class/kwargsimp.py)
+- [Reserved methods in class](notebooks/class/reservedMethod.py)
+- [The magic variable *args and **kwargs](notebooks/class/kwargsimp.py)
 
 ## ConfigParser
 - Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
