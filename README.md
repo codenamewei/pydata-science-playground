@@ -36,11 +36,13 @@ conda env create -f config.yml
 ### Operations
 - Check if dataframe is empty - ```df.empty #return boolean```
 - [Get dataframe from list](notebooks/pandas/list2df.ipynb)
+- Build dataframe with columns name - ```column_list = ["a", "b"] df = pd.DataFrame(columns = column_list)```
+- [Build a new dataframe from a subset of columns from another dataframe](notebooks/pandas/series_subset.ipynb)
 - [Get subset of dataframe, sample columns with specific criteria](notebooks/pandas/sample_df.ipynb)
     - Sample by percentage
     - Sample by # of rows specified
     - Sample by matching to a value
-- Column to list: [```df['sample_column'].tolist()```](notebooks/pandas/columns2list.ipynb)  
+- Column to list: [```df.columns.tolist()```](notebooks/pandas/columns2list.ipynb)  
 - Sample rows: ```df = df.sample(frac=1).reset_index(drop=True) ```
 - [Referring to dataframe column by key or by string](notebooks/pandas/refer_column_name.ipynb)
 - [Concatenate dataframe](notebooks/pandas/concat_df.ipynb)
@@ -145,7 +147,7 @@ conda env create -f config.yml
 - Build list of same values: ```['100'] * 20 # 20 items of the value '100'```
 
 ### Dictionary
-- Define dict: ```dict(key = "value") / dict = {"key":"value"}```
+- [Define dict with str keys](notebooks/dictionary/definedict.ipynb)
 - Add new key value pair: ```dict.update({"key2":"value2"})```
 - Get keys as list: ```list(lut.keys())```
 - Get values as list: ```list(lut.values())```
@@ -159,6 +161,7 @@ conda env create -f config.yml
 - Sum up an array: ```sum(arr)```
 - Round up a number to a certain decimal point: ```round(value, 1)``` 
 - [Calculate percentile](notebooks/math/percentile.ipynb)
+- Randomly choosing an item out from a list: ```import random; random.choice([123, 456, 378])```
 
 ## File System
 - The character used by the operating system to separate pathname components: ```os.sep```
@@ -190,6 +193,10 @@ conda env create -f config.yml
 - Replace string/character with intended string/character: ```strout = strin.replace(" ", "_")```
 - [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
 - [Generate random string](https://pynative.com/python-generate-random-string/)
+
+## Class
+- [Reserved methods in class](notebooks/class/reservedMethod.py)
+- [The magic variable *args and **kwargs](notebooks/class/kwargsimp.py)
 
 ## ConfigParser
 - Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
