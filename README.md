@@ -148,6 +148,7 @@ conda env create -f config.yml
 
 ### Dictionary
 - [Define dict with str keys](notebooks/dictionary/definedict.ipynb)
+- Add new key value pair: ```dict.update({"key2":"value2"})```
 - Get keys as list: ```list(lut.keys())```
 - Get values as list: ```list(lut.values())```
 - Create dict from list: ```{i: 0 for i in arr}```
