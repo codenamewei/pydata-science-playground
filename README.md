@@ -195,6 +195,7 @@ conda env create -f config.yml
 
 ## Class
 - [Reserved methods in class](class/reservedMethod.py)
+- [The magic variable *args and **kwargs](class/kwargsimp.py)
 
 ## ConfigParser
 - Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
