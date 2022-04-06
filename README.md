@@ -53,7 +53,7 @@ conda env create -f config.yml
 
 ### Type
 - [Series to value](notebooks/pandas/series_to_values.ipynb)
-- Series to numpy array - ```input.to_numpy()```
+- Series/Dataframe to numpy array - ```input.to_numpy()```
 - [Change column type](notebooks/pandas/change_column_type.ipynb)
 - [Rename column name if exist](notebooks/pandas/rename_column.ipynb)
 - [Compare column type](notebooks/pandas/comparecoltype.ipynb)
@@ -105,6 +105,7 @@ conda env create -f config.yml
 - Save to pickle: ```df.to_pickle(<file_name>)```
 
 ## Numpy
+- [Numpy basic](notebooks/numpy/npbasic.ipynb)
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: ```np.NaN / np.nan / np.NAN```
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
 - [Numpy <> Bytes](notebooks/numpy/np2bytes.ipynb)
@@ -202,7 +203,10 @@ conda env create -f config.yml
 - Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
 
 ## URL
-- [Download URL to local file and checksum](url/downloadurl.ipynb)
+- [Download URL to local file and checksum](notebooks/url/downloadurl.ipynb)
+
+## Performance
+- [Dataframe - column-major, Numpy - row-major](notebooks/performance/df_numpy_major.ipynb)
 
 ## Logging 
 ### Built-In Logging
@@ -218,7 +222,6 @@ conda env create -f config.yml
 ### Ice cream
 
 - [Logging walkthrough](notebooks/logging/icecream/summary.ipynb)
-
 
 ## Medium Posts
 - [Ctrl + c, Ctrl + v — Replicating Data Science Conda Environment](https://codenamewei.medium.com/ctrl-c-ctrl-v-replicating-data-science-conda-environment-c190ad0d93fd)
