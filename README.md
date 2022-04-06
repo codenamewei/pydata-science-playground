@@ -53,7 +53,7 @@ conda env create -f config.yml
 
 ### Type
 - [Series to value](notebooks/pandas/series_to_values.ipynb)
-- Series to numpy array - ```input.to_numpy()```
+- Series/Dataframe to numpy array - ```input.to_numpy()```
 - [Change column type](notebooks/pandas/change_column_type.ipynb)
 - [Rename column name if exist](notebooks/pandas/rename_column.ipynb)
 - [Compare column type](notebooks/pandas/comparecoltype.ipynb)
