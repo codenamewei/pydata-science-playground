@@ -203,10 +203,10 @@ conda env create -f config.yml
 - Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
 
 ## URL
-- [Download URL to local file and checksum](url/downloadurl.ipynb)
+- [Download URL to local file and checksum](notebooks/url/downloadurl.ipynb)
 
 ## Performance
-- [Dataframe - column-major, Numpy - row-major](performance/df_numpy_major.ipynb)
+- [Dataframe - column-major, Numpy - row-major](notebooks/performance/df_numpy_major.ipynb)
 
 ## Logging 
 ### Built-In Logging
