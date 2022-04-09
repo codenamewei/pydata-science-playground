@@ -174,6 +174,7 @@ conda env create -f config.yml
 - Create folders recursively: ```os.makedirs(<path>)```
 - Expand home directory: ```os.path.expanduser('~')```
 - Get current running script path: ```os.getcwd()```
+- Get the list of all files and directories in the specified directory (does not expand to items in the child folder: ```os.listdir(<path>)```
 - Get current file path (getcwd will point to the running script(main) path, this will get individually py path): ```os.path.dirname(os.path.abspath(__file__))```
 - Append certain path: ```sys.path.append(<path>)```
 - Check if path exist: ```os.path.exists(<path>)```
