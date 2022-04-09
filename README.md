@@ -185,6 +185,7 @@ conda env create -f config.yml
 ## String
 - Check file extension: [string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
 - Capitalize a string: ```strvar.capitalize()```
+- Uppercase a string: ```strvar.upper()```
 - Lowercase a string: ```strvar.lower()```
 - Split a string based on character: ```strvar.split(<char>)```
   - Note: if split with every character, do this instead: ```[i for i in "ABCDE"]```
