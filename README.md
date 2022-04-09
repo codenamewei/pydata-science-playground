@@ -179,6 +179,7 @@ conda env create -f config.yml
 - Append certain path: ```sys.path.append(<path>)```
 - Check if path exist: ```os.path.exists(<path>)```
 - Remove a file: ```os.remove()```
+- Get size of current file in byte: ```os.path.getsize(<path>)```
 - Removes an empty directory: ```os.rmdir()```
 - Deletes a directory and all its contents: ```shutil.rmtree()```
 - [Copy a file to another path](notebooks/filesystem/copyfile.ipynb)
