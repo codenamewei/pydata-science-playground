@@ -204,6 +204,11 @@ conda env create -f config.yml
 - [Reserved methods in class](notebooks/class/reservedMethod.py)
 - [The magic variable *args and **kwargs](notebooks/class/kwargsimp.py)
 
+## Processing iterables with a functional style
+- [Produce a new iterable with map()](notebooks/functional/mapimp.ipynb)
+- [Generate a new iterable with Boolean-return function with filter()](notebooks/functional/filterimp.ipynb)
+- [Produce a single cumulative value from iterable with reduce()](notebooks/functional/reduceimp.ipynb)
+
 ## ConfigParser
 - Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
 
