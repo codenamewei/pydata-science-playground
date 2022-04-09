@@ -164,6 +164,7 @@ conda env create -f config.yml
 - [Calculate percentile](notebooks/math/percentile.ipynb)
 - Randomly choosing an item out from a list: ```import random; random.choice([123, 456, 378])```
 - Power of a number: ```pow(base_number, exponent_number```
+- Square root of a number: ```sqrt(number)```
 
 ## File System
 - The character used by the operating system to separate pathname components: ```os.sep```
