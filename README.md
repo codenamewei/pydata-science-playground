@@ -60,8 +60,9 @@ conda env create -f config.yml
 
 ### Assign values
 - [Create new column and assign value according to another column](notebooks/pandas/assign_column.ipynb)
+- [Assign values by lambda and df.assign](notebooks/pandas/dfassign.ipynb)
 - [Dataframe append rows](notebooks/pandas/df_append_rows.ipynb)
-- Assign values by lambda - [tbd]( https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.assign.html)
+
 
 ### Remove/drop values
 - [Drop duplicates for df / subset, keep one copy and remove all](notebooks/pandas/drop_duplicate.ipynb)
