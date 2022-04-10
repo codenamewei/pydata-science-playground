@@ -212,6 +212,8 @@ conda env create -f config.yml
 - [Generate a new iterable with Boolean-return function with filter()](notebooks/functional/filterimp.ipynb)
 - [Produce a single cumulative value from iterable with reduce()](notebooks/functional/reduceimp.ipynb)
 
+_Note: Functional style can be replaced with **list comprehension** or **generator expressions**_
+
 ## ConfigParser
 - Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
 
