@@ -60,8 +60,9 @@ conda env create -f config.yml
 
 ### Assign values
 - [Create new column and assign value according to another column](notebooks/pandas/assign_column.ipynb)
+- [Assign values by lambda and df.assign](notebooks/pandas/dfassign.ipynb)
 - [Dataframe append rows](notebooks/pandas/df_append_rows.ipynb)
-- Assign values by lambda - [tbd]( https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.assign.html)
+
 
 ### Remove/drop values
 - [Drop duplicates for df / subset, keep one copy and remove all](notebooks/pandas/drop_duplicate.ipynb)
@@ -146,6 +147,7 @@ conda env create -f config.yml
 - Check all items in a list(subset) if exist in another list, returns boolean: ```set(b).issubset(v)```
 - [Get items of list not exist in another list](notebooks/list/filteritemsnotinlist.ipynb)
 - Build list of same values: ```['100'] * 20 # 20 items of the value '100'```
+- Change values of list with **List Comprehension**: ```[func(a) for a in sample_list]```
 
 ### Dictionary
 - [Define dict with str keys](notebooks/dictionary/definedict.ipynb)
@@ -163,6 +165,8 @@ conda env create -f config.yml
 - Round up a number to a certain decimal point: ```round(value, 1)``` 
 - [Calculate percentile](notebooks/math/percentile.ipynb)
 - Randomly choosing an item out from a list: ```import random; random.choice([123, 456, 378])```
+- Power of a number: ```pow(base_number, exponent_number```
+- Square root of a number: ```sqrt(number)```
 
 ## File System
 - The character used by the operating system to separate pathname components: ```os.sep```
@@ -170,12 +174,14 @@ conda env create -f config.yml
 - Check if path is a folder: ```os.path.isdir(<path>)```
 - Create folder: ```os.mkdir(<path>```
 - Create folders recursively: ```os.makedirs(<path>)```
-- Get home directory: ```os.path.expanduser('~')```
+- Expand home directory: ```os.path.expanduser('~')```
 - Get current running script path: ```os.getcwd()```
+- Get the list of all files and directories in the specified directory (does not expand to items in the child folder: ```os.listdir(<path>)```
 - Get current file path (getcwd will point to the running script(main) path, this will get individually py path): ```os.path.dirname(os.path.abspath(__file__))```
 - Append certain path: ```sys.path.append(<path>)```
 - Check if path exist: ```os.path.exists(<path>)```
 - Remove a file: ```os.remove()```
+- Get size of current file in byte: ```os.path.getsize(<path>)```
 - Removes an empty directory: ```os.rmdir()```
 - Deletes a directory and all its contents: ```shutil.rmtree()```
 - [Copy a file to another path](notebooks/filesystem/copyfile.ipynb)
@@ -184,7 +190,10 @@ conda env create -f config.yml
 ## String
 - Check file extension: [string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
 - Capitalize a string: ```strvar.capitalize()```
+- Uppercase a string: ```strvar.upper()```
 - Lowercase a string: ```strvar.lower()```
+- Swap existing upper and lower case: ```strvar.swapcase()```
+- Capitalize every first letter of a word: ```strvar.title()```
 - Split a string based on character: ```strvar.split(<char>)```
   - Note: if split with every character, do this instead: ```[i for i in "ABCDE"]```
 - Check if string starts with a substring: ```strvar.startswith(<substring>)```
@@ -198,6 +207,13 @@ conda env create -f config.yml
 ## Class
 - [Reserved methods in class](notebooks/class/reservedMethod.py)
 - [The magic variable *args and **kwargs](notebooks/class/kwargsimp.py)
+
+## Processing iterables with a functional style
+- [Produce a new iterable with map()](notebooks/functional/mapimp.ipynb)
+- [Generate a new iterable with Boolean-return function with filter()](notebooks/functional/filterimp.ipynb)
+- [Produce a single cumulative value from iterable with reduce()](notebooks/functional/reduceimp.ipynb)
+
+_Note: Functional style can be replaced with **list comprehension** or **generator expressions**_
 
 ## ConfigParser
 - Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
