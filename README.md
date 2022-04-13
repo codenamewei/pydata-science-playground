@@ -159,6 +159,9 @@ conda env create -f config.yml
 - [Iteration to dict to get keys and values](notebooks/dictionary/dict_iteration.ipynb)
 - Save/load dictionary to/from a file: [saveloaddict.ipynb](notebooks/dictionary/saveloaddict.ipynb)
 
+### Python Iterables (List, Set,...)
+- To identify if any items in the iterables has True/1 values: ```any(sample_list) #returns single value True/False```
+
 ## Maths
 - [Define Nan, Infinite](notebooks/math/define_nan_infinite.ipynb)
 - Sum up an array: ```sum(arr)```
