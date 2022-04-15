@@ -148,6 +148,7 @@ conda env create -f config.yml
 - [Get items of list not exist in another list](notebooks/list/filteritemsnotinlist.ipynb)
 - Build list of same values: ```['100'] * 20 # 20 items of the value '100'```
 - Change values of list with **List Comprehension**: ```[func(a) for a in sample_list]```
+- Iteration of list with index: ```for index, value in enumerate(inlist):```
 
 ### Dictionary
 - [Define dict with str keys](notebooks/dictionary/definedict.ipynb)
