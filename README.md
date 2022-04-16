@@ -148,6 +148,7 @@ conda env create -f config.yml
 - [Get items of list not exist in another list](notebooks/list/filteritemsnotinlist.ipynb)
 - Build list of same values: ```['100'] * 20 # 20 items of the value '100'```
 - Change values of list with **List Comprehension**: ```[func(a) for a in sample_list]```
+- Iteration of list with index: ```for index, value in enumerate(inlist):```
 
 ### Dictionary
 - [Define dict with str keys](notebooks/dictionary/definedict.ipynb)
@@ -191,6 +192,8 @@ conda env create -f config.yml
 - [Unzip file](notebooks/filesystem/uncompresszip.ipynb)
 
 ## String
+- Check if string is empty, len = 0: ```if not strvar:```
+- Check if string contains digit: ```any(chr.isdigit() for chr in str1) #return True if there's digit```
 - Check file extension: [string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
 - Capitalize a string: ```strvar.capitalize()```
 - Uppercase a string: ```strvar.upper()```
@@ -241,6 +244,13 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ### Ice cream
 
 - [Logging walkthrough](notebooks/logging/icecream/summary.ipynb)
+
+## Design Patterns 
+- [Abstract Factory](notebooks/designpatterns/abstractfactory.py)
+- [Monkey Patching](notebooks/designpatterns/monkeypatching.py)
+- [Class Method](notebooks/designpatterns/classmethod.py)
+- [Static Method](notebooks/designpatterns/staticmethod.py)
+
 
 ## Medium Posts
 - [Ctrl + c, Ctrl + v — Replicating Data Science Conda Environment](https://codenamewei.medium.com/ctrl-c-ctrl-v-replicating-data-science-conda-environment-c190ad0d93fd)
