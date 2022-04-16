@@ -190,6 +190,7 @@ conda env create -f config.yml
 - Deletes a directory and all its contents: ```shutil.rmtree()```
 - [Copy a file to another path](notebooks/filesystem/copyfile.ipynb)
 - [Unzip file](notebooks/filesystem/uncompresszip.ipynb)
+- Check operating system: ```import platform; platform.system()```
 
 ## String
 - Check if string is empty, len = 0: ```if not strvar:```
