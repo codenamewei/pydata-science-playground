@@ -1,3 +1,14 @@
+Built in decorators are just **syntactic sugar**.  
+The following two definitions create equal functions 
+```
+def f(...):
+    ...
+f = staticmethod(f)
+
+@staticmethod
+def f(...):
+```
+
 ### Static Method
 
 - A static method is a method that belongs to a class rather than an instance of a class.
