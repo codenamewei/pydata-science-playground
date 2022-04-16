@@ -249,7 +249,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Abstract Factory](notebooks/designpatterns/abstractfactory.py)
 - [Monkey Patching](notebooks/designpatterns/monkeypatching.py)
 
-### Built-in Decorators
+### [Built-in Decorators](notebooks/designpatterns/built-in-decorators.md)
 - [Class Method](notebooks/designpatterns/classmethod.py)
 - [Static Method](notebooks/designpatterns/staticmethod.py)
 
