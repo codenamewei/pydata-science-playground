@@ -202,7 +202,8 @@ conda env create -f config.yml
 - Swap existing upper and lower case: ```strvar.swapcase()```
 - Capitalize every first letter of a word: ```strvar.title()```
 - Split a string based on character: ```strvar.split(<char>)```
-  - Note: if split with every character, do this instead: ```[i for i in "ABCDE"]```
+  - If split with every character, do this instead: ```[i for i in "ABCDE"]```
+  - Split on white space ```strvar.split()```
 - Check if string starts with a substring: ```strvar.startswith(<substring>)```
 - Check if string ends with a substring: ```strvar.endswith(<substring>)```
 - Check if string have substring/specific character. Returns -1 if not found. : ```strvar.find(<substring>)```
