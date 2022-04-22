@@ -100,6 +100,10 @@ conda env create -f config.yml
 - Save excel: ```df.to_excel('file_name', index = False) ```
 - [Write to multiple sheets](notebooks/pandas/write_to_multiple_sheets_excel.ipynb)
 
+### [Parquet In/Out](notebooks/pandas/readwriteparquet.ipynb)
+- Read in parquet: ```pd.read_parquet(...)```
+- Write to parquet: ```pd.to_parquet(...)```
+
 ### Pickle In/Out 
 **Note: Pickle have security risk and slow in serialization (even to csv and json). Dont use**
 - Read in pickle to dataframe: ```df = pd.read_pickle(<file_name>) # ends with .pkl```
@@ -185,7 +189,7 @@ conda env create -f config.yml
 - Append certain path: ```sys.path.append(<path>)```
 - Check if path exist: ```os.path.exists(<path>)```
 - Remove a file: ```os.remove()```
-- Get size of current file in byte: ```os.path.getsize(<path>)```
+- Get size of current file in byte: ```os.path.getsize(<path>)``` or ```from pathlib import Path; Path(<path>).stat().st_size```
 - Removes an empty directory: ```os.rmdir()```
 - Deletes a directory and all its contents: ```shutil.rmtree()```
 - [Copy a file to another path](notebooks/filesystem/copyfile.ipynb)
