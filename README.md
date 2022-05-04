@@ -52,11 +52,14 @@ conda env create -f config.yml
 - Assign df by copy instead of reference - [```df.copy()```](notebooks/pandas/copybyvalue.ipynb)
 
 ### Type
-- [Series to value](notebooks/pandas/series_to_values.ipynb)
-- Series/Dataframe to numpy array - ```input.to_numpy()```
 - [Change column type](notebooks/pandas/change_column_type.ipynb)
 - [Rename column name if exist](notebooks/pandas/rename_column.ipynb)
 - [Compare column type](notebooks/pandas/comparecoltype.ipynb)
+
+### Series
+- [Series to value](notebooks/pandas/series_to_values.ipynb)
+- Series/Dataframe to numpy array - ```input.to_numpy()```
+- Series iteration: ```for index, item in seriesf.items():```
 
 ### Assign values
 - [Create new column and assign value according to another column](notebooks/pandas/assign_column.ipynb)
@@ -131,7 +134,6 @@ conda env create -f config.yml
 - [Audio file <> Numpy Array](notebooks/audio/audiofile2array.ipynb)
 
 ## Input
-
 - [Get system input](notebooks/input/sysinput.py)
 
 ## Formatting
@@ -153,6 +155,7 @@ conda env create -f config.yml
 - Build list of same values: ```['100'] * 20 # 20 items of the value '100'```
 - Change values of list with **List Comprehension**: ```[func(a) for a in sample_list]```
 - Iteration of list with index: ```for index, value in enumerate(inlist):```
+- [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
 
 ### Dictionary
 - [Define dict with str keys](notebooks/dictionary/definedict.ipynb)
