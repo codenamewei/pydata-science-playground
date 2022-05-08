@@ -256,6 +256,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ## Design Patterns 
 - [Abstract Factory](notebooks/designpatterns/abstractfactory.py)
 - [Monkey Patching](notebooks/designpatterns/monkeypatching.py)
+- [Singleton](notebooks/designpatterns/singleton.py)
 
 ### [Built-in Decorators](notebooks/designpatterns/built-in-decorators.md)
 - [Class Method](notebooks/designpatterns/classmethod.py)
