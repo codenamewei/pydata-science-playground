@@ -221,6 +221,7 @@ conda env create -f config.yml
 ## Class
 - [Reserved methods in class](notebooks/class/reservedMethod.py)
 - [The magic variable *args and **kwargs](notebooks/class/kwargsimp.py)
+- [getter: @property, setter: @{variable}.setter, deleter: @{variable}.deleter](notebooks/class/property.ipynb)
 
 ## Processing iterables with a functional style
 - [Produce a new iterable with map()](notebooks/functional/mapimp.ipynb)
