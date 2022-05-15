@@ -263,7 +263,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ### [Built-in Decorators](notebooks/designpatterns/built-in-decorators.md)
 - [Class Method](notebooks/designpatterns/classmethod.py)
 - [Static Method](notebooks/designpatterns/staticmethod.py)
-
+- [Abstract Method](notebooks/class/abstractmethod.py)
 
 ## Medium Posts
 - [Ctrl + c, Ctrl + v — Replicating Data Science Conda Environment](https://codenamewei.medium.com/ctrl-c-ctrl-v-replicating-data-science-conda-environment-c190ad0d93fd)
