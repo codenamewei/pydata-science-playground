@@ -126,7 +126,8 @@ conda env create -f config.yml
 ## Huggingface
 
 - Send model to cuda - ```model = model.to('cuda:0')```
-- [Overview of DatasetDict](notebooks/huggingface/DatasetDict_Overview.ipynb)
+- [Overview of DatasetDict](notebooks/huggingface/datasetdict_intro.ipynb)
+- [DatasetDict from Pandas Dataframe](https://stackoverflow.com/questions/71618974/convert-pandas-dataframe-to-datasetdict)
 
 ## Audio 
 - [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
