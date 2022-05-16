@@ -206,6 +206,7 @@ conda env create -f config.yml
 - Capitalize a string: ```strvar.capitalize()```
 - Uppercase a string: ```strvar.upper()```
 - Lowercase a string: ```strvar.lower()```
+- Remove white spaces in the beginning and end: ```strvar.strip()```
 - Swap existing upper and lower case: ```strvar.swapcase()```
 - Capitalize every first letter of a word: ```strvar.title()```
 - Split a string based on character: ```strvar.split(<char>)```
