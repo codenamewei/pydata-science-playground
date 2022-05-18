@@ -126,7 +126,8 @@ conda env create -f config.yml
 ## Huggingface
 
 - Send model to cuda - ```model = model.to('cuda:0')```
-- [Overview of DatasetDict](notebooks/huggingface/DatasetDict_Overview.ipynb)
+- [Overview of DatasetDict](notebooks/huggingface/datasetdict_intro.ipynb)
+- [DatasetDict from Pandas Dataframe](https://stackoverflow.com/questions/71618974/convert-pandas-dataframe-to-datasetdict)
 
 ## Audio 
 - [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
@@ -205,6 +206,7 @@ conda env create -f config.yml
 - Capitalize a string: ```strvar.capitalize()```
 - Uppercase a string: ```strvar.upper()```
 - Lowercase a string: ```strvar.lower()```
+- Remove white spaces in the beginning and end: ```strvar.strip()```
 - Swap existing upper and lower case: ```strvar.swapcase()```
 - Capitalize every first letter of a word: ```strvar.title()```
 - Split a string based on character: ```strvar.split(<char>)```
@@ -221,6 +223,8 @@ conda env create -f config.yml
 ## Class
 - [Reserved methods in class](notebooks/class/reservedMethod.py)
 - [The magic variable *args and **kwargs](notebooks/class/kwargsimp.py)
+- [Abstract class with ABCMeta and @abstractmethod](notebooks/class/abstractmethod.py)
+- [getter: @property, setter: @{variable}.setter, deleter: @{variable}.deleter](notebooks/class/property.ipynb)
 
 ## Processing iterables with a functional style
 - [Produce a new iterable with map()](notebooks/functional/mapimp.ipynb)
@@ -256,11 +260,12 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ## Design Patterns 
 - [Abstract Factory](notebooks/designpatterns/abstractfactory.py)
 - [Monkey Patching](notebooks/designpatterns/monkeypatching.py)
+- [Singleton](notebooks/designpatterns/singleton.py)
 
 ### [Built-in Decorators](notebooks/designpatterns/built-in-decorators.md)
 - [Class Method](notebooks/designpatterns/classmethod.py)
 - [Static Method](notebooks/designpatterns/staticmethod.py)
-
+- [Abstract Method](notebooks/class/abstractmethod.py)
 
 ## Medium Posts
 - [Ctrl + c, Ctrl + v — Replicating Data Science Conda Environment](https://codenamewei.medium.com/ctrl-c-ctrl-v-replicating-data-science-conda-environment-c190ad0d93fd)
