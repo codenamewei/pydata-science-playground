@@ -221,10 +221,12 @@ conda env create -f config.yml
 - [Generate random string](https://pynative.com/python-generate-random-string/)
 
 ## Class
+- [Effective way to view object address and object](notebooks/class/class_object_view.ipynb)
 - [Reserved methods in class](notebooks/class/reservedMethod.py)
 - [The magic variable *args and **kwargs](notebooks/class/kwargsimp.py)
 - [Abstract class with ABCMeta and @abstractmethod](notebooks/class/abstractmethod.py)
 - [getter: @property, setter: @{variable}.setter, deleter: @{variable}.deleter](notebooks/class/property.ipynb)
+- [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
 
 ## Processing iterables with a functional style
 - [Produce a new iterable with map()](notebooks/functional/mapimp.ipynb)
