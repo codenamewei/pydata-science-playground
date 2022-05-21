@@ -50,6 +50,7 @@ conda env create -f config.yml
 - [Append string to all rows of a column](notebooks/pandas/append_value_to_rows.ipynb)
 - Reset index without creating new (index) column - ```df.reset_index(drop=True)```
 - Assign df by copy instead of reference - [```df.copy()```](notebooks/pandas/copybyvalue.ipynb)
+- Shuffle rows of df: ```df = df.sample(frac=1).reset_index(drop=True)```
 
 ### Type
 - [Change column type](notebooks/pandas/change_column_type.ipynb)
