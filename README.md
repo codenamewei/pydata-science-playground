@@ -223,7 +223,7 @@ conda env create -f config.yml
 ## Class
 - [Reserved methods in class](notebooks/class/reservedMethod.py)
 - [The magic variable *args and **kwargs](notebooks/class/kwargsimp.py)
-- [Abstract class with ABCMeta and @abstractmethod](notebooks/class/abstractmethod.py)
+- [Abstract class with ABCMeta and @abstractmethod](notebooks/class/abstractmethod.ipynb)
 - [getter: @property, setter: @{variable}.setter, deleter: @{variable}.deleter](notebooks/class/property.ipynb)
 
 ## Processing iterables with a functional style
@@ -265,7 +265,6 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ### [Built-in Decorators](notebooks/designpatterns/built-in-decorators.md)
 - [Class Method](notebooks/designpatterns/classmethod.py)
 - [Static Method](notebooks/designpatterns/staticmethod.py)
-- [Abstract Method](notebooks/class/abstractmethod.py)
 
 ## Medium Posts
 - [Ctrl + c, Ctrl + v — Replicating Data Science Conda Environment](https://codenamewei.medium.com/ctrl-c-ctrl-v-replicating-data-science-conda-environment-c190ad0d93fd)
