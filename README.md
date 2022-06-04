@@ -137,11 +137,12 @@ conda env create -f config.yml
 
 - Given torch.tensor `buffer = tensor(4)`, get the value by - `id = buffer.item()`
 - Given torch.tensor, get the argmax of each row - `torch.argmax(buffer, dim=<(int)dimension_to_reduce>)`
+- Tensor to cuda - `inputs = inputs.to("cuda")`
 - Check if cuda is available - `import torch; torch.cuda.is_available()`
 
 ## Huggingface
 
-- Send model to cuda - `model = model.to('cuda:0')`
+- Send model to cuda - `model.to('cuda:0')` or `model.cuda()`
 - [Overview of DatasetDict](notebooks/huggingface/datasetdict_intro.ipynb)
 - [DatasetDict from Pandas Dataframe](https://stackoverflow.com/questions/71618974/convert-pandas-dataframe-to-datasetdict)
 
