@@ -257,10 +257,6 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Advanced configuration log to stdout](notebooks/logging/builtinlogging/log2stdout.ipynb)
 - [Advanced configuration log to file](notebooks/logging/builtinlogging/log2file.ipynb)
 
-### Ice cream
-
-- [Logging walkthrough](notebooks/logging/icecream/summary.ipynb)
-
 ## Design Patterns 
 - [Abstract Factory](notebooks/designpatterns/abstractfactory.py)
 - [Monkey Patching](notebooks/designpatterns/monkeypatching.py)
@@ -270,6 +266,10 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Class Method](notebooks/designpatterns/classmethod.py)
 - [Static Method](notebooks/designpatterns/staticmethod.py)
 - [Abstract Method](notebooks/class/abstractmethod.py)
+
+## Others
+- [Type Checking with module _typing_](notebooks/modules/typing_imp.ipynb)
+- [Logging with module_icecream_](notebooks/modules/icecream_imp.ipynb)
 
 ## Medium Posts
 - [Ctrl + c, Ctrl + v — Replicating Data Science Conda Environment](https://codenamewei.medium.com/ctrl-c-ctrl-v-replicating-data-science-conda-environment-c190ad0d93fd)
