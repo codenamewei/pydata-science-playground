@@ -303,7 +303,6 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 - [Class Method](notebooks/designpatterns/classmethod.py)
 - [Static Method](notebooks/designpatterns/staticmethod.py)
-- [Abstract Method](notebooks/class/abstractmethod.py)
 
 ## Others
 
