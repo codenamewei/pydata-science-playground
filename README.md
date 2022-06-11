@@ -91,7 +91,10 @@ conda env create -f config.yml
 - [Filter with function isin()](notebooks/pandas/isin.ipynb)
 - [Filter df with item not in list](notebooks/pandas/filtervaluenotinlist.ipynb)
 - [Filter with function query()](notebooks/pandas/query.ipynb)
-- Find with loc - `df.loc[df['address'].eq('johndoe@gmail.com')]` `df.loc[df.a.eq(123) & df.b.eq("helloworld")]`
+- Find with loc
+  - `df.loc[df['address'].eq('johndoe@gmail.com')] #filter with one value`
+  - `df.loc[df.a.eq(123) & df.b.eq("helloworld")] #filter with one value in multiple columns`
+  - `df.loc[df.a.isin(valuelist)] #filter with a few values in a list`
 - [Assign value to specific column(s) by matching value](notebooks/pandas/df_assign_col_values.ipynb)
 - Get a subset of dataframe by rows - `df.iloc[<from_rows>:<to_rows>, :]`
 - [Count items and filter by counter values](notebooks/pandas/filter&valuecount.ipynb)
