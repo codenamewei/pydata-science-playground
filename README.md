@@ -78,6 +78,7 @@ conda env create -f config.yml
 - [Drop duplicates for df / subset, keep one copy and remove all](notebooks/pandas/drop_duplicate.ipynb)
 - [Remove/drop rows where specific column matched value](notebooks/pandas/remove_with_matching_value.ipynb)
 - [Remove specific columns with column name](notebooks/pandas/remove_column.ipynb)
+- [Drop rows by index](notebooks/pandas/drop_row_by_index.ipynb)
 - Drop rows/columns with np.NaN: `df3 = df3.dropna(axis = 1) #row`
 
 ### SQL-like functions
