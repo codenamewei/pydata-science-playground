@@ -165,6 +165,7 @@ conda env create -f config.yml
 ## Formatting
 
 - datetime: [datetime.ipynb](notebooks/formatting/datetime.ipynb)
+- Format floating value to n decimal: ```"%.2f" % floating_var```
 
 ## Data Structure
 
