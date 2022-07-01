@@ -101,6 +101,15 @@ conda env create -f config.yml
 - [Count items and filter by counter values](notebooks/pandas/filter&valuecount.ipynb)
 - [Retrieve columns name which match specific str](notebooks/pandas/filterbysubsetname.ipynb)
 
+
+### Excel In/Out
+
+- Read in excel with specific sheet name: `pd.read_excel(<url>, sheet_name = "Sheet1", engine = "openpyxl")`
+  - Note: Install engine by `pip install openpyxl`
+- [Read number of sheets in excel](notebooks/pandas/count_excel_sheets.ipynb)
+- Save excel: `df.to_excel('file_name', index = False) `
+- [Write to multiple sheets](notebooks/pandas/write_to_multiple_sheets_excel.ipynb)
+
 ### CSV In/Out
 
 - Read csv with other delimiter `pd.read_csv(<path-to-file>, delimiter = '\x01')`
@@ -111,12 +120,6 @@ conda env create -f config.yml
   - Note: Put `index = False` is important to prevent an extra column of index being saved.
 - Save to csv with encoding `df.to_csv('file name', encoding = 'utf-8')`
 
-### Excel In/Out
-
-- Read in excel with specific sheet name: `pd.read_excel(<url>, sheet_name = "Sheet1", engine = "openpyxl")`
-  - Note: Install engine by `pip install openpyxl`
-- Save excel: `df.to_excel('file_name', index = False) `
-- [Write to multiple sheets](notebooks/pandas/write_to_multiple_sheets_excel.ipynb)
 
 ### [Parquet In/Out](notebooks/pandas/readwriteparquet.ipynb)
 
