@@ -148,7 +148,12 @@ conda env create -f config.yml
 - Given torch.tensor, get the argmax of each row - `torch.argmax(buffer, dim=<(int)dimension_to_reduce>)`
 - Tensor to cuda - `inputs = inputs.to("cuda")`
 - Check if cuda is available - `import torch; torch.cuda.is_available()`
+
+### Torch Tensor
 - Numpy array to torch tensor - `torch.from_numpy(np_array)`
+- Tensor shape - `tensor.shape`
+- Tensor data types - `tensor.dtype`
+- Device tensor is stored on - `tensor.device`
 
 ## Huggingface
 
