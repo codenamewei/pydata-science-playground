@@ -54,6 +54,7 @@ conda env create -f config.yml
 - Reset index without creating new (index) column - `df.reset_index(drop=True)`
 - Assign df by copy instead of reference - [`df.copy()`](notebooks/pandas/copybyvalue.ipynb)
 - Shuffle rows of df: `df = df.sample(frac=1).reset_index(drop=True)`
+- [Pandas with multiple index](notebooks/pandas/pd_multiple_index.ipynb)
 
 ### Type
 
