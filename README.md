@@ -193,6 +193,7 @@ conda env create -f config.yml
 - Build list of same values: `['100'] * 20 # 20 items of the value '100'`
 - Change values of list with **List Comprehension**: `[func(a) for a in sample_list]`
 - Iteration of list with index: `for index, value in enumerate(inlist):`
+- Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]```
 - [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
 
 ### Dictionary
@@ -279,6 +280,7 @@ conda env create -f config.yml
 - [Produce a new iterable with map()](notebooks/functional/mapimp.ipynb)
 - [Generate a new iterable with Boolean-return function with filter()](notebooks/functional/filterimp.ipynb)
 - [Produce a single cumulative value from iterable with reduce()](notebooks/functional/reduceimp.ipynb)
+- [Condition checking with any(<iterable>)](notebooks/functions/anyimp.ipynb)
 
 _Note: Functional style can be replaced with **list comprehension** or **generator expressions**_
 
