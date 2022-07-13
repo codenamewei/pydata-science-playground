@@ -54,6 +54,7 @@ conda env create -f config.yml
 - Reset index without creating new (index) column - `df.reset_index(drop=True)`
 - Assign df by copy instead of reference - [`df.copy()`](notebooks/pandas/copybyvalue.ipynb)
 - Shuffle rows of df: `df = df.sample(frac=1).reset_index(drop=True)`
+- [Pandas with multiple index](notebooks/pandas/pd_multiple_index.ipynb)
 
 ### Type
 
@@ -78,7 +79,8 @@ conda env create -f config.yml
 - [Drop duplicates for df / subset, keep one copy and remove all](notebooks/pandas/drop_duplicate.ipynb)
 - [Remove/drop rows where specific column matched value](notebooks/pandas/remove_with_matching_value.ipynb)
 - [Remove specific columns with column name](notebooks/pandas/remove_column.ipynb)
-- Drop rows/columns with np.NaN: `df3 = df3.dropna(axis = 0) #column`
+- [Drop rows by index](notebooks/pandas/drop_row_by_index.ipynb)
+- Drop rows/columns with np.NaN: `df3 = df3.dropna(axis = 1) #row`
 
 ### SQL-like functions
 
@@ -91,11 +93,23 @@ conda env create -f config.yml
 - [Filter with function isin()](notebooks/pandas/isin.ipynb)
 - [Filter df with item not in list](notebooks/pandas/filtervaluenotinlist.ipynb)
 - [Filter with function query()](notebooks/pandas/query.ipynb)
-- Find with loc - `df.loc[df['address'].eq('johndoe@gmail.com')]` `df.loc[df.a.eq(123) & df.b.eq("helloworld")]`
+- Find with loc
+  - `df.loc[df['address'].eq('johndoe@gmail.com')] #filter with one value`
+  - `df.loc[df.a.eq(123) & df.b.eq("helloworld")] #filter with one value in multiple columns`
+  - `df.loc[df.a.isin(valuelist)] #filter with a few values in a list`
 - [Assign value to specific column(s) by matching value](notebooks/pandas/df_assign_col_values.ipynb)
 - Get a subset of dataframe by rows - `df.iloc[<from_rows>:<to_rows>, :]`
 - [Count items and filter by counter values](notebooks/pandas/filter&valuecount.ipynb)
 - [Retrieve columns name which match specific str](notebooks/pandas/filterbysubsetname.ipynb)
+
+
+### Excel In/Out
+
+- Read in excel with specific sheet name: `pd.read_excel(<url>, sheet_name = "Sheet1", engine = "openpyxl")`
+  - Note: Install engine by `pip install openpyxl`
+- [Read number of sheets in excel](notebooks/pandas/count_excel_sheets.ipynb)
+- Save excel: `df.to_excel('file_name', index = False) `
+- [Write to multiple sheets](notebooks/pandas/write_to_multiple_sheets_excel.ipynb)
 
 ### CSV In/Out
 
@@ -107,12 +121,6 @@ conda env create -f config.yml
   - Note: Put `index = False` is important to prevent an extra column of index being saved.
 - Save to csv with encoding `df.to_csv('file name', encoding = 'utf-8')`
 
-### Excel In/Out
-
-- Read in excel with specific sheet name: `pd.read_excel(<url>, sheet_name = "Sheet1", engine = "openpyxl")`
-  - Note: Install engine by `pip install openpyxl`
-- Save excel: `df.to_excel('file_name', index = False) `
-- [Write to multiple sheets](notebooks/pandas/write_to_multiple_sheets_excel.ipynb)
 
 ### [Parquet In/Out](notebooks/pandas/readwriteparquet.ipynb)
 
@@ -129,9 +137,11 @@ conda env create -f config.yml
 ## Numpy
 
 - [Numpy basic](notebooks/numpy/npbasic.ipynb)
+- [Numpy array to list]: ```nparray.tolist()```
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
 - [Numpy <> Bytes](notebooks/numpy/np2bytes.ipynb)
+
 
 ## Pytorch
 
@@ -139,6 +149,12 @@ conda env create -f config.yml
 - Given torch.tensor, get the argmax of each row - `torch.argmax(buffer, dim=<(int)dimension_to_reduce>)`
 - Tensor to cuda - `inputs = inputs.to("cuda")`
 - Check if cuda is available - `import torch; torch.cuda.is_available()`
+
+### Torch Tensor
+- Numpy array to torch tensor - `torch.from_numpy(np_array)`
+- Tensor shape - `tensor.shape`
+- Tensor data types - `tensor.dtype`
+- Device tensor is stored on - `tensor.device`
 
 ## Huggingface
 
@@ -159,6 +175,7 @@ conda env create -f config.yml
 ## Formatting
 
 - datetime: [datetime.ipynb](notebooks/formatting/datetime.ipynb)
+- Format floating value to n decimal: ```"%.2f" % floating_var```
 
 ## Data Structure
 
@@ -176,6 +193,7 @@ conda env create -f config.yml
 - Build list of same values: `['100'] * 20 # 20 items of the value '100'`
 - Change values of list with **List Comprehension**: `[func(a) for a in sample_list]`
 - Iteration of list with index: `for index, value in enumerate(inlist):`
+- Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]```
 - [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
 
 ### Dictionary
@@ -203,6 +221,10 @@ conda env create -f config.yml
 - Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
 - Power of a number: `pow(base_number, exponent_number`
 - Square root of a number: `sqrt(number)`
+
+### Random
+- Generate random integer within (min, max): `from random import randint; randint(0, 100) #within 0 and 100`
+- Generte random floating value: `from random import random; random()`
 
 ## File System
 
@@ -255,12 +277,14 @@ conda env create -f config.yml
 - [Abstract class with ABCMeta and @abstractmethod](notebooks/class/abstractmethod.py)
 - [getter: @property, setter: @{variable}.setter, deleter: @{variable}.deleter](notebooks/class/property.ipynb)
 - [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
+  - Copy list by value: `list_cp = list_ori[:]` (Note: `list_cp = list_ori` copy by reference)
 
 ## Processing iterables with a functional style
 
 - [Produce a new iterable with map()](notebooks/functional/mapimp.ipynb)
 - [Generate a new iterable with Boolean-return function with filter()](notebooks/functional/filterimp.ipynb)
 - [Produce a single cumulative value from iterable with reduce()](notebooks/functional/reduceimp.ipynb)
+- [Condition checking with any(<iterable>)](notebooks/functions/anyimp.ipynb)
 
 _Note: Functional style can be replaced with **list comprehension** or **generator expressions**_
 
@@ -299,10 +323,11 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Monkey Patching](notebooks/designpatterns/monkeypatching.py)
 - [Singleton](notebooks/designpatterns/singleton.py)
 
-### [Built-in Decorators](notebooks/designpatterns/built-in-decorators.md)
-
-- [Class Method](notebooks/designpatterns/classmethod.py)
-- [Static Method](notebooks/designpatterns/staticmethod.py)
+### [Built-in Decorators](notebooks/decorator/built-in-decorators.md)
+- [Class Method](notebooks/decorator/classmethod.py)
+- [Static Method](notebooks/decorator/staticmethod.py)
+- dataclass
+  - [dataclass hello world](notebooks/decorator/dataclasshelloworld.py)
 
 ## Others
 
