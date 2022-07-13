@@ -222,6 +222,10 @@ conda env create -f config.yml
 - Power of a number: `pow(base_number, exponent_number`
 - Square root of a number: `sqrt(number)`
 
+### Random
+- Generate random integer within (min, max): `from random import randint; randint(0, 100) #within 0 and 100`
+- Generte random floating value: `from random import random; random()`
+
 ## File System
 
 - The character used by the operating system to separate pathname components: `os.sep`
