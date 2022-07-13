@@ -323,10 +323,11 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Monkey Patching](notebooks/designpatterns/monkeypatching.py)
 - [Singleton](notebooks/designpatterns/singleton.py)
 
-### [Built-in Decorators](notebooks/designpatterns/built-in-decorators.md)
-
-- [Class Method](notebooks/designpatterns/classmethod.py)
-- [Static Method](notebooks/designpatterns/staticmethod.py)
+### [Built-in Decorators](notebooks/decorator/built-in-decorators.md)
+- [Class Method](notebooks/decorator/classmethod.py)
+- [Static Method](notebooks/decorator/staticmethod.py)
+- [dataclass]
+  - [dataclass hello world](notebooks/decorator/dataclasshelloworld.py)
 
 ## Others
 
