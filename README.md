@@ -102,7 +102,6 @@ conda env create -f config.yml
 - [Count items and filter by counter values](notebooks/pandas/filter&valuecount.ipynb)
 - [Retrieve columns name which match specific str](notebooks/pandas/filterbysubsetname.ipynb)
 
-
 ### Excel In/Out
 
 - Read in excel with specific sheet name: `pd.read_excel(<url>, sheet_name = "Sheet1", engine = "openpyxl")`
@@ -167,10 +166,6 @@ conda env create -f config.yml
 - [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
 - [Get sampling rate of an audio file](notebooks/audio/getsamplingrate.ipynb)
 - [Audio file <> Numpy Array](notebooks/audio/audiofile2array.ipynb)
-
-## Input
-
-- [Get system input](notebooks/input/sysinput.py)
 
 ## Formatting
 
@@ -245,7 +240,12 @@ conda env create -f config.yml
 - Deletes a directory and all its contents: `shutil.rmtree()`
 - [Copy a file to another path](notebooks/filesystem/copyfile.ipynb)
 - [Unzip file](notebooks/filesystem/uncompresszip.ipynb)
+
+## System
+
+- [Get system input](notebooks/system/sysinput.py)
 - Check operating system: `import platform; platform.system()`
+- [Check if port is open/close](notebooks/system/check_port_open.ipynb)
 
 ## String
 
