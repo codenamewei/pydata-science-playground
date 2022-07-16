@@ -251,7 +251,7 @@ conda env create -f config.yml
 
 - Check if string is empty, len = 0: `if not strvar:`
 - Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
-- Check file extension: [string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
+- Check file extension: [notebooks/string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
 - Capitalize a string: `strvar.capitalize()`
 - Uppercase a string: `strvar.upper()`
 - Lowercase a string: `strvar.lower()`
@@ -268,6 +268,11 @@ conda env create -f config.yml
 - Replace string/character with intended string/character: `strout = strin.replace(" ", "_")`
 - [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
 - [Generate random string](https://pynative.com/python-generate-random-string/)
+
+## Regular Expression (Regex)
+- [Find matching word/character](notebooks/regex/charactermatch.ipynb)
+- [Negation](notebooks/regex/negation.ipynb)
+- [Disjunction](notebooks/regex/disjunction.ipynb)
 
 ## Class
 
