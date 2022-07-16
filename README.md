@@ -67,6 +67,7 @@ conda env create -f config.yml
 - [Series to value](notebooks/pandas/series_to_values.ipynb)
 - Series/Dataframe to numpy array - `input.to_numpy()`
 - Series iteration: `for index, item in seriesf.items():`
+- Series to dict: `seriesf.to_dict()`
 
 ### Assign values
 
