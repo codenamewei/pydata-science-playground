@@ -271,7 +271,8 @@ conda env create -f config.yml
 - [Generate random string](https://pynative.com/python-generate-random-string/)
 
 ## Regular Expression (Regex)
-- [Find matching word/character](notebooks/regex/charactermatch.ipynb)
+- [Find matching word/character 1](notebooks/regex/charactermatch.ipynb)
+- [Find matching word/character 2](notebooks/regex/charactermatch2.ipynb)
 - [Negation](notebooks/regex/negation.ipynb)
 - [Disjunction](notebooks/regex/disjunction.ipynb)
 
