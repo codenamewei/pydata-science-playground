@@ -184,6 +184,7 @@ conda env create -f config.yml
 - Get index of a value: `arr.index(value)`
 - Add one more value to existing list: `arr.append(value)`
 - Extend list with values in another list: `arr.extend(arr2)`
+- Remove an item from the list: `arr.remove(item)`
 - Check for empty list: `arr = []; if not arr: #empty list`
 - Check all items in a list(subset) if exist in another list, returns boolean: `set(b).issubset(v)`
 - Build list of same values: `['100'] * 20 # 20 items of the value '100'`
@@ -191,6 +192,7 @@ conda env create -f config.yml
 - Iteration of list with index: `for index, value in enumerate(inlist):`
 - Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]```
 - [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
+
 
 ### Dictionary
 
