@@ -274,9 +274,19 @@ conda env create -f config.yml
 
 ## Regular Expression (Regex)
 - [Find matching word/character 1](notebooks/regex/charactermatch.ipynb)
+  - Introduction of functions in _re_ library
+  - Square brackets for upper and lower case `[Ww]oodchuck`
 - [Find matching word/character 2](notebooks/regex/charactermatch2.ipynb)
+  - Optional character with `?`
+  - Optional 0 or more character with `*`
+  - Optional 1 or more character with `+`
+  - Any character with `.`
 - [Find matching word/character 3](notebooks/regex/charactermatch3.ipynb)
+  - Whitespace character find with `\s`
+  - Non-whitespace character find with `\S`
 - [Find matching word/character 4](notebooks/regex/charactermatch4.ipynb)
+  - Caret before square bracket:`^[]` to indicate beginning
+  - Dollar sign after square bracket:`[]$` to indicate ending
 - [Negation](notebooks/regex/negation.ipynb)
 - [Disjunction](notebooks/regex/disjunction.ipynb)
 
