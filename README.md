@@ -289,6 +289,7 @@ conda env create -f config.yml
   - Dollar sign after square bracket:`[]$` to indicate ending
 - [Negation](notebooks/regex/negation.ipynb)
 - [Disjunction](notebooks/regex/disjunction.ipynb)
+  - To match a series of patterns with parenthesis.
 
 ## Class
 
