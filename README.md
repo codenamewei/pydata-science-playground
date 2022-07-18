@@ -336,7 +336,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Class Method](notebooks/decorator/classmethod.py)
 - [Static Method](notebooks/decorator/staticmethod.py)
 - dataclass
-  - [dataclass hello world](notebooks/decorator/dataclasshelloworld.py)
+  - [dataclass hello world](notebooks/decorator/dataclass_helloworld.ipynb)
 
 ## Others
 
