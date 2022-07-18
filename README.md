@@ -275,6 +275,8 @@ conda env create -f config.yml
 ## Regular Expression (Regex)
 - [Find matching word/character 1](notebooks/regex/charactermatch.ipynb)
 - [Find matching word/character 2](notebooks/regex/charactermatch2.ipynb)
+- [Find matching word/character 3](notebooks/regex/charactermatch3.ipynb)
+- [Find matching word/character 4](notebooks/regex/charactermatch4.ipynb)
 - [Negation](notebooks/regex/negation.ipynb)
 - [Disjunction](notebooks/regex/disjunction.ipynb)
 
