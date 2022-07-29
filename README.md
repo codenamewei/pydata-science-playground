@@ -67,6 +67,7 @@ conda env create -f config.yml
 - [Series to value](notebooks/pandas/series_to_values.ipynb)
 - Series/Dataframe to numpy array - `input.to_numpy()`
 - Series iteration: `for index, item in seriesf.items():`
+- Series to dict: `seriesf.to_dict()`
 
 ### Assign values
 
@@ -101,7 +102,6 @@ conda env create -f config.yml
 - Get a subset of dataframe by rows - `df.iloc[<from_rows>:<to_rows>, :]`
 - [Count items and filter by counter values](notebooks/pandas/filter&valuecount.ipynb)
 - [Retrieve columns name which match specific str](notebooks/pandas/filterbysubsetname.ipynb)
-
 
 ### Excel In/Out
 
@@ -168,10 +168,6 @@ conda env create -f config.yml
 - [Get sampling rate of an audio file](notebooks/audio/getsamplingrate.ipynb)
 - [Audio file <> Numpy Array](notebooks/audio/audiofile2array.ipynb)
 
-## Input
-
-- [Get system input](notebooks/input/sysinput.py)
-
 ## Formatting
 
 - datetime: [datetime.ipynb](notebooks/formatting/datetime.ipynb)
@@ -188,6 +184,7 @@ conda env create -f config.yml
 - Get index of a value: `arr.index(value)`
 - Add one more value to existing list: `arr.append(value)`
 - Extend list with values in another list: `arr.extend(arr2)`
+- Remove an item from the list: `arr.remove(item)`
 - Check for empty list: `arr = []; if not arr: #empty list`
 - Check all items in a list(subset) if exist in another list, returns boolean: `set(b).issubset(v)`
 - Build list of same values: `['100'] * 20 # 20 items of the value '100'`
@@ -195,6 +192,7 @@ conda env create -f config.yml
 - Iteration of list with index: `for index, value in enumerate(inlist):`
 - Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]```
 - [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
+
 
 ### Dictionary
 
@@ -245,13 +243,18 @@ conda env create -f config.yml
 - Deletes a directory and all its contents: `shutil.rmtree()`
 - [Copy a file to another path](notebooks/filesystem/copyfile.ipynb)
 - [Unzip file](notebooks/filesystem/uncompresszip.ipynb)
+
+## System
+
+- [Get system input](notebooks/system/sysinput.py)
 - Check operating system: `import platform; platform.system()`
+- [Check if port is open/close](notebooks/system/check_port_open.ipynb)
 
 ## String
 
 - Check if string is empty, len = 0: `if not strvar:`
 - Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
-- Check file extension: [string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
+- Check file extension: [notebooks/string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
 - Capitalize a string: `strvar.capitalize()`
 - Uppercase a string: `strvar.upper()`
 - Lowercase a string: `strvar.lower()`
@@ -268,6 +271,25 @@ conda env create -f config.yml
 - Replace string/character with intended string/character: `strout = strin.replace(" ", "_")`
 - [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
 - [Generate random string](https://pynative.com/python-generate-random-string/)
+
+## Regular Expression (Regex)
+- [Find matching word/character 1](notebooks/regex/charactermatch.ipynb)
+  - Introduction of functions in _re_ library
+  - Square brackets for upper and lower case `[Ww]oodchuck`
+- [Find matching word/character 2](notebooks/regex/charactermatch2.ipynb)
+  - Optional character with `?`
+  - Optional 0 or more character with `*`
+  - Optional 1 or more character with `+`
+  - Any character with `.`
+- [Find matching word/character 3](notebooks/regex/charactermatch3.ipynb)
+  - Whitespace character find with `\s`
+  - Non-whitespace character find with `\S`
+- [Find matching word/character 4](notebooks/regex/charactermatch4.ipynb)
+  - Caret before square bracket:`^[]` to indicate beginning
+  - Dollar sign after square bracket:`[]$` to indicate ending
+- [Negation](notebooks/regex/negation.ipynb)
+- [Disjunction](notebooks/regex/disjunction.ipynb)
+  - To match a series of patterns with parenthesis.
 
 ## Class
 
@@ -327,7 +349,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Class Method](notebooks/decorator/classmethod.py)
 - [Static Method](notebooks/decorator/staticmethod.py)
 - dataclass
-  - [dataclass hello world](notebooks/decorator/dataclasshelloworld.py)
+  - [dataclass hello world](notebooks/decorator/dataclass_helloworld.ipynb)
 
 ## Others
 
