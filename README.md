@@ -290,6 +290,7 @@ conda env create -f config.yml
 - [Negation](notebooks/regex/negation.ipynb)
 - [Disjunction](notebooks/regex/disjunction.ipynb)
   - To match a series of patterns with parenthesis.
+- [Extract hashtags](notebooks/regex/filterhashtag.ipynb)
 
 ## Class
 
