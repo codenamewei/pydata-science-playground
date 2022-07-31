@@ -216,13 +216,13 @@ conda env create -f config.yml
 - Sum up an array: `sum(arr)`
 - Round up a number to a certain decimal point: `round(value, 1)`
 - [Calculate percentile](notebooks/math/percentile.ipynb)
-- Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
 - Power of a number: `pow(base_number, exponent_number`
 - Square root of a number: `sqrt(number)`
 
 ### Random
 - Generate random integer within (min, max): `from random import randint; randint(0, 100) #within 0 and 100`
-- Generte random floating value: `from random import random; random()`
+- Generate random floating value: `from random import random; random()`
+- Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
 
 ## File System
 
