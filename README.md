@@ -140,7 +140,7 @@ conda env create -f config.yml
 - [Numpy array to list]: ```nparray.tolist()```
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
-- [Numpy <> Bytes](notebooks/numpy/np2bytes.ipynb)
+- [Numpy <> Bytes, Bytes <> Numpy](notebooks/numpy/np2bytes.ipynb)
 
 
 ## Pytorch
