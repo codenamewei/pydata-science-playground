@@ -7,13 +7,16 @@
 ### Argparse
 
 #### Named argument with library _argparse
-    - 0_helloworld_argparse.py
+- [0_helloworld_argparse.py](argparse/0_helloworld_argparse.py)
+    
+    
+    
+    <img src="metadata/argparse.jpg" width="500">
+    
     ```
     python 0_helloworld_argparse.py --path C:\Users\codenamewei\Downloads\temp2
     ```
-    
-    <img src="metadata/argparse.jpg" width="500">
-    <img src="metadata/argparse2.jpg" width="500">
+    <img src="metadata/argparse2.jpg" width="800">
 
 #### [File argument with library _argparse_](fileargparser.py)
 <img src="metadata/fileargparse.png" width="500">
