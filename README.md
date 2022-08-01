@@ -301,6 +301,10 @@ conda env create -f config.yml
 - [getter: @property, setter: @{variable}.setter, deleter: @{variable}.deleter](notebooks/class/property.ipynb)
 - [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
   - Copy list by value: `list_cp = list_ori[:]` (Note: `list_cp = list_ori` copy by reference)
+  
+## Passing variables in from command line
+- [Unnamed arguments](command_line/sysarg.py)
+- [Unnamed arguments](command_line/fileargparse.py)
 
 ## Processing iterables with a functional style
 
