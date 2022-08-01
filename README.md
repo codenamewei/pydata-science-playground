@@ -304,7 +304,8 @@ conda env create -f config.yml
   
 ## Passing variables in from command line
 - [Unnamed arguments](command_line/sysarg.py)
-- [Unnamed arguments](command_line/fileargparse.py)
+- [Named arguments](tbd)
+- [Filename as argument](command_line/fileargparse.py)
 
 ## Processing iterables with a functional style
 
