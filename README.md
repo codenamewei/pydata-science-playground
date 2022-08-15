@@ -307,6 +307,7 @@ conda env create -f config.yml
   - Copy list by value: `list_cp = list_ori[:]` (Note: `list_cp = list_ori` copy by reference)
   
 ### Magic Method
+- ```__dict__``` return all attributes of the obj: ```print(
 - ```__str__``` return string representation of the obj: ```def __str__(self):```
 - ```__eq__``` compare the instances of the class: ```def __eq__(self, other):```
   - [Define __eq__ function in class 1](notebooks/class/eq_function.ipynb)
