@@ -298,9 +298,9 @@ conda env create -f config.yml
 ## Class
 
 - [Effective way to view object address and object](notebooks/class/class_object_view.ipynb)
-
 - [Reserved methods in class](notebooks/class/reservedMethod.py)
 - [The magic variable \*args and \*\*kwargs](notebooks/class/kwargsimp.py)
+- Check if object is of specified type: ```isinstance(obj, MyClass)```
 - [Abstract class with ABCMeta and @abstractmethod](notebooks/class/abstractmethod.py)
 - [getter: @property, setter: @{variable}.setter, deleter: @{variable}.deleter](notebooks/class/property.ipynb)
 - [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
