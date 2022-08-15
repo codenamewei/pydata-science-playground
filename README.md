@@ -140,7 +140,7 @@ conda env create -f config.yml
 - [Numpy array to list]: ```nparray.tolist()```
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
-- [Numpy <> Bytes](notebooks/numpy/np2bytes.ipynb)
+- [Numpy <> Bytes, Bytes <> Numpy](notebooks/numpy/np2bytes.ipynb)
 
 
 ## Pytorch
@@ -216,13 +216,13 @@ conda env create -f config.yml
 - Sum up an array: `sum(arr)`
 - Round up a number to a certain decimal point: `round(value, 1)`
 - [Calculate percentile](notebooks/math/percentile.ipynb)
-- Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
 - Power of a number: `pow(base_number, exponent_number`
 - Square root of a number: `sqrt(number)`
 
 ### Random
 - Generate random integer within (min, max): `from random import randint; randint(0, 100) #within 0 and 100`
-- Generte random floating value: `from random import random; random()`
+- Generate random floating value: `from random import random; random()`
+- Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
 
 ## File System
 
@@ -290,6 +290,7 @@ conda env create -f config.yml
 - [Negation](notebooks/regex/negation.ipynb)
 - [Disjunction](notebooks/regex/disjunction.ipynb)
   - To match a series of patterns with parenthesis.
+- [Extract hashtags](notebooks/regex/filterhashtag.ipynb)
 
 ## Class
 
@@ -300,6 +301,11 @@ conda env create -f config.yml
 - [getter: @property, setter: @{variable}.setter, deleter: @{variable}.deleter](notebooks/class/property.ipynb)
 - [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
   - Copy list by value: `list_cp = list_ori[:]` (Note: `list_cp = list_ori` copy by reference)
+  
+## Passing variables in from command line
+- [Unnamed arguments](command_line/sysarg.py)
+- [Named arguments](tbd)
+- [Filename as argument](command_line/fileargparse.py)
 
 ## Processing iterables with a functional style
 
