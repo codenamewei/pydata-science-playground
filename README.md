@@ -292,6 +292,9 @@ conda env create -f config.yml
   - To match a series of patterns with parenthesis.
 - [Extract hashtags](notebooks/regex/filterhashtag.ipynb)
 
+## Collections Module ```from collections import *```
+- [NamedTuple](notebooks/collections_imp/namedtupleimp.ipynb)
+
 ## Class
 
 - [Effective way to view object address and object](notebooks/class/class_object_view.ipynb)
