@@ -298,13 +298,19 @@ conda env create -f config.yml
 ## Class
 
 - [Effective way to view object address and object](notebooks/class/class_object_view.ipynb)
-- [Define __eq__ function in class](notebooks/class/eq_function.ipynb)
+
 - [Reserved methods in class](notebooks/class/reservedMethod.py)
 - [The magic variable \*args and \*\*kwargs](notebooks/class/kwargsimp.py)
 - [Abstract class with ABCMeta and @abstractmethod](notebooks/class/abstractmethod.py)
 - [getter: @property, setter: @{variable}.setter, deleter: @{variable}.deleter](notebooks/class/property.ipynb)
 - [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
   - Copy list by value: `list_cp = list_ori[:]` (Note: `list_cp = list_ori` copy by reference)
+  
+### Magic Method
+- ```__str__``` return string representation of the obj: ```def __str__(self):```
+- ```__eq__``` compare the instances of the class: ```def __eq__(self, other):```
+  - [Define __eq__ function in class 1](notebooks/class/eq_function.ipynb)
+  - [Define __eq__ function in class 2](notebooks/class/dataclass_helloworld_1.ipynb)
   
 ## Passing variables in from command line
 - [Unnamed arguments](command_line/sysarg.py)
