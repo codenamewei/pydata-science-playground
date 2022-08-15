@@ -295,6 +295,7 @@ conda env create -f config.yml
 ## Class
 
 - [Effective way to view object address and object](notebooks/class/class_object_view.ipynb)
+- [Define __eq__ function in class](notebooks/class/eq_function.ipynb)
 - [Reserved methods in class](notebooks/class/reservedMethod.py)
 - [The magic variable \*args and \*\*kwargs](notebooks/class/kwargsimp.py)
 - [Abstract class with ABCMeta and @abstractmethod](notebooks/class/abstractmethod.py)
