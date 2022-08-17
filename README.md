@@ -317,9 +317,9 @@ conda env create -f config.yml
   - [Define __eq__ function in class 2](notebooks/class/dataclass_helloworld_1.ipynb)
   
 ## Passing variables in from command line
-- [Unnamed arguments](command_line/sysarg.py)
-- [Named arguments](tbd)
-- [Filename as argument](command_line/fileargparse.py)
+- [Unnamed arguments](notebooks/command_line/sysarg.py)
+- Named arguments: TBD
+- [Filename as argument](notebooks/command_line/fileargparse.py)
 
 ## Processing iterables with a functional style
 
