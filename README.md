@@ -292,15 +292,29 @@ conda env create -f config.yml
   - To match a series of patterns with parenthesis.
 - [Extract hashtags](notebooks/regex/filterhashtag.ipynb)
 
+## Collections Module
+- [NamedTuple](notebooks/collections_imp/namedtupleimp.ipynb)
+
 ## Class
 
 - [Effective way to view object address and object](notebooks/class/class_object_view.ipynb)
 - [Reserved methods in class](notebooks/class/reservedMethod.py)
 - [The magic variable \*args and \*\*kwargs](notebooks/class/kwargsimp.py)
+- Check if object is of specified type: ```isinstance(obj, MyClass)```
 - [Abstract class with ABCMeta and @abstractmethod](notebooks/class/abstractmethod.py)
 - [getter: @property, setter: @{variable}.setter, deleter: @{variable}.deleter](notebooks/class/property.ipynb)
 - [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
   - Copy list by value: `list_cp = list_ori[:]` (Note: `list_cp = list_ori` copy by reference)
+- Define dataclass
+  - [dataclass 1](notebooks/class/dataclass/dataclass_helloworld_1.ipynb)
+  - [dataclass 2](notebooks/class/dataclass/dataclass_helloworld_2.ipynb)
+  
+### Magic Method
+- ```__dict__``` return all attributes of the obj: ```print(
+- ```__str__``` return string representation of the obj: ```def __str__(self):```
+- ```__eq__``` compare the instances of the class: ```def __eq__(self, other):```
+  - [Define __eq__ function in class 1](notebooks/class/eq_function.ipynb)
+  - [Define __eq__ function in class 2](notebooks/class/dataclass_helloworld_1.ipynb)
   
 ## Passing variables in from command line
 - [Unnamed arguments](command_line/sysarg.py)
