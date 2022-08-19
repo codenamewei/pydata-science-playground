@@ -250,10 +250,6 @@ conda env create -f config.yml
 - Check operating system: `import platform; platform.system()`
 - [Check if port is open/close](notebooks/system/check_port_open.ipynb)
 
-## Concurrency
-### Built-in Concurrency Library: Asyncio
-- [Simple example with asyncio](notebooks/concurrency/asyncio/asyncio_wait.py)
-
 ## String
 
 - Check if string is empty, len = 0: `if not strvar:`
@@ -375,10 +371,14 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - dataclass
   - [dataclass hello world](notebooks/decorator/dataclass_helloworld.ipynb)
 
-## Others
+## Type Checking
 
-- [Type Checking with module _typing_](notebooks/module/typing_imp.ipynb)
-
+- [Type Checking with module _typing_](notebooks/type_checking/typing_imp.ipynb)
+  
+## Concurrency
+### Built-in Concurrency Library: Asyncio
+- [Simple example with asyncio](notebooks/concurrency/asyncio/asyncio_wait.py)
+  
 ## Medium Posts
 
 - [Ctrl + c, Ctrl + v — Replicating Data Science Conda Environment](https://codenamewei.medium.com/ctrl-c-ctrl-v-replicating-data-science-conda-environment-c190ad0d93fd)
