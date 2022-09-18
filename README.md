@@ -19,6 +19,13 @@ conda env create -f config.yml
 
 # Gist
 
+## Boolean Operator
+
+- [X and Y](notebooks/boolean_operator/boolean_options.ipynb)
+- [X or Y](notebooks/boolean_operator/boolean_options.ipynb)
+- [if not X](notebooks/boolean_operator/boolean_options.ipynb)
+- [custom object boolean](notebooks/boolean_operator/boolean_for_objects.ipynb)
+
 ## [Pandas](https://pandas.pydata.org/docs/reference/)
 
 ### Infos
@@ -121,7 +128,6 @@ conda env create -f config.yml
   - Note: Put `index = False` is important to prevent an extra column of index being saved.
 - Save to csv with encoding `df.to_csv('file name', encoding = 'utf-8')`
 
-
 ### [Parquet In/Out](notebooks/pandas/readwriteparquet.ipynb)
 
 - Read in parquet: `pd.read_parquet(...)`
@@ -137,11 +143,10 @@ conda env create -f config.yml
 ## Numpy
 
 - [Numpy basic](notebooks/numpy/npbasic.ipynb)
-- [Numpy array to list]: ```nparray.tolist()```
+- [numpy array to list]: ```nparray.tolist()```
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
 - [Numpy <> Bytes, Bytes <> Numpy](notebooks/numpy/np2bytes.ipynb)
-
 
 ## Pytorch
 
@@ -151,6 +156,7 @@ conda env create -f config.yml
 - Check if cuda is available - `import torch; torch.cuda.is_available()`
 
 ### Torch Tensor
+
 - Numpy array to torch tensor - `torch.from_numpy(np_array)`
 - Tensor shape - `tensor.shape`
 - Tensor data types - `tensor.dtype`
@@ -171,7 +177,7 @@ conda env create -f config.yml
 ## Formatting
 
 - datetime: [datetime.ipynb](notebooks/formatting/datetime.ipynb)
-- Format floating value to n decimal: ```"%.2f" % floating_var```
+- Format floating value to n decimal: `"%.2f" % floating_var`
 
 ## Data Structure
 
@@ -192,7 +198,6 @@ conda env create -f config.yml
 - Iteration of list with index: `for index, value in enumerate(inlist):`
 - Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]```
 - [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
-
 
 ### [Dictionary](notebooks/dictionary)
 
@@ -220,6 +225,7 @@ conda env create -f config.yml
 - Square root of a number: `sqrt(number)`
 
 ### Random
+
 - Generate random integer within (min, max): `from random import randint; randint(0, 100) #within 0 and 100`
 - Generate random floating value: `from random import random; random()`
 - Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
@@ -273,6 +279,7 @@ conda env create -f config.yml
 - [Generate random string](https://pynative.com/python-generate-random-string/)
 
 ## [Regular Expression (Regex)](notebooks/regex)
+
 - [Find matching word/character 1](notebooks/regex/charactermatch.ipynb)
   - Introduction of functions in _re_ library
   - Square brackets for upper and lower case `[Ww]oodchuck`
@@ -293,6 +300,7 @@ conda env create -f config.yml
 - [Extract hashtags](notebooks/regex/filterhashtag.ipynb)
 
 ## Collections Module
+
 - [NamedTuple](notebooks/collections_imp/namedtupleimp.ipynb)
 
 ## Class
@@ -300,7 +308,7 @@ conda env create -f config.yml
 - [Effective way to view object address and object](notebooks/class/class_object_view.ipynb)
 - [Reserved methods in class](notebooks/class/reservedMethod.py)
 - [The magic variable \*args and \*\*kwargs](notebooks/class/kwargsimp.py)
-- Check if object is of specified type: ```isinstance(obj, MyClass)```
+- Check if object is of specified type: `isinstance(obj, MyClass)`
 - [Abstract class with ABCMeta and @abstractmethod](notebooks/class/abstractmethod.py)
 - [getter: @property, setter: @{variable}.setter, deleter: @{variable}.deleter](notebooks/class/property.ipynb)
 - [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
@@ -308,15 +316,17 @@ conda env create -f config.yml
 - Define dataclass
   - [dataclass 1](notebooks/class/dataclass/dataclass_helloworld_1.ipynb)
   - [dataclass 2](notebooks/class/dataclass/dataclass_helloworld_2.ipynb)
-  
+
 ### Magic Method
-- ```__dict__``` return all attributes of the obj: ```print(
-- ```__str__``` return string representation of the obj: ```def __str__(self):```
-- ```__eq__``` compare the instances of the class: ```def __eq__(self, other):```
-  - [Define __eq__ function in class 1](notebooks/class/eq_function.ipynb)
-  - [Define __eq__ function in class 2](notebooks/class/dataclass_helloworld_1.ipynb)
-  
+
+- `__dict__` return all attributes of the obj: ```print(
+- `__str__` return string representation of the obj: `def __str__(self):`
+- `__eq__` compare the instances of the class: `def __eq__(self, other):`
+  - [Define **eq** function in class 1](notebooks/class/eq_function.ipynb)
+  - [Define **eq** function in class 2](notebooks/class/dataclass_helloworld_1.ipynb)
+
 ## Passing variables in from command line
+
 - [Unnamed arguments](notebooks/command_line/sysarg.py)
 - Named arguments: TBD
 - [Filename as argument](notebooks/command_line/fileargparse.py)
@@ -366,6 +376,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Singleton](notebooks/designpatterns/singleton.py)
 
 ### [Built-in Decorators](notebooks/decorator/built-in-decorators.md)
+
 - [Class Method](notebooks/decorator/classmethod.py)
 - [Static Method](notebooks/decorator/staticmethod.py)
 - dataclass
@@ -374,12 +385,15 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ## Type Checking
 
 - [Type Checking with module _typing_](notebooks/type_checking/typing_imp.ipynb)
-  
+
 ## Concurrency
+
 ### Built-in Concurrency Library: Asyncio
+
 - [Simple example with asyncio](notebooks/concurrency/asyncio/asyncio_wait.py)
-  
+
 ## Web
+
 - [Webhook](src/web/webhook)
 
 ## Medium Posts
