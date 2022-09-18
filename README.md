@@ -162,7 +162,7 @@ conda env create -f config.yml
 - [Overview of DatasetDict](notebooks/huggingface/datasetdict_intro.ipynb)
 - [DatasetDict from Pandas Dataframe](https://stackoverflow.com/questions/71618974/convert-pandas-dataframe-to-datasetdict)
 
-## Audio
+## [Audio](notebooks/audio)
 
 - [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
 - [Get sampling rate of an audio file](notebooks/audio/getsamplingrate.ipynb)
@@ -175,7 +175,7 @@ conda env create -f config.yml
 
 ## Data Structure
 
-### List
+### [List](notebooks/list)
 
 - List of str to int: `list(map(int, arr))`
 - List with range of values: `list(range(...))`
@@ -194,14 +194,14 @@ conda env create -f config.yml
 - [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
 
 
-### Dictionary
+### [Dictionary](notebooks/dictionary)
 
 - [Define dict with str keys](notebooks/dictionary/definedict.ipynb)
 - Add new key value pair: `dict.update({"key2":"value2"})`
 - Get keys as list: `list(lut.keys())`
 - Get values as list: `list(lut.values())`
 - Create dict from list: `{i: 0 for i in arr}`
-- Find if key exists in existing dict: `if k in lut`
+- [Handling missing items in dict](notebooks/dictionary/nativedict_handlemissingkey.ipynb)
 - [Iteration to dict to get keys and values](notebooks/dictionary/dict_iteration.ipynb)
 - Save/load dictionary to/from a file: [saveloaddict.ipynb](notebooks/dictionary/saveloaddict.ipynb)
 - Revert or inverse a dictionary mapping: `inv_map = {v: k for k, v in my_map.items()}`
@@ -210,7 +210,7 @@ conda env create -f config.yml
 
 - To identify if any items in the iterables has True/1 values: `any(sample_list) #returns single value True/False`
 
-## Maths
+## [Maths](notebooks/math)
 
 - [Define Nan, Infinite](notebooks/math/define_nan_infinite.ipynb)
 - Sum up an array: `sum(arr)`
@@ -224,7 +224,7 @@ conda env create -f config.yml
 - Generate random floating value: `from random import random; random()`
 - Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
 
-## File System
+## [File System](notebooks/filesystem)
 
 - The character used by the operating system to separate pathname components: `os.sep`
 - [Iterate through a path to get files/folders of all the subpaths](notebooks/filesystem/filewalk.ipynb)
@@ -272,7 +272,7 @@ conda env create -f config.yml
 - [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
 - [Generate random string](https://pynative.com/python-generate-random-string/)
 
-## Regular Expression (Regex)
+## [Regular Expression (Regex)](notebooks/regex)
 - [Find matching word/character 1](notebooks/regex/charactermatch.ipynb)
   - Introduction of functions in _re_ library
   - Square brackets for upper and lower case `[Ww]oodchuck`
@@ -317,9 +317,9 @@ conda env create -f config.yml
   - [Define __eq__ function in class 2](notebooks/class/dataclass_helloworld_1.ipynb)
   
 ## Passing variables in from command line
-- [Unnamed arguments](command_line/sysarg.py)
-- [Named arguments](tbd)
-- [Filename as argument](command_line/fileargparse.py)
+- [Unnamed arguments](notebooks/command_line/sysarg.py)
+- Named arguments: TBD
+- [Filename as argument](notebooks/command_line/fileargparse.py)
 
 ## Processing iterables with a functional style
 
@@ -371,9 +371,16 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - dataclass
   - [dataclass hello world](notebooks/decorator/dataclass_helloworld.ipynb)
 
-## Others
+## Type Checking
 
-- [Type Checking with module _typing_](notebooks/module/typing_imp.ipynb)
+- [Type Checking with module _typing_](notebooks/type_checking/typing_imp.ipynb)
+  
+## Concurrency
+### Built-in Concurrency Library: Asyncio
+- [Simple example with asyncio](notebooks/concurrency/asyncio/asyncio_wait.py)
+  
+## Web
+- [Webhook](src/web/webhook)
 
 ## Medium Posts
 
