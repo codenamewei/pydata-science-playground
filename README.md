@@ -24,7 +24,7 @@ conda env create -f config.yml
 - [X and Y](notebooks/boolean_operator/boolean_options.ipynb)
 - [X or Y](notebooks/boolean_operator/boolean_options.ipynb)
 - [if not X](notebooks/boolean_operator/boolean_options.ipynb)
-- [custom object boolean](notebooks/boolean_operator/boolean_for_objects.ipynb)
+- [custom object boolean](notebooks/boolean_operator/boolean_options.ipynb)
 
 ## [Pandas](https://pandas.pydata.org/docs/reference/)
 
