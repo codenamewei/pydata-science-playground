@@ -257,7 +257,7 @@ conda env create -f config.yml
 - [Check if port is open/close](notebooks/system/check_port_open.ipynb)
 
 ## String
-
+- [Generate string with templates](notebooks/string/stringtemplate.ipynb)
 - Check if string is empty, len = 0: `if not strvar:`
 - Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
 - Check file extension: [notebooks/string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
