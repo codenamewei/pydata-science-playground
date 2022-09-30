@@ -1,0 +1,17 @@
+{
+    "speech2text": {
+        "model_name": "speech2text",
+        "date": "20190124",
+        "language": "english"
+    },
+    "text2speech": {
+        "model_name": "text2speech",
+        "date": "20190124",
+        "language": "english"
+    },
+    "textclassification": {
+        "model_name": "textclassification",
+        "date": "20190124",
+        "language": "english"
+    }
+}

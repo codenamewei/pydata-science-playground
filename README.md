@@ -128,6 +128,11 @@ conda env create -f config.yml
   - Note: Put `index = False` is important to prevent an extra column of index being saved.
 - Save to csv with encoding `df.to_csv('file name', encoding = 'utf-8')`
 
+### JSON In/Out
+
+- [Read in json](notebooks/json/readfromjson.ipynb)
+- [Write to json](notebooks/json/write2json.ipynb)
+
 ### [Parquet In/Out](notebooks/pandas/readwriteparquet.ipynb)
 
 - Read in parquet: `pd.read_parquet(...)`
@@ -257,6 +262,7 @@ conda env create -f config.yml
 - [Check if port is open/close](notebooks/system/check_port_open.ipynb)
 
 ## String
+
 - [Generate string with templates](notebooks/string/stringtemplate.ipynb)
 - Check if string is empty, len = 0: `if not strvar:`
 - Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
