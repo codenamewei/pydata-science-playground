@@ -130,7 +130,7 @@ conda env create -f config.yml
 
 ### JSON In/Out
 
-- [Read in json](notebooks/json/readfromjson.ipynb)
+- [Read in json](notebooks/json/readfromjson.ipynb)~
 - [Write to json](notebooks/json/write2json.ipynb)
 
 ### [Parquet In/Out](notebooks/pandas/readwriteparquet.ipynb)
