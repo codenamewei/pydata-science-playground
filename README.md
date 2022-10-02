@@ -130,7 +130,7 @@ conda env create -f config.yml
 
 ### JSON In/Out
 
-- [Read in json](notebooks/json/readfromjson.ipynb)~
+- [Read in json](notebooks/json/readfromjson.ipynb)
 - [Write to json](notebooks/json/write2json.ipynb)
 
 ### [Parquet In/Out](notebooks/pandas/readwriteparquet.ipynb)
@@ -260,6 +260,7 @@ conda env create -f config.yml
 - [Get system input](notebooks/system/sysinput.py)
 - Check operating system: `import platform; platform.system()`
 - [Check if port is open/close](notebooks/system/check_port_open.ipynb)
+- [Generate unique identifer UUID](notebooks/system/generate_uuid.ipynb)
 
 ## String
 
