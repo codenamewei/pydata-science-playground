@@ -234,6 +234,8 @@ conda env create -f config.yml
 - Generate random integer within (min, max): `from random import randint; randint(0, 100) #within 0 and 100`
 - Generate random floating value: `from random import random; random()`
 - Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
+- Generate list with random number: `import random; random.sample(range(10, 30), 5)`
+  - Example shown where 5 random numbers are generated in between 10 to 30
 
 ## [File System](notebooks/filesystem)
 
@@ -358,6 +360,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ## Performance
 
 - [Dataframe - column-major, Numpy - row-major](notebooks/performance/df_numpy_major.ipynb)
+- [Measure time prior and after](notebooks/performance/count_time.ipynb)
 
 ## Logging
 
