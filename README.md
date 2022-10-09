@@ -173,6 +173,10 @@ conda env create -f config.yml
 - [Overview of DatasetDict](notebooks/huggingface/datasetdict_intro.ipynb)
 - [DatasetDict from Pandas Dataframe](https://stackoverflow.com/questions/71618974/convert-pandas-dataframe-to-datasetdict)
 
+## [OpenCV / Computer Vision](src/cv)
+
+- Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 videostream](src/cv/concat3windows.py)
+
 ## [Audio](notebooks/audio)
 
 - [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
