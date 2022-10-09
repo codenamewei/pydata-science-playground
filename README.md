@@ -175,7 +175,7 @@ conda env create -f config.yml
 
 ## [OpenCV / Computer Vision](src/cv)
 
-- Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 videostream](src/cv/concat3windows.py)
+- Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
 
 ## [Audio](notebooks/audio)
 
