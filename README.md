@@ -397,15 +397,16 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - dataclass
   - [dataclass hello world](notebooks/decorator/dataclass_helloworld.ipynb)
 
-## Type Checking
+## Type Checking, Data Validation
 
-- [Type Checking with module _typing_](notebooks/type_checking/typingimp.ipynb)
+- [Module _typing_: Type hint & annotations](notebooks/type_checking/typingimp.ipynb)
   - Dict
   - List
   - Tuple
   - Set
-- [Any](anyimp.ipynb)
-- [Union](unionimp.ipynb)
+  - [Any](anyimp.ipynb)
+  - [Union](unionimp.ipynb)
+- Module _pydantic_: Data parsing and validation library: TBA
 
 ## Concurrency
 
