@@ -280,9 +280,10 @@ conda env create -f config.yml
 - Remove white spaces in the beginning and end: `strvar.strip()`
 - Swap existing upper and lower case: `strvar.swapcase()`
 - Capitalize every first letter of a word: `strvar.title()`
-- Split a string based on character: `strvar.split(<char>)`
-  - If split with every character, do this instead: `[i for i in "ABCDE"]`
+- Splitting string: 
+  - Split a string based on separator: `strvar.split(separator)` Example: `strvar.split("x")`
   - Split on white space `strvar.split()`
+  - If split with every character, do this instead: `[*"ABCDE"]` Result: `["A", "B", "C", "D", "E"]`
 - Check if string starts with a substring: `strvar.startswith(<substring>)`
 - Check if string ends with a substring: `strvar.endswith(<substring>)`
 - Check if string have substring/specific character. Returns -1 if not found. : `strvar.find(<substring>)`
