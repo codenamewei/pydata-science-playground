@@ -280,7 +280,7 @@ conda env create -f config.yml
 - Remove white spaces in the beginning and end: `strvar.strip()`
 - Swap existing upper and lower case: `strvar.swapcase()`
 - Capitalize every first letter of a word: `strvar.title()`
-- Splitting string: 
+- Splitting string:
   - Split a string based on separator: `strvar.split(separator)` Example: `strvar.split("x")`
   - Split on white space `strvar.split()`
   - If split with every character, do this instead: `[*"ABCDE"]` Result: `["A", "B", "C", "D", "E"]`
@@ -399,7 +399,13 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 ## Type Checking
 
-- [Type Checking with module _typing_](notebooks/type_checking/typing_imp.ipynb)
+- [Type Checking with module _typing_](notebooks/type_checking/typingimp.ipynb)
+  - Dict
+  - List
+  - Tuple
+  - Set
+- [Any](anyimp.ipynb)
+- [Union](unionimp.ipynb)
 
 ## Concurrency
 
