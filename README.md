@@ -246,6 +246,7 @@ conda env create -f config.yml
 - The character used by the operating system to separate pathname components: `os.sep`
 - [Iterate through a path to get files/folders of all the subpaths](notebooks/filesystem/filewalk.ipynb)
 - Check if path is a folder: `os.path.isdir(<path>)`
+- [Get file size](notebooks/filesystem/getfilesize.ipynb)
 - Create folder: `os.mkdir(<path>`
 - Create folders recursively: `os.makedirs(<path>)`
 - Expand home directory: `os.path.expanduser('~')`
