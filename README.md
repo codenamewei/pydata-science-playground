@@ -267,7 +267,12 @@ conda env create -f config.yml
 - [Get system input](notebooks/system/sysinput.py)
 - Check operating system: `import platform; platform.system()`
 - [Check if port is open/close](notebooks/system/check_port_open.ipynb)
-- [Generate unique identifer UUID](notebooks/system/generate_uuid.ipynb)
+
+## Unique Identifer (UUID)
+
+- [Generate unique identifer UUID](notebooks/uuid/uuidops.ipynb)
+- [Validate if a string is UUID](notebooks/uuid/uuidops.ipynb)
+- [Compare if both UUID are the same](notebooks/uuid/uuidops.ipynb)
 
 ## String
 
