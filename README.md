@@ -337,6 +337,7 @@ conda env create -f config.yml
 - Define dataclass
   - [dataclass 1](notebooks/class/dataclass/dataclass_helloworld_1.ipynb)
   - [dataclass 2](notebooks/class/dataclass/dataclass_helloworld_2.ipynb)
+- [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
 
 ### Magic Method
 
