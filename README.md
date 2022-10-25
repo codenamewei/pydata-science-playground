@@ -341,7 +341,7 @@ conda env create -f config.yml
 
 ### Magic Method
 
-- `__dict__` return all attributes of the obj: ```print(
+- `__dict__` return all attributes of the obj: ```obj.__dict__```
 - `__str__` return string representation of the obj: `def __str__(self):`
 - `__eq__` compare the instances of the class: `def __eq__(self, other):`
   - [Define **eq** function in class 1](notebooks/class/eq_function.ipynb)
