@@ -297,7 +297,8 @@ conda env create -f config.yml
 - Replace string/character with intended string/character: `strout = strin.replace(" ", "_")`
 - [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
 - [Generate random string](https://pynative.com/python-generate-random-string/)
-- [Bytes -> String](notebooks/string/bytes2string.ipynb)
+- [Bytes -> String](notebooks/string/bytes2string.ipynb): `bytesobj.decode("utf-8")`
+- String -> Bytes: `strobj.encode("utf-8")`
 
 ## [Regular Expression (Regex)](notebooks/regex)
 
