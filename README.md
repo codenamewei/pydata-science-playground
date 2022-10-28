@@ -175,6 +175,7 @@ conda env create -f config.yml
 
 ## OpenCV / Computer Vision
 
+- Get image shape: `img.shape`
 - Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
 - [Blurring region of image](notebooks/cv/blur_region.ipynb)
 - [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
