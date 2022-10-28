@@ -151,7 +151,6 @@ conda env create -f config.yml
 - Numpy array to list: `nparray.tolist()`
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
-- [Numpy <> Bytes, Bytes <> Numpy](notebooks/numpy/np2bytes.ipynb)
 
 ## Pytorch
 
@@ -182,6 +181,13 @@ conda env create -f config.yml
 - [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
 - [Get sampling rate of an audio file](notebooks/audio/getsamplingrate.ipynb)
 - [Audio file <> Numpy Array](notebooks/audio/audiofile2array.ipynb)
+
+## Bytes
+
+- [Numpy <> Bytes, Bytes <> Numpy](notebooks/numpy/np2bytes.ipynb)
+- [Bytes -> String](notebooks/string/bytes2string.ipynb): `bytesobj.decode("utf-8")
+- String -> Bytes: `strobj.encode("utf-8")`
+- [Bytes -> Multimedia file (video/audio))](src/bytesops/readme.md)
 
 ## Formatting
 
@@ -297,8 +303,6 @@ conda env create -f config.yml
 - Replace string/character with intended string/character: `strout = strin.replace(" ", "_")`
 - [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
 - [Generate random string](https://pynative.com/python-generate-random-string/)
-- [Bytes -> String](notebooks/string/bytes2string.ipynb): `bytesobj.decode("utf-8")`
-- String -> Bytes: `strobj.encode("utf-8")`
 
 ## [Regular Expression (Regex)](notebooks/regex)
 
@@ -342,7 +346,7 @@ conda env create -f config.yml
 
 ### Magic Method
 
-- `__dict__` return all attributes of the obj: ```obj.__dict__```
+- `__dict__` return all attributes of the obj: `obj.__dict__`
 - `__str__` return string representation of the obj: `def __str__(self):`
 - `__eq__` compare the instances of the class: `def __eq__(self, other):`
   - [Define **eq** function in class 1](notebooks/class/eq_function.ipynb)
