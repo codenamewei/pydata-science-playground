@@ -177,6 +177,8 @@ conda env create -f config.yml
 
 - Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
 - [Blurring region of image](src/cv/blur_region.ipynb)
+- [Display of image in jupyter notebook](src/cv/blur_region.ipynb)
+
 
 ## [Audio](notebooks/audio)
 
