@@ -176,7 +176,8 @@ conda env create -f config.yml
 ## [OpenCV / Computer Vision](src/cv)
 
 - Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
-- [Blurring region of image](src/cv/blur_region.ipynb)
+- [Blurring region of image](notebooks/cv/blur_region.ipynb)
+- [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
 
 ## [Audio](notebooks/audio)
 
