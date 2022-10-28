@@ -151,6 +151,7 @@ conda env create -f config.yml
 - Numpy array to list: `nparray.tolist()`
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
+- [Use of `numpy.where`](src/cv/blur_region.ipynb)
 
 ## Pytorch
 
@@ -175,6 +176,7 @@ conda env create -f config.yml
 ## [OpenCV / Computer Vision](src/cv)
 
 - Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
+- [Blurring region of image](src/cv/blur_region.ipynb)
 
 ## [Audio](notebooks/audio)
 
