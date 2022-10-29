@@ -175,7 +175,21 @@ conda env create -f config.yml
 
 ## OpenCV / Computer Vision
 
+### Basic
+
 - Get image shape: `img.shape`
+- Create a color image: `image = np.zeros((h,w,3), np.uint8)`
+- Pause to display image or wait for an input: `cv2.waitKey(0)`
+- Save an image: `cv2.imwrite(pathtoimg : str, img : numpy.ndarray)`
+- Show an image in window: `cv2.imshow(windowname : str, frame : np.array)`
+- Show an image in Jupyter notebok
+  ```
+  from IPython.display import Image
+  Image(filename=pathtoimg : str)
+  ```
+
+### Intermediate
+
 - Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
 - [Blurring region of image](notebooks/cv/blur_region.ipynb)
 - [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
