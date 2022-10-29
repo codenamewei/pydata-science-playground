@@ -191,7 +191,8 @@ conda env create -f config.yml
 ### Intermediate
 
 ### Filter
-- GaussianBlur: `blur = cv.GaussianBlur(img,(5,5),0)` 
+- [Blur](https://docs.opencv.org/4.x/d4/d86/group__imgproc__filter.html#ga8c45db9afe636703801b0b2e440fce37) with averaging mask: `cv2.blur(img,(5,5))`
+- GaussianBlur: `blur = cv2.GaussianBlur(img,(5,5),0)` 
   - Note: Kernel size `(5, 5)` to be positive and odd. Read more [here](https://plantcv.readthedocs.io/en/v2.0/gaussian_blur/) on how kernel size influence the degree of blurring.
 - [Blurring region of image](notebooks/cv/blur_region.ipynb)
 
