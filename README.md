@@ -190,8 +190,16 @@ conda env create -f config.yml
 
 ### Intermediate
 
-- Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
+### Filter
+- GaussianBlur: `blur = cv.GaussianBlur(img,(5,5),0)` 
+  - Note: Kernel size `(5, 5)` to be positive and odd
 - [Blurring region of image](notebooks/cv/blur_region.ipynb)
+
+
+#### Video Stream
+- Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
+
+#### Other
 - [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
 
 ## [Audio](notebooks/audio)
