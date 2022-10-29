@@ -192,7 +192,7 @@ conda env create -f config.yml
 
 ### Filter
 - GaussianBlur: `blur = cv.GaussianBlur(img,(5,5),0)` 
-  - Note: Kernel size `(5, 5)` to be positive and odd
+  - Note: Kernel size `(5, 5)` to be positive and odd. Read more [here](https://plantcv.readthedocs.io/en/v2.0/gaussian_blur/) on how kernel size influence the degree of blurring.
 - [Blurring region of image](notebooks/cv/blur_region.ipynb)
 
 
