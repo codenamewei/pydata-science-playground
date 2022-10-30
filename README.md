@@ -419,6 +419,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   ```
 - [Advanced configuration log to stdout](notebooks/logging/builtinlogging/log2stdout.ipynb)
 - [Advanced configuration log to file](notebooks/logging/builtinlogging/log2file.ipynb)
+- Log with variables: `logging.error(f"Keys {a} is missing")`
 
 ### Logging
 
