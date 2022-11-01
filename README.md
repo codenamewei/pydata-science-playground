@@ -199,7 +199,7 @@ conda env create -f config.yml
 
 ### Video Stream
 - Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
-- [Save stream to video output](save2video.py)
+- [Save stream to video output](src/cv/save2video.py)
 
 #### Other
 - [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
