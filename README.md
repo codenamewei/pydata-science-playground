@@ -187,6 +187,10 @@ conda env create -f config.yml
   from IPython.display import Image
   Image(filename=pathtoimg : str)
   ```
+- Flip image: `frame = cv2.flip(frame, flipcode : int)`
+  - Positive flip code for flip on y axis (left right flip)
+  - 0 for flip on x axis (up down)
+  - Negative for flipping around both axes
 
 ### Intermediate
 
