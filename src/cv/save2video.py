@@ -15,6 +15,7 @@ if __name__ == "__main__":
     while(cap.isOpened()):
         ret, frame = cap.read()
         if ret == True:
+            frame = cv2.flip(frame, 1)
 
             # write the flipped frame
             out.write(frame)
