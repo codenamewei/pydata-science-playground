@@ -19,6 +19,13 @@ conda env create -f config.yml
 
 # Gist
 
+## Boolean Operator
+
+- [X and Y](notebooks/boolean_operator/boolean_options.ipynb)
+- [X or Y](notebooks/boolean_operator/boolean_options.ipynb)
+- [if not X](notebooks/boolean_operator/boolean_options.ipynb)
+- [custom object boolean](notebooks/boolean_operator/boolean_for_object.ipynb)
+
 ## [Pandas](https://pandas.pydata.org/docs/reference/)
 
 ### Infos
@@ -121,6 +128,10 @@ conda env create -f config.yml
   - Note: Put `index = False` is important to prevent an extra column of index being saved.
 - Save to csv with encoding `df.to_csv('file name', encoding = 'utf-8')`
 
+### JSON In/Out
+
+- [Read in json](notebooks/json/readfromjson.ipynb)
+- [Write to json](notebooks/json/write2json.ipynb)
 
 ### [Parquet In/Out](notebooks/pandas/readwriteparquet.ipynb)
 
@@ -137,11 +148,10 @@ conda env create -f config.yml
 ## Numpy
 
 - [Numpy basic](notebooks/numpy/npbasic.ipynb)
-- [Numpy array to list]: ```nparray.tolist()```
+- Numpy array to list: `nparray.tolist()`
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
-- [Numpy <> Bytes, Bytes <> Numpy](notebooks/numpy/np2bytes.ipynb)
-
+- [Use of `numpy.where`](src/cv/blur_region.ipynb)
 
 ## Pytorch
 
@@ -151,6 +161,7 @@ conda env create -f config.yml
 - Check if cuda is available - `import torch; torch.cuda.is_available()`
 
 ### Torch Tensor
+
 - Numpy array to torch tensor - `torch.from_numpy(np_array)`
 - Tensor shape - `tensor.shape`
 - Tensor data types - `tensor.dtype`
@@ -162,16 +173,58 @@ conda env create -f config.yml
 - [Overview of DatasetDict](notebooks/huggingface/datasetdict_intro.ipynb)
 - [DatasetDict from Pandas Dataframe](https://stackoverflow.com/questions/71618974/convert-pandas-dataframe-to-datasetdict)
 
+## OpenCV / Computer Vision
+
+### Basic
+
+- Get image shape: `img.shape`
+- Create a color image: `image = np.zeros((h,w,3), np.uint8)`
+- Pause to display image or wait for an input: `cv2.waitKey(0)`
+- Save an image: `cv2.imwrite(pathtoimg : str, img : numpy.ndarray)`
+- Show an image in window: `cv2.imshow(windowname : str, frame : np.array)`
+- Show an image in Jupyter notebok
+  ```
+  from IPython.display import Image
+  Image(filename=pathtoimg : str)
+  ```
+- Flip image: `frame = cv2.flip(frame, flipcode : int)`
+  - Positive flip code for flip on y axis (left right flip)
+  - 0 for flip on x axis (up down)
+  - Negative for flipping around both axes
+
+### Intermediate
+
+### Filter
+- [Blur](https://docs.opencv.org/4.x/d4/d86/group__imgproc__filter.html#ga8c45db9afe636703801b0b2e440fce37) with averaging mask: `cv2.blur(img,(5,5))`
+- GaussianBlur: `blur = cv2.GaussianBlur(img,(5,5),0)` 
+  - Note: Kernel size `(5, 5)` to be positive and odd. Read more [here](https://plantcv.readthedocs.io/en/v2.0/gaussian_blur/) on how kernel size influence the degree of blurring.
+- [Blurring region of image](notebooks/cv/blur_region.ipynb)
+
+
+### Video Stream
+- Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
+- [Save stream to video output](src/cv/save2video.py)
+
+#### Other
+- [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
+
 ## [Audio](notebooks/audio)
 
 - [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
 - [Get sampling rate of an audio file](notebooks/audio/getsamplingrate.ipynb)
 - [Audio file <> Numpy Array](notebooks/audio/audiofile2array.ipynb)
 
+## Bytes
+
+- [Numpy <> Bytes, Bytes <> Numpy](notebooks/numpy/np2bytes.ipynb)
+- [Bytes -> String](notebooks/string/bytes2string.ipynb): `bytesobj.decode("utf-8")
+- String -> Bytes: `strobj.encode("utf-8")`
+- [Bytes -> Multimedia file (video/audio))](src/bytesops/readme.md)
+
 ## Formatting
 
 - datetime: [datetime.ipynb](notebooks/formatting/datetime.ipynb)
-- Format floating value to n decimal: ```"%.2f" % floating_var```
+- Format floating value to n decimal: `"%.2f" % floating_var`
 
 ## Data Structure
 
@@ -192,7 +245,6 @@ conda env create -f config.yml
 - Iteration of list with index: `for index, value in enumerate(inlist):`
 - Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]```
 - [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
-
 
 ### [Dictionary](notebooks/dictionary)
 
@@ -220,15 +272,19 @@ conda env create -f config.yml
 - Square root of a number: `sqrt(number)`
 
 ### Random
+
 - Generate random integer within (min, max): `from random import randint; randint(0, 100) #within 0 and 100`
 - Generate random floating value: `from random import random; random()`
 - Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
+- Generate list with random number: `import random; random.sample(range(10, 30), 5)`
+  - Example shown where 5 random numbers are generated in between 10 to 30
 
 ## [File System](notebooks/filesystem)
 
 - The character used by the operating system to separate pathname components: `os.sep`
 - [Iterate through a path to get files/folders of all the subpaths](notebooks/filesystem/filewalk.ipynb)
 - Check if path is a folder: `os.path.isdir(<path>)`
+- [Get file size](notebooks/filesystem/getfilesize.ipynb)
 - Create folder: `os.mkdir(<path>`
 - Create folders recursively: `os.makedirs(<path>)`
 - Expand home directory: `os.path.expanduser('~')`
@@ -250,8 +306,15 @@ conda env create -f config.yml
 - Check operating system: `import platform; platform.system()`
 - [Check if port is open/close](notebooks/system/check_port_open.ipynb)
 
+## Unique Identifer (UUID)
+
+- [Generate unique identifer UUID](notebooks/uuid/uuidops.ipynb)
+- [Validate if a string is UUID](notebooks/uuid/uuidops.ipynb)
+- [Compare if both UUID are the same](notebooks/uuid/uuidops.ipynb)
+
 ## String
 
+- [Generate string with templates](notebooks/string/stringtemplate.ipynb)
 - Check if string is empty, len = 0: `if not strvar:`
 - Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
 - Check file extension: [notebooks/string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
@@ -261,9 +324,10 @@ conda env create -f config.yml
 - Remove white spaces in the beginning and end: `strvar.strip()`
 - Swap existing upper and lower case: `strvar.swapcase()`
 - Capitalize every first letter of a word: `strvar.title()`
-- Split a string based on character: `strvar.split(<char>)`
-  - If split with every character, do this instead: `[i for i in "ABCDE"]`
+- Splitting string:
+  - Split a string based on separator: `strvar.split(separator)` Example: `strvar.split("x")`
   - Split on white space `strvar.split()`
+  - If split with every character, do this instead: `[*"ABCDE"]` Result: `["A", "B", "C", "D", "E"]`
 - Check if string starts with a substring: `strvar.startswith(<substring>)`
 - Check if string ends with a substring: `strvar.endswith(<substring>)`
 - Check if string have substring/specific character. Returns -1 if not found. : `strvar.find(<substring>)`
@@ -273,6 +337,7 @@ conda env create -f config.yml
 - [Generate random string](https://pynative.com/python-generate-random-string/)
 
 ## [Regular Expression (Regex)](notebooks/regex)
+
 - [Find matching word/character 1](notebooks/regex/charactermatch.ipynb)
   - Introduction of functions in _re_ library
   - Square brackets for upper and lower case `[Ww]oodchuck`
@@ -293,6 +358,7 @@ conda env create -f config.yml
 - [Extract hashtags](notebooks/regex/filterhashtag.ipynb)
 
 ## Collections Module
+
 - [NamedTuple](notebooks/collections_imp/namedtupleimp.ipynb)
 
 ## Class
@@ -300,7 +366,7 @@ conda env create -f config.yml
 - [Effective way to view object address and object](notebooks/class/class_object_view.ipynb)
 - [Reserved methods in class](notebooks/class/reservedMethod.py)
 - [The magic variable \*args and \*\*kwargs](notebooks/class/kwargsimp.py)
-- Check if object is of specified type: ```isinstance(obj, MyClass)```
+- Check if object is of specified type: `isinstance(obj, MyClass)`
 - [Abstract class with ABCMeta and @abstractmethod](notebooks/class/abstractmethod.py)
 - [getter: @property, setter: @{variable}.setter, deleter: @{variable}.deleter](notebooks/class/property.ipynb)
 - [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
@@ -308,15 +374,18 @@ conda env create -f config.yml
 - Define dataclass
   - [dataclass 1](notebooks/class/dataclass/dataclass_helloworld_1.ipynb)
   - [dataclass 2](notebooks/class/dataclass/dataclass_helloworld_2.ipynb)
-  
+- [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
+
 ### Magic Method
-- ```__dict__``` return all attributes of the obj: ```print(
-- ```__str__``` return string representation of the obj: ```def __str__(self):```
-- ```__eq__``` compare the instances of the class: ```def __eq__(self, other):```
-  - [Define __eq__ function in class 1](notebooks/class/eq_function.ipynb)
-  - [Define __eq__ function in class 2](notebooks/class/dataclass_helloworld_1.ipynb)
-  
+
+- `__dict__` return all attributes of the obj: `obj.__dict__`
+- `__str__` return string representation of the obj: `def __str__(self):`
+- `__eq__` compare the instances of the class: `def __eq__(self, other):`
+  - [Define **eq** function in class 1](notebooks/class/eq_function.ipynb)
+  - [Define **eq** function in class 2](notebooks/class/dataclass_helloworld_1.ipynb)
+
 ## Passing variables in from command line
+
 - [Unnamed arguments](notebooks/command_line/sysarg.py)
 - Named arguments: TBD
 - [Filename as argument](notebooks/command_line/fileargparse.py)
@@ -341,6 +410,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ## Performance
 
 - [Dataframe - column-major, Numpy - row-major](notebooks/performance/df_numpy_major.ipynb)
+- [Measure time prior and after](notebooks/performance/count_time.ipynb)
 
 ## Logging
 
@@ -354,6 +424,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   ```
 - [Advanced configuration log to stdout](notebooks/logging/builtinlogging/log2stdout.ipynb)
 - [Advanced configuration log to file](notebooks/logging/builtinlogging/log2file.ipynb)
+- Log with variables: `logging.error(f"Keys {a} is missing")`
 
 ### Logging
 
@@ -366,20 +437,31 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Singleton](notebooks/designpatterns/singleton.py)
 
 ### [Built-in Decorators](notebooks/decorator/built-in-decorators.md)
+
 - [Class Method](notebooks/decorator/classmethod.py)
 - [Static Method](notebooks/decorator/staticmethod.py)
 - dataclass
   - [dataclass hello world](notebooks/decorator/dataclass_helloworld.ipynb)
 
-## Type Checking
+## Type Checking, Data Validation
 
-- [Type Checking with module _typing_](notebooks/type_checking/typing_imp.ipynb)
-  
+- [Module _typing_: Type hint & annotations](notebooks/type_checking/typingimp.ipynb)
+  - Dict
+  - List
+  - Tuple
+  - Set
+  - [Any](anyimp.ipynb)
+  - [Union](unionimp.ipynb)
+- Module _pydantic_: Data parsing and validation library: TBA
+
 ## Concurrency
+
 ### Built-in Concurrency Library: Asyncio
+
 - [Simple example with asyncio](notebooks/concurrency/asyncio/asyncio_wait.py)
-  
+
 ## Web
+
 - [Webhook](src/web/webhook)
 
 ## Medium Posts
