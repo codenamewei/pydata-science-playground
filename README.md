@@ -205,9 +205,12 @@ conda env create -f config.yml
 
 - Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
 - [Save stream to video output](src/cv/save2video.py)
+- [Read in video stream from a file](src/cv/readvideostream.py)
+- [Read in stream from camera](src/cv/save2video.py)
 
 #### Other
 
+- Resizing frame: `outframe = cv2.resize(frame, (w, h))`
 - [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
 
 ## [Audio](notebooks/audio)
