@@ -195,17 +195,19 @@ conda env create -f config.yml
 ### Intermediate
 
 ### Filter
+
 - [Blur](https://docs.opencv.org/4.x/d4/d86/group__imgproc__filter.html#ga8c45db9afe636703801b0b2e440fce37) with averaging mask: `cv2.blur(img,(5,5))`
-- GaussianBlur: `blur = cv2.GaussianBlur(img,(5,5),0)` 
+- GaussianBlur: `blur = cv2.GaussianBlur(img,(5,5),0)`
   - Note: Kernel size `(5, 5)` to be positive and odd. Read more [here](https://plantcv.readthedocs.io/en/v2.0/gaussian_blur/) on how kernel size influence the degree of blurring.
 - [Blurring region of image](notebooks/cv/blur_region.ipynb)
 
-
 ### Video Stream
+
 - Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
 - [Save stream to video output](src/cv/save2video.py)
 
 #### Other
+
 - [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
 
 ## [Audio](notebooks/audio)
@@ -446,12 +448,12 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ## Type Checking, Data Validation
 
 - [Module _typing_: Type hint & annotations](notebooks/type_checking/typingimp.ipynb)
-  - Dict
+  - [Dict](notebooks/type_checking/anyimp.ipynb)
   - List
   - Tuple
   - Set
-  - [Any](anyimp.ipynb)
-  - [Union](unionimp.ipynb)
+  - [Any](notebooks/type_checking/anyimp.ipynb)
+  - [Union](notebooks/type_checking/unionimp.ipynb)
 - Module _pydantic_: Data parsing and validation library: TBA
 
 ## Concurrency
