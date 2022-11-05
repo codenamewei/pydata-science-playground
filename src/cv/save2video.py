@@ -4,14 +4,14 @@ if __name__ == "__main__":
 
     cap = cv2.VideoCapture(0)
 
-    #Get the width, height, and fps
+    # Get the width, height, and fps
     out_w = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
     out_h = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
     fps = cap.get(cv2.CAP_PROP_FPS)
 
     out = cv2.VideoWriter("result.mp4", cv2.VideoWriter_fourcc(
-        *'MP4V'), fps, (out_w, out_h))
+        'm', 'p', '4', 'v'), fps, (out_w, out_h))
 
     while(cap.isOpened()):
         ret, frame = cap.read()
