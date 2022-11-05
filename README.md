@@ -213,6 +213,7 @@ conda env create -f config.yml
 
 - Resizing frame: `outframe = cv2.resize(frame, (w, h))`
 - [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
+- Color to gray image: `gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`
 
 ## [Audio](notebooks/audio)
 
