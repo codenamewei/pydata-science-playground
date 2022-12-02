@@ -380,7 +380,13 @@ conda env create -f config.yml
 - [The magic variable \*args and \*\*kwargs](notebooks/class/kwargsimp.py)
 - Check if object is of specified type: `isinstance(obj, MyClass)`
 - [Abstract class with ABCMeta and @abstractmethod](notebooks/class/abstractmethod.py)
-- [getter: @property, setter: @{variable}.setter, deleter: @{variable}.deleter](notebooks/class/property.ipynb)
+- [Property Setting](notebooks/class/property.ipynb)
+  1. Native Verbose Method
+  2. Using built-in property function
+  3. Using decorator
+    - getter: @property
+    - setter: @{variable}.setter
+    - deleter: @{variable}.deleter
 - [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
   - Copy list by value: `list_cp = list_ori[:]` (Note: `list_cp = list_ori` copy by reference)
 - Define dataclass
