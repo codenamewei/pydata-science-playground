@@ -472,6 +472,10 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - [Union](notebooks/type_checking/unionimp.ipynb)
 - Module _pydantic_: Data parsing and validation library: TBA
 
+## Error Handling
+- Types of Built-In Exceptions
+  - [ValueError](notebooks/error_handling/error_types/valueerror.ipynb)
+
 ## Concurrency
 
 ### Built-in Concurrency Library: Asyncio
