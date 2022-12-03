@@ -240,6 +240,7 @@ conda env create -f config.yml
 - List of str to int: `list(map(int, arr))`
 - List with range of values: `list(range(...))`
 - Split str to list of str: `arr.split(" ")`
+- Check for empty list: `if not mylist:`
 - Sort an array in place: `arr.sort()` / Return a sorted array: `sorted(arr)`
 - Get index of a value: `arr.index(value)`
 - Add one more value to existing list: `arr.append(value)`
