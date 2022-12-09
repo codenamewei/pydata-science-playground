@@ -240,6 +240,7 @@ conda env create -f config.yml
 - List of str to int: `list(map(int, arr))`
 - List with range of values: `list(range(...))`
 - Split str to list of str: `arr.split(" ")`
+- Check for empty list: `if not mylist:`
 - Sort an array in place: `arr.sort()` / Return a sorted array: `sorted(arr)`
 - Get index of a value: `arr.index(value)`
 - Add one more value to existing list: `arr.append(value)`
@@ -278,7 +279,7 @@ conda env create -f config.yml
 - Power of a number: `pow(base_number, exponent_number`
 - Square root of a number: `sqrt(number)`
 - Logarithm / Log
-  - Log to the base of 2: 
+  - Log to the base of 2:
     - Numpy: `import numpy as np; np.log2(10)`
     - Math: `import math; math.log2(10)`
     - [Plotting of log to the to the base of 2](notebooks/math/logn_plotting.ipynb)
@@ -295,6 +296,22 @@ conda env create -f config.yml
 
 - The character used by the operating system to separate pathname components: `os.sep`
 - [Iterate through a path to get files/folders of all the subpaths](notebooks/filesystem/filewalk.ipynb)
+- [Readfile](notebooks/filesystem/readfile.ipynb)
+
+  ```
+  open(<path-to-file>, mode)
+  ```
+
+  - `r`: Open for text file for reading text
+  - `w`: Open a text file for writing text
+  - `a`: Open a text file for appending text
+
+  Read file has 3 functions
+
+  - `read()` or `read(size)`: read all / size as one string.
+  - `readline()`: read a single line from a text file and return the line as a string.
+  - `readlines()`: read all the lines of the text file into a list of strings.
+
 - Check if path is a folder: `os.path.isdir(<path>)`
 - [Get file size](notebooks/filesystem/getfilesize.ipynb)
 - Create folder: `os.mkdir(<path>`
@@ -379,8 +396,6 @@ conda env create -f config.yml
 - [Reserved methods in class](notebooks/class/reservedMethod.py)
 - [The magic variable \*args and \*\*kwargs](notebooks/class/kwargsimp.py)
 - Check if object is of specified type: `isinstance(obj, MyClass)`
-- [Abstract class with ABCMeta and @abstractmethod](notebooks/class/abstractmethod.py)
-- [getter: @property, setter: @{variable}.setter, deleter: @{variable}.deleter](notebooks/class/property.ipynb)
 - [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
   - Copy list by value: `list_cp = list_ori[:]` (Note: `list_cp = list_ori` copy by reference)
 - Define dataclass
@@ -395,6 +410,13 @@ conda env create -f config.yml
 - `__eq__` compare the instances of the class: `def __eq__(self, other):`
   - [Define **eq** function in class 1](notebooks/class/eq_function.ipynb)
   - [Define **eq** function in class 2](notebooks/class/dataclass_helloworld_1.ipynb)
+
+### Inheritance
+
+- [from abs import ABC](notebooks/error_handling/error_types/notimplementederror.ipynb)
+- [from abs import ABCMeta](notebooks/decorator/abstractmethod.py)
+- [Difference between importance ABC or ABCMeta](https://stackoverflow.com/questions/33335005/is-there-any-difference-between-using-abc-vs-abcmeta)
+  - TLDR: ABC is a wrapper of ABCMeta, both serves the purpose where former easy to write.
 
 ## Passing variables in from command line
 
@@ -454,6 +476,14 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Static Method](notebooks/decorator/staticmethod.py)
 - dataclass
   - [dataclass hello world](notebooks/decorator/dataclass_helloworld.ipynb)
+- [Abstract class with ABCMeta and @abstractmethod](notebooks/decorator/abstractmethod.py)
+- [Property Setting](notebooks/decorator/property.ipynb)
+  1. Native Verbose Method
+  2. Using built-in property function
+  3. Using decorator
+  - getter: @property
+  - setter: @{variable}.setter
+  - deleter: @{variable}.deleter
 
 ## Type Checking, Data Validation
 
@@ -465,6 +495,19 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - [Any](notebooks/type_checking/anyimp.ipynb)
   - [Union](notebooks/type_checking/unionimp.ipynb)
 - Module _pydantic_: Data parsing and validation library: TBA
+
+## Error Handling
+
+- [Native Catching Exception](notebooks/error_handling/catcherror.ipynb)
+
+### [Types of Built-In Exceptions](https://docs.python.org/3/library/exceptions.html)
+
+- [ValueError: argument of the correct data type but an inappropriate value](notebooks/error_handling/error_types/valueerror.ipynb)
+- [TypeError: the data type of an object is incorrect](notebooks/error_handling/error_types/typeerror.ipynb)
+- [ZeroDivisionError: when a number is divided by zero](notebooks/error_handling/error_types/zerodivisionerror.ipynb)
+- [OSError: error from an os-specific function](notebooks/error_handling/error_types/oserror.ipynb)
+- [FileNotFoundError: when a file or directory is requested but doesn’t exist](notebooks/error_handling/error_types/filenotfounderror.ipynb)
+- [NotImplementedError: commonly raised when an abstract method is not implemented in a derived class](notebooks/error_handling/error_types/notimplementederror.ipynb)
 
 ## Concurrency
 
