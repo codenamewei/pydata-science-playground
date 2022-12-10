@@ -173,6 +173,24 @@ conda env create -f config.yml
 - [Image to torch tensor](notebooks/pytorch/torchtensor2image.ipynb)
 - [Torch tensor to image](notebooks/pytorch/torchtensor2image.ipynb)
 
+### Dataset Loader, Iterator
+- ```torch.utils.data.DataLoader```: stores the samples and their corresponding labels,
+- ```torch.utils.data.Dataset```: wraps an iterable around the Dataset to enable easy access to the samples
+
+
+### Dataset
+- [Image Datasets](https://pytorch.org/vision/stable/datasets.html)
+  - Fashion MNIST
+      <details> 
+  
+      Fashion-MNIST is a dataset of Zalando’s article images consisting of 60,000 training examples and 10,000 test examples. 
+      Each example comprises a 28×28 grayscale image and an associated label from one of 10 classes.
+   
+      </details>
+
+- [Text Datasets](https://pytorch.org/text/stable/datasets.html)
+- [Audio Datasets](https://pytorch.org/audio/stable/datasets.html)
+
 ## Huggingface
 
 - Send model to cuda - `model.to('cuda:0')` or `model.cuda()`
