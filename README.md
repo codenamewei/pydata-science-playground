@@ -336,7 +336,7 @@ conda env create -f config.yml
   - `read()` or `read(size)`: read all / size as one string.
   - `readline()`: read a single line from a text file and return the line as a string.
   - `readlines()`: read all the lines of the text file into a list of strings.
-
+- Write file: `f.write(str)`
 - Check if path is a folder: `os.path.isdir(<path>)`
 - [Get file size](notebooks/filesystem/getfilesize.ipynb)
 - Create folder: `os.mkdir(<path>`
