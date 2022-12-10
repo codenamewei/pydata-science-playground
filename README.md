@@ -148,8 +148,12 @@ conda env create -f config.yml
 ## Numpy
 
 - [Numpy basic](notebooks/numpy/npbasic.ipynb)
+- Get numpy shape: `nparray.shape`
 - Numpy array to list: `nparray.tolist()`
+- Change datatype: `nparray = nparray.astype(<dtype>)` example: `nparray = nparray.astype("uint8")`
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
+- Numpy multiply by a value: `nparray = nparray * 255`
+- [Numpy array to image](notebooks/pytorch/torchtensor2image.ipynb)
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
 - [Use of `numpy.where`](src/cv/blur_region.ipynb)
 
@@ -166,6 +170,8 @@ conda env create -f config.yml
 - Tensor shape - `tensor.shape`
 - Tensor data types - `tensor.dtype`
 - Device tensor is stored on - `tensor.device`
+- [Image to torch tensor](notebooks/pytorch/torchtensor2image.ipynb)
+- [Torch tensor to image](notebooks/pytorch/torchtensor2image.ipynb)
 
 ## Huggingface
 
