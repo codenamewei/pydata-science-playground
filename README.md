@@ -180,7 +180,7 @@ conda env create -f config.yml
 
 ### Dataset
 - [Image Datasets](https://pytorch.org/vision/stable/datasets.html)
-  - Fashion MNIST
+  - Fashion MNIST [Torch](https://github.com/pytorch/vision/blob/main/torchvision/datasets/mnist.py)
       <details> 
   
       Fashion-MNIST is a dataset of Zalando’s article images consisting of 60,000 training examples and 10,000 test examples. 
