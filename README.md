@@ -165,7 +165,7 @@ conda env create -f config.yml
 - Check if cuda is available - `import torch; torch.cuda.is_available()`
 
 ### Torch Tensor
-
+- List to torch - `torch.tensor(listimp)`
 - Numpy array to torch tensor - `torch.from_numpy(np_array)`
 - Tensor shape - `tensor.shape`
 - Tensor data types - `tensor.dtype`
