@@ -159,20 +159,34 @@ conda env create -f config.yml
 
 ## Pytorch
 
-- Given torch.tensor `buffer = tensor(4)`, get the value by - `id = buffer.item()`
-- Given torch.tensor, get the argmax of each row - `torch.argmax(buffer, dim=<(int)dimension_to_reduce>)`
-- Tensor to cuda - `inputs = inputs.to("cuda")`
 - Check if cuda is available - `import torch; torch.cuda.is_available()`
 
 ### Torch Tensor
-- List to torch - `torch.tensor(listimp)`
-- Numpy array to torch tensor - `torch.from_numpy(np_array)`
+
+
+#### Torch Tensor Creation
+- Create tensor of zeros with shape like another tensor: `torch.zeros_like(another_tensor)`
+- Create tensor of ones with shape like another tensor: `torch.ones_like(another_tensor)`
+- Create tensor of random floating value between 0-1 with shape like another tensor: `torch.rand_like(another_tensor, dtype = torch.float)`
+
+
+#### Torch Tensor Info Extraction
+
+- Given torch.tensor `buffer = tensor(4)`, get the value by - `id = buffer.item()`
+- Given torch.tensor, get the argmax of each row - `torch.argmax(buffer, dim=<(int)dimension_to_reduce>)`
+- Tensor to cuda - `inputs = inputs.to("cuda")`
 - Tensor shape - `tensor.shape`
 - Tensor data types - `tensor.dtype`
 - Device tensor is stored on - `tensor.device`
 - Torch tensor(single value) to value: `tensorarray.item()`
+
+#### Torch Tensor Conversion
+- List to torch tensor - `torch.tensor(listimp)`
+- Numpy array to torch tensor - `torch.from_numpy(np_array)`
 - [Image to torch tensor](notebooks/pytorch/torchtensor2image.ipynb)
 - [Torch tensor to image](notebooks/pytorch/torchtensor2image.ipynb)
+
+
 
 ### Dataset Loader, Iterator
 - ```torch.utils.data.DataLoader```: stores the samples and their corresponding labels,
