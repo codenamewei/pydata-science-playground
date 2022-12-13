@@ -165,9 +165,14 @@ conda env create -f config.yml
 
 
 #### Torch Tensor Creation
-- Create tensor of zeros with shape like another tensor: `torch.zeros_like(another_tensor)`
-- Create tensor of ones with shape like another tensor: `torch.ones_like(another_tensor)`
-- Create tensor of random floating value between 0-1 with shape like another tensor: `torch.rand_like(another_tensor, dtype = torch.float)`
+- Create tensor of **zeros** with shape like another tensor: `torch.zeros_like(another_tensor)`
+- Create tensor of **zeros** with shape (tuple): `torch.zeros(shape_in_tuple)`
+- Create tensor of **ones** with shape like another tensor: `torch.ones_like(another_tensor)`
+- Create tensor of **ones** with shape (tuple): `torch.ones(shape_in_tuple)`
+- Create tensor of **random floating value** between 0-1 with shape like another tensor:  
+  `torch.rand_like(another_tensor, dtype = torch.float)`
+- Create tensor of **random floating value** between 0-1 with shape (tuple):  
+  `torch.rand(shape_in_tuple)`
 
 
 #### Torch Tensor Info Extraction
