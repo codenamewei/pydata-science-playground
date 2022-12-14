@@ -198,6 +198,7 @@ conda env create -f config.yml
 #### Torch Tensor Operation
 
 - [Torch tensor value change by indexing and conditions](notebooks/pytorch/tensorvalue_manipulation.ipynb)
+- [Concatenate tensor according to dimension (0 for adding rows, 1 for adding columns](notebooks/pytorch/tensorvalue_manipulation_0.ipynb): `torch.cat([<tensor_1>, <tensor_2>, ...], dim = <dimension_number>`
 
 ### Dataset Loader, Iterator
 - ```torch.utils.data.DataLoader```: stores the samples and their corresponding labels,
