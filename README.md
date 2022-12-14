@@ -192,6 +192,9 @@ conda env create -f config.yml
 - [Torch tensor to image](notebooks/pytorch/torchtensor2image.ipynb)
 
 
+#### Torch Tensor Operation
+
+- [Torch tensor value change by indexing and conditions](notebooks/pytorch/tensorvalue_manipulation.ipynb)
 
 ### Dataset Loader, Iterator
 - ```torch.utils.data.DataLoader```: stores the samples and their corresponding labels,
