@@ -184,6 +184,9 @@ conda env create -f config.yml
 - Tensor data types - `tensor.dtype`
 - Device tensor is stored on - `tensor.device`
 - Torch tensor(single value) to value: `tensorarray.item()`
+- Retrieve subset of torch tensor by row index: `tensor[<row_number>, :]` / `tensor[<row_number_from>:<row_number_to>, :]`
+- Retrieve subset of torch tensor by column index: `tensor[:, <column_number_from>:<column_number_to>]`
+
 
 #### Torch Tensor Conversion
 - List to torch tensor - `torch.tensor(listimp)`
