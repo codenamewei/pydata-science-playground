@@ -205,6 +205,9 @@ conda env create -f config.yml
 - ```torch.utils.data.DataLoader```: stores the samples and their corresponding labels,
 - ```torch.utils.data.Dataset```: wraps an iterable around the Dataset to enable easy access to the samples
 
+#### Torch Tensor In/Out
+- [Save torch tensor to file](notebooks/pytorch/save_write_torch.ipynb): `torch.save(x : torch.tensor, tensorfile :str)`
+- [Load torch tensor from file](notebooks/pytorch/save_write_torch.ipynb): `torch.load(tensorfile :str)`
 
 ### Dataset
 - [Image Datasets](https://pytorch.org/vision/stable/datasets.html)
