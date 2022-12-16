@@ -160,6 +160,7 @@ conda env create -f config.yml
 ## Pytorch
 
 - Check if cuda is available - `import torch; torch.cuda.is_available()`
+- [Softmax](notebooks/pytorch/torch_softmax.ipynb)
 
 ### Torch Tensor
 
