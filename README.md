@@ -485,7 +485,7 @@ conda env create -f config.yml
 - [Produce a new iterable with map()](notebooks/functional/mapimp.ipynb)
 - [Generate a new iterable with Boolean-return function with filter()](notebooks/functional/filterimp.ipynb)
 - [Produce a single cumulative value from iterable with reduce()](notebooks/functional/reduceimp.ipynb)
-- [Condition checking with any(<iterable>)](notebooks/functions/anyimp.ipynb)
+- [Condition checking with any(<iterable>)](notebooks/functional/anyimp.ipynb)
 
 _Note: Functional style can be replaced with **list comprehension** or **generator expressions**_
 
