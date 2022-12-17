@@ -451,7 +451,7 @@ conda env create -f config.yml
 - [Effective way to view object address and object](notebooks/class/class_object_view.ipynb)
 - [Reserved methods in class](notebooks/class/reservedMethod.py)
 - [The magic variable \*args and \*\*kwargs](notebooks/class/kwargsimp.py)
-- Check if object is of specified type: `isinstance(obj, MyClass)`
+- [Check if object is of specified type](notebooks/class/isinstanceimp.ipynb): `isinstance(obj, MyClass)` / `isinstance(obj, (type1, type2) : tuple)`
 - [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
   - Copy list by value: `list_cp = list_ori[:]` (Note: `list_cp = list_ori` copy by reference)
 - Define dataclass
