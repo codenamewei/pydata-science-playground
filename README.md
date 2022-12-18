@@ -148,24 +148,80 @@ conda env create -f config.yml
 ## Numpy
 
 - [Numpy basic](notebooks/numpy/npbasic.ipynb)
+- Get numpy shape: `nparray.shape`
 - Numpy array to list: `nparray.tolist()`
+- Change datatype: `nparray = nparray.astype(<dtype>)` example: `nparray = nparray.astype("uint8")`
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
+- Numpy multiply by a value: `nparray = nparray * 255`
+- [Numpy array to image](notebooks/pytorch/torchtensor2image.ipynb)
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
 - [Use of `numpy.where`](src/cv/blur_region.ipynb)
 
 ## Pytorch
 
-- Given torch.tensor `buffer = tensor(4)`, get the value by - `id = buffer.item()`
-- Given torch.tensor, get the argmax of each row - `torch.argmax(buffer, dim=<(int)dimension_to_reduce>)`
-- Tensor to cuda - `inputs = inputs.to("cuda")`
 - Check if cuda is available - `import torch; torch.cuda.is_available()`
+- [Softmax](notebooks/pytorch/torch_softmax.ipynb)
 
 ### Torch Tensor
 
-- Numpy array to torch tensor - `torch.from_numpy(np_array)`
+
+#### Torch Tensor Creation
+- Create tensor of **zeros** with shape like another tensor: `torch.zeros_like(another_tensor)`
+- Create tensor of **zeros** with shape (tuple): `torch.zeros(shape_in_tuple)`
+- Create tensor of **ones** with shape like another tensor: `torch.ones_like(another_tensor)`
+- Create tensor of **ones** with shape (tuple): `torch.ones(shape_in_tuple)`
+- Create tensor of **random floating value** between 0-1 with shape like another tensor:  
+  `torch.rand_like(another_tensor, dtype = torch.float)`
+- Create tensor of **random floating value** between 0-1 with shape (tuple):  
+  `torch.rand(shape_in_tuple)`
+
+
+#### Torch Tensor Info Extraction
+
+- Given torch.tensor `buffer = tensor(4)`, get the value by - `id = buffer.item()`
+- Given torch.tensor, get the argmax of each row - `torch.argmax(buffer, dim=<(int)dimension_to_reduce>)`
+- Tensor to cuda - `inputs = inputs.to("cuda")`
 - Tensor shape - `tensor.shape`
 - Tensor data types - `tensor.dtype`
 - Device tensor is stored on - `tensor.device`
+- Torch tensor(single value) to value: `tensorarray.item()`
+- Retrieve subset of torch tensor by row index: `tensor[<row_number>, :]` / `tensor[<row_number_from>:<row_number_to>, :]`
+- Retrieve subset of torch tensor by column index: `tensor[:, <column_number_from>:<column_number_to>]`
+
+
+#### Torch Tensor Conversion
+- List to torch tensor - `torch.tensor(listimp)`
+- Numpy array to torch tensor - `torch.from_numpy(np_array)`
+- [Image to torch tensor](notebooks/pytorch/torchtensor2image.ipynb)
+- [Torch tensor to image](notebooks/pytorch/torchtensor2image.ipynb)
+
+
+#### Torch Tensor Operation
+
+- [Torch tensor value change by indexing and conditions](notebooks/pytorch/tensorvalue_manipulation.ipynb)
+- [Concatenate tensor according to dimension (0 for adding rows, 1 for adding columns)](notebooks/pytorch/tensorvalue_manipulation_0.ipynb):  
+  `torch.cat([<tensor_1>, <tensor_2>, ...], dim = <dimension_number>`
+
+### Dataset Loader, Iterator
+- ```torch.utils.data.DataLoader```: stores the samples and their corresponding labels,
+- ```torch.utils.data.Dataset```: wraps an iterable around the Dataset to enable easy access to the samples
+
+#### Torch Tensor In/Out
+- [Save torch tensor to file](notebooks/pytorch/save_write_torch.ipynb): `torch.save(x : torch.tensor, tensorfile :str)`
+- [Load torch tensor from file](notebooks/pytorch/save_write_torch.ipynb): `torch.load(tensorfile :str)`
+
+### Dataset
+- [Image Datasets](https://pytorch.org/vision/stable/datasets.html)
+  - Fashion MNIST [Torch](https://github.com/pytorch/vision/blob/main/torchvision/datasets/mnist.py)
+      <details> 
+  
+      Fashion-MNIST is a dataset of Zalando’s article images consisting of 60,000 training examples and 10,000 test examples. 
+      Each example comprises a 28×28 grayscale image and an associated label from one of 10 classes.
+   
+      </details>
+
+- [Text Datasets](https://pytorch.org/text/stable/datasets.html)
+- [Audio Datasets](https://pytorch.org/audio/stable/datasets.html)
 
 ## Huggingface
 
@@ -311,7 +367,7 @@ conda env create -f config.yml
   - `read()` or `read(size)`: read all / size as one string.
   - `readline()`: read a single line from a text file and return the line as a string.
   - `readlines()`: read all the lines of the text file into a list of strings.
-
+- Write file: `f.write(str)`
 - Check if path is a folder: `os.path.isdir(<path>)`
 - [Get file size](notebooks/filesystem/getfilesize.ipynb)
 - Create folder: `os.mkdir(<path>`
@@ -395,7 +451,7 @@ conda env create -f config.yml
 - [Effective way to view object address and object](notebooks/class/class_object_view.ipynb)
 - [Reserved methods in class](notebooks/class/reservedMethod.py)
 - [The magic variable \*args and \*\*kwargs](notebooks/class/kwargsimp.py)
-- Check if object is of specified type: `isinstance(obj, MyClass)`
+- [Check if object is of specified type](notebooks/class/isinstanceimp.ipynb): `isinstance(obj, MyClass)` / `isinstance(obj, (type1, type2) : tuple)`
 - [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
   - Copy list by value: `list_cp = list_ori[:]` (Note: `list_cp = list_ori` copy by reference)
 - Define dataclass
@@ -429,7 +485,8 @@ conda env create -f config.yml
 - [Produce a new iterable with map()](notebooks/functional/mapimp.ipynb)
 - [Generate a new iterable with Boolean-return function with filter()](notebooks/functional/filterimp.ipynb)
 - [Produce a single cumulative value from iterable with reduce()](notebooks/functional/reduceimp.ipynb)
-- [Condition checking with any(<iterable>)](notebooks/functions/anyimp.ipynb)
+- [Condition checking with any(<iterable>)](notebooks/functional/anyimp.ipynb)
+- [Multiple function declaration with singledispatch)](notebooks/functional/singledispatchimp.ipynb)
 
 _Note: Functional style can be replaced with **list comprehension** or **generator expressions**_
 
