@@ -145,6 +145,9 @@ conda env create -f config.yml
 - Read in pickle to dataframe: `df = pd.read_pickle(<file_name>) # ends with .pkl`
 - Save to pickle: `df.to_pickle(<file_name>)`
 
+### Dataframe Others 
+- [Random dataframe and database table generator](https://github.com/tirthajyoti/pydbgen)
+
 ## Numpy
 
 - [Numpy basic](notebooks/numpy/npbasic.ipynb)
@@ -163,7 +166,6 @@ conda env create -f config.yml
 - [Softmax](notebooks/pytorch/torch_softmax.ipynb)
 
 ### Torch Tensor
-
 
 #### Torch Tensor Creation
 - Create tensor of **zeros** with shape like another tensor: `torch.zeros_like(another_tensor)`
