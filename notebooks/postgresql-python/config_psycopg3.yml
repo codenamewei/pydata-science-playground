@@ -9,3 +9,5 @@ dependencies:
   - matplotlib=3.3.*
   - jupyterlab
   - pip=20.2.*
+  - pip:
+      - psycopg==3.1.6
