@@ -21,3 +21,14 @@ Run
 ```
 pip install --pre psycopg[binary,pool]  # install binary files
 ```
+
+## Fetch types 
+```
+# open a cursor to perform database operations
+cur = conn.cursor()
+# execute a command: this creates a new table
+cur.execute(<command>)
+```
+- ```cur.fetchone()```
+- ```cur.fetchmany(n)```
+- ```cur.fetchall()```
