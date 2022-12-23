@@ -145,7 +145,8 @@ conda env create -f config.yml
 - Read in pickle to dataframe: `df = pd.read_pickle(<file_name>) # ends with .pkl`
 - Save to pickle: `df.to_pickle(<file_name>)`
 
-### Dataframe Others 
+### Dataframe Others
+
 - [Random dataframe and database table generator](https://github.com/tirthajyoti/pydbgen)
 
 ## Numpy
@@ -168,6 +169,7 @@ conda env create -f config.yml
 ### Torch Tensor
 
 #### Torch Tensor Creation
+
 - Create tensor of **zeros** with shape like another tensor: `torch.zeros_like(another_tensor)`
 - Create tensor of **zeros** with shape (tuple): `torch.zeros(shape_in_tuple)`
 - Create tensor of **ones** with shape like another tensor: `torch.ones_like(another_tensor)`
@@ -176,7 +178,6 @@ conda env create -f config.yml
   `torch.rand_like(another_tensor, dtype = torch.float)`
 - Create tensor of **random floating value** between 0-1 with shape (tuple):  
   `torch.rand(shape_in_tuple)`
-
 
 #### Torch Tensor Info Extraction
 
@@ -190,13 +191,12 @@ conda env create -f config.yml
 - Retrieve subset of torch tensor by row index: `tensor[<row_number>, :]` / `tensor[<row_number_from>:<row_number_to>, :]`
 - Retrieve subset of torch tensor by column index: `tensor[:, <column_number_from>:<column_number_to>]`
 
-
 #### Torch Tensor Conversion
+
 - List to torch tensor - `torch.tensor(listimp)`
 - Numpy array to torch tensor - `torch.from_numpy(np_array)`
 - [Image to torch tensor](notebooks/pytorch/torchtensor2image.ipynb)
 - [Torch tensor to image](notebooks/pytorch/torchtensor2image.ipynb)
-
 
 #### Torch Tensor Operation
 
@@ -205,21 +205,25 @@ conda env create -f config.yml
   `torch.cat([<tensor_1>, <tensor_2>, ...], dim = <dimension_number>`
 
 ### Dataset Loader, Iterator
-- ```torch.utils.data.DataLoader```: stores the samples and their corresponding labels,
-- ```torch.utils.data.Dataset```: wraps an iterable around the Dataset to enable easy access to the samples
+
+- `torch.utils.data.DataLoader`: stores the samples and their corresponding labels,
+- `torch.utils.data.Dataset`: wraps an iterable around the Dataset to enable easy access to the samples
 
 #### Torch Tensor In/Out
+
 - [Save torch tensor to file](notebooks/pytorch/save_write_torch.ipynb): `torch.save(x : torch.tensor, tensorfile :str)`
 - [Load torch tensor from file](notebooks/pytorch/save_write_torch.ipynb): `torch.load(tensorfile :str)`
 
 ### Dataset
+
 - [Image Datasets](https://pytorch.org/vision/stable/datasets.html)
+
   - Fashion MNIST [Torch](https://github.com/pytorch/vision/blob/main/torchvision/datasets/mnist.py)
-      <details> 
-  
-      Fashion-MNIST is a dataset of Zalando’s article images consisting of 60,000 training examples and 10,000 test examples. 
-      Each example comprises a 28×28 grayscale image and an associated label from one of 10 classes.
-   
+      <details>
+
+    Fashion-MNIST is a dataset of Zalando’s article images consisting of 60,000 training examples and 10,000 test examples.
+    Each example comprises a 28×28 grayscale image and an associated label from one of 10 classes.
+
       </details>
 
 - [Text Datasets](https://pytorch.org/text/stable/datasets.html)
@@ -237,6 +241,8 @@ conda env create -f config.yml
 
 - Get image shape: `img.shape`
 - Create a color image: `image = np.zeros((h,w,3), np.uint8)`
+- Read/Write image:
+  - [As byte](notebooks/cv/image_as_byte.ipynb)
 - Pause to display image or wait for an input: `cv2.waitKey(0)`
 - Save an image: `cv2.imwrite(pathtoimg : str, img : numpy.ndarray)`
 - Show an image in window: `cv2.imshow(windowname : str, frame : np.array)`
@@ -363,12 +369,13 @@ conda env create -f config.yml
   - `r`: Open for text file for reading text
   - `w`: Open a text file for writing text
   - `a`: Open a text file for appending text
-
-  Read file has 3 functions
+  - [`b`: Open to read/write as bytes](notebooks/cv/image_as_byte.ipynb)
+    Read file has 3 functions
 
   - `read()` or `read(size)`: read all / size as one string.
   - `readline()`: read a single line from a text file and return the line as a string.
   - `readlines()`: read all the lines of the text file into a list of strings.
+
 - Write file: `f.write(str)`
 - Check if path is a folder: `os.path.isdir(<path>)`
 - [Get file size](notebooks/filesystem/getfilesize.ipynb)
@@ -577,6 +584,14 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ## Web
 
 - [Webhook](src/web/webhook)
+
+## Database
+
+### [PostgreSQL](notebooks\postgresql-python)
+
+- [Connect to AWS RDS()](notebooks\postgresql-python\notebooks\aws-rds)
+- [Local Node](notebooks\postgresql-python\notebooks\local)
+- [Save and load image between REST and Postgres](notebooks\postgresql-python\notebooks\image2postgres)
 
 ## Medium Posts
 
