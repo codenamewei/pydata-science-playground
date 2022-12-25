@@ -243,6 +243,8 @@ conda env create -f config.yml
 - Create a color image: `image = np.zeros((h,w,3), np.uint8)`
 - Read/Write image:
   - [As byte](notebooks/cv/image_as_byte.ipynb)
+  - [As Bytearray](notebooks/cv/image_as bytearray.ipynb)
+  - [As base64](notebooks/cv/image_as_base64.ipynb)
 - Pause to display image or wait for an input: `cv2.waitKey(0)`
 - Save an image: `cv2.imwrite(pathtoimg : str, img : numpy.ndarray)`
 - Show an image in window: `cv2.imshow(windowname : str, frame : np.array)`
@@ -288,9 +290,25 @@ conda env create -f config.yml
 ## Bytes
 
 - [Numpy <> Bytes, Bytes <> Numpy](notebooks/numpy/np2bytes.ipynb)
-- [Bytes -> String](notebooks/string/bytes2string.ipynb): `bytesobj.decode("utf-8")
+- [Bytes -> String](notebooks/string/bytes2string.ipynb): `bytesobj.decode("utf-8")`
 - String -> Bytes: `strobj.encode("utf-8")`
 - [Bytes -> Multimedia file (video/audio))](src/bytesops/readme.md)
+- [Check bytes encoding](notebooks/bytearrayops/checkbytesarrayencoding.ipynb)
+- To Bytes: `bytes(<value>)`
+
+## ByteArray
+
+- [Integer to Bytearray](notebooks/bytearrayops/bytearraybasic.ipynb)
+- [Native Array to Bytearray](notebooks/bytearrayops/bytearraybasic.ipynb)
+- [Numpy Array to Bytearray](notebooks/bytearrayops/bytearraybasic.ipynb)
+- [Image as Bytearray](notebooks/cv/image_as bytearray.ipynb)
+- [Check bytes array encoding](notebooks/bytearrayops/checkbytesarrayencoding.ipynb)
+- To ByteArray: `bytearray(<value>)`
+
+**Notes:**  
+```
+Difference between bytes() and bytearray() is that bytes() returns an object that cannot be modified (immutable), and bytearray() returns an object that can be modified (mutable).
+```
 
 ## Formatting
 
@@ -592,6 +610,16 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Connect to AWS RDS()](notebooks\postgresql-python\notebooks\aws-rds)
 - [Local Node](notebooks\postgresql-python\notebooks\local)
 - [Save and load image between REST and Postgres](notebooks\postgresql-python\notebooks\image2postgres)
+
+
+## REST
+
+### FastAPI
+
+- [Send image via UploadFile](notebooks\postgresql-python\notebooks\image2postgres\server.py)
+
+- [Return content from url and write image](notebooks\postgresql-python\notebooks\image2postgres\client.py)
+
 
 ## Medium Posts
 

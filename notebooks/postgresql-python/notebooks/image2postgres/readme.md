@@ -1,9 +1,7 @@
 
 ### Prerequisite
 
-1. Server Started with
-```
-```
+1. Server Started with `server.py`
 
 2. Postgres Setup
 
@@ -14,7 +12,14 @@
 1. Save image with methods below
     - Upload through page
     - Provide with Postman
+    <img src="metadata/rest1.jpg" width="500">
     - Upload through endpoint with python script 
 
 2. Retrieve image with 
-    - Python script
+    - Provide with Postman
+    <img src="metadata/rest2.jpg" width="500">
+    - [Retrieve through endpoint with python script](client.ipynb)
+    
+ 
+### Test
+- `nativesaveimage.ipynb` saves image into postgres
