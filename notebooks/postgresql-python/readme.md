@@ -46,7 +46,7 @@ pip install --pre psycopg[binary,pool]  # install binary files
     ```
 - get a cursor to perform database operations
   ```cur = conn.cursor()```
-- execute a command: for operations such as CREATE, INSERT INTO
+- execute a command: for operations such as CREATE, INSERT INTO  
   ```cur.execute(<command>)```
   To handle exception: 
   ```
@@ -56,9 +56,9 @@ pip install --pre psycopg[binary,pool]  # install binary files
     raise Exception("Failed to execute command")
   ```
 - get data: for operations such as SELECT
-  ```cur.fetchone()```
-  ```cur.fetchmany(n)```
-  ```cur.fetchall()```: return a list
+  - ```cur.fetchone()```  
+  - ```cur.fetchmany(n)```
+  - ```cur.fetchall()```: return a list
 
 
 ## Other Notes
