@@ -607,7 +607,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 ### [PostgreSQL](notebooks\postgresql-python)
 
-- [Connect to AWS RDS()](notebooks\postgresql-python\notebooks\aws-rds)
+- [Connect to AWS RDS](notebooks\postgresql-python\notebooks\aws-rds)
 - [Local Node](notebooks\postgresql-python\notebooks\local)
 - [Save and load image between REST and Postgres](notebooks\postgresql-python\notebooks\restimage2postgres)
 - [Save and load video between REST and Postgres](notebooks\postgresql-python\notebooks\restvideo2postgres)

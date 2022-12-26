@@ -22,13 +22,45 @@ Run
 pip install --pre psycopg[binary,pool]  # install binary files
 ```
 
-## Fetch types 
-```
-# open a cursor to perform database operations
-cur = conn.cursor()
-# execute a command: this creates a new table
-cur.execute(<command>)
-```
-- ```cur.fetchone()```
-- ```cur.fetchmany(n)```
-- ```cur.fetchall()```
+## Commands 
+- connect to database
+  ```
+  try:
+    conn = psycopg.connect(
+        user="postgres",
+        password="password",
+        host="database.cosqamqjez6h.ap-northeast-2.rds.amazonaws.com",
+        port='5432'
+    )
+
+   except:
+    raise Exception("Failed to connect to database")
+  ```
+  - PostgreSQL does not have an autocommit facility which means that all queries will execute within a transaction. 
+    To make transaction on every query. Put `autocommit = True` in connection
+    ```
+    conn = psycopg.connect(
+        ...,
+        autocommit = True
+    )
+    ```
+- get a cursor to perform database operations
+  ```cur = conn.cursor()```
+- execute a command: for operations such as CREATE, INSERT INTO
+  ```cur.execute(<command>)```
+  To handle exception: 
+  ```
+  try:
+    cur.execute(<command>)
+  except:
+    raise Exception("Failed to execute command")
+  ```
+- get data: for operations such as SELECT
+  ```cur.fetchone()```
+  ```cur.fetchmany(n)```
+  ```cur.fetchall()```: return a list
+
+
+## Other Notes
+
+- [How to drop DATABASE](https://wiki.postgresql.org/wiki/Psycopg2_Tutorial)
