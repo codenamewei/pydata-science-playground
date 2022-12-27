@@ -605,7 +605,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 ## Database
 
-### [PostgreSQL](notebooks\postgresql-python\readme.md)
+### [PostgreSQL](notebooks/postgresql-python/readme.md)
 
 - [Postgres connect to AWS RDS](notebooks\postgresql-python\notebooks\aws-rds)
 - [Local Node](notebooks\postgresql-python\notebooks\local)
