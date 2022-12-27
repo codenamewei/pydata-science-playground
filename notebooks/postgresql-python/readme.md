@@ -47,14 +47,25 @@ pip install --pre psycopg[binary,pool]  # install binary files
 - get a cursor to perform database operations
   ```cur = conn.cursor()```
 - execute a command: for operations such as CREATE, INSERT INTO  
-  ```cur.execute(<command>)```
-  To handle exception: 
-  ```
-  try:
-    cur.execute(<command>)
-  except:
-    raise Exception("Failed to execute command")
-  ```
+  - ```cur.execute(<command>)```
+  - ```cur.executemany(<command>)```
+    - To handle exception: 
+      ```
+      try:
+        cur.execute(<command>)
+      except:
+        raise Exception("Failed to execute command")
+      ```
+     - To put placeholder: Variable placeholder must always be **%s**
+      ```cur.execute("INSERT INTO hero (num, data) VALUES (%s, %s)", (1100, "abc'def"))```
+      
+      ```
+      namedict = ({"id": 113, "name":"ABC"},
+            {"id": 222, "name":"CDE"},
+            {"id": 333, "name":"EFG"})
+
+      cur.executemany("""INSERT INTO hero (num, data) VALUES (%(id)s, %(name)s)""", namedict)   
+      ```
 - get data: for operations such as SELECT
   - ```cur.fetchone()```  
   - ```cur.fetchmany(n)```
