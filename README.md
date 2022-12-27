@@ -625,6 +625,20 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ### AWS
 - [Postgres connect to AWS RDS](notebooks/postgresql-python/notebooks/aws-rds)
 
+#### S3: Scalable Storage
+
+**Note:**
+
+- **What is a bucket in S3**
+  <details> 
+  
+  A bucket is a container for objects stored in Amazon S3 which can contains files and folders. 
+  You can store any number of objects in a bucket and can have up to 100 buckets in your account
+   
+  </details>
+
+
+
 
 ## Medium Posts
 
