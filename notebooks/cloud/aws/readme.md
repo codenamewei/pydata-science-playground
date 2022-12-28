@@ -11,7 +11,7 @@ pip install boto3
 ### References / Examples 
 - https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html
 
-<img src="metadata/sample.JPG" width = "500"> 
+<img src="metadata/sample.JPG" width = "300"> 
 
 Class and functions are in "Available Services" tab.
 
