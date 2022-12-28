@@ -10,6 +10,7 @@
   - <TBD>
 - Task 
   - An asyncio Task is an object that schedules and independently runs an asyncio coroutine.
+  - https://superfastpython.com/asyncio-create-task/
 
 ### Other terms in Asyncio
 - await 
