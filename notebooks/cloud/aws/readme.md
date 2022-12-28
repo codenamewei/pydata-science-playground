@@ -8,8 +8,11 @@ Boto3 makes it easy to integrate your Python application, library, or script wit
 pip install boto3
 ```
 
-
 ### References / Examples 
 - https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html
 
 <img src="metadata/sample.JPG" width = "500"> 
+
+Class and functions are in "Available Services" tab.
+
+<img src="metadata/sample2.JPG" width = "500"> 

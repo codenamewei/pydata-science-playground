@@ -403,6 +403,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - Get current running script path: `os.getcwd()`
 - Get the list of all files and directories in the specified directory (does not expand to items in the child folder: `os.listdir(<path>)`
 - Get current file path (getcwd will point to the running script(main) path, this will get individually py path): `os.path.dirname(os.path.abspath(__file__))`
+- Get filename from path: `os.path.basename(configfilepath)`
 - Append certain path: `sys.path.append(<path>)`
 - Check if path exist: `os.path.exists(<path>)`
 - Remove a file: `os.remove()`
@@ -626,6 +627,9 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Postgres connect to AWS RDS](notebooks/postgresql-python/notebooks/aws-rds)
 
 #### S3: Scalable Storage
+
+- [List buckets in AWS S3](notebooks/cloud/aws/getbucketlist.ipynb)
+- [Upload file with function upload_file or upload_fileobj](notebooks/cloud/aws/upload2bucket.ipynb)
 
 **Note:**
 
