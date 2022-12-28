@@ -7,7 +7,7 @@
   - coroutines can execute non-blocking I/O asynchronously
   - You can run an asyncio coroutine via the run() function, by awaiting it within another coroutine, or by scheduling it as Task.
 - Subprocess
-  - <TBD>
+  - Asyncio deals with subprocess module that works with filesystem. Example: `ls -al`, initiate another program for example.
 - Task 
   - An asyncio Task is an object that schedules and independently runs an asyncio coroutine.
   - https://superfastpython.com/asyncio-create-task/
