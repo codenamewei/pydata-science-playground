@@ -5,7 +5,9 @@
 - Task 
 
 ### Other terms in Asyncio
-- await
+- await 
+  - Just a term more formal that wait
+
 
 ### asyncio_wait.py
 
