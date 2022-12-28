@@ -626,7 +626,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ### AWS
 - [Postgres connect to AWS RDS](notebooks/postgresql-python/notebooks/aws-rds)
 
-#### S3: Scalable Storage
+#### [S3: Scalable Storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/tutorials.html)
 
 - [List buckets in AWS S3](notebooks/cloud/aws/getbucketlist.ipynb)
 - [Upload file with function upload_file or upload_fileobj](notebooks/cloud/aws/upload2bucket.ipynb)
@@ -640,9 +640,6 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   You can store any number of objects in a bucket and can have up to 100 buckets in your account
    
   </details>
-
-
-
 
 ## Medium Posts
 
