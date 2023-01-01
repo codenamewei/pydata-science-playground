@@ -618,7 +618,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ### FastAPI
 
 - [Send image via UploadFile](notebooks/postgresql-python/notebooks/image2postgres/server.py)
-
+- [Client upload file to FastAPI Uploadfile and get response](notebooks/rest/fastapi/clientsendfile.ipynb)
 - [Return content from url and write image](notebooks/postgresql-python/notebooks/image2postgres/client.py)
 
 ## Cloud
