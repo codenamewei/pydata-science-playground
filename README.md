@@ -403,6 +403,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - Get current running script path: `os.getcwd()`
 - Get the list of all files and directories in the specified directory (does not expand to items in the child folder: `os.listdir(<path>)`
 - Get current file path (getcwd will point to the running script(main) path, this will get individually py path): `os.path.dirname(os.path.abspath(__file__))`
+- Get filename from path: `os.path.basename(configfilepath)`
 - Append certain path: `sys.path.append(<path>)`
 - Check if path exist: `os.path.exists(<path>)`
 - Remove a file: `os.remove()`
@@ -528,8 +529,12 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ## Performance
 
 - [Dataframe - column-major, Numpy - row-major](notebooks/performance/df_numpy_major.ipynb)
+  
+## Time
 - [Measure time prior and after](notebooks/performance/count_time.ipynb)
-
+- Add delay to execution of the program by pausing: `import time;time.sleep(seconds)`
+  - Note: stops the execution of current thread only
+  
 ## Logging
 
 ### Built-In Logging
@@ -617,7 +622,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ### FastAPI
 
 - [Send image via UploadFile](notebooks/postgresql-python/notebooks/image2postgres/server.py)
-
+- [Client upload file to FastAPI Uploadfile and get response](notebooks/rest/fastapi/clientsendfile.ipynb)
 - [Return content from url and write image](notebooks/postgresql-python/notebooks/image2postgres/client.py)
 
 ## Cloud
@@ -625,6 +630,21 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ### AWS
 - [Postgres connect to AWS RDS](notebooks/postgresql-python/notebooks/aws-rds)
 
+#### [S3: Scalable Storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/tutorials.html)
+
+- [List buckets in AWS S3](notebooks/cloud/aws/getbucketlist.ipynb)
+- [Upload file with function upload_file or upload_fileobj](notebooks/cloud/aws/upload2bucket.ipynb)
+    - [Upload video file with timer](notebooks/cloud/aws/uploadvideo2bucket.ipynb)
+
+**Note:**
+
+- **What is a bucket in S3**
+  <details> 
+  
+  A bucket is a container for objects stored in Amazon S3 which can contains files and folders. 
+  You can store any number of objects in a bucket and can have up to 100 buckets in your account
+   
+  </details>
 
 ## Medium Posts
 
