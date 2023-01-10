@@ -529,8 +529,12 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ## Performance
 
 - [Dataframe - column-major, Numpy - row-major](notebooks/performance/df_numpy_major.ipynb)
+  
+## Time
 - [Measure time prior and after](notebooks/performance/count_time.ipynb)
-
+- Add delay to execution of the program by pausing: `import time;time.sleep(seconds)`
+  - Note: stops the execution of current thread only
+  
 ## Logging
 
 ### Built-In Logging
