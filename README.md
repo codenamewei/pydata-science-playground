@@ -636,6 +636,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [List buckets in AWS S3](notebooks/cloud/aws/getbucketlist.ipynb)
 - [Upload file with function upload_file or upload_fileobj](notebooks/cloud/aws/upload2bucket.ipynb)
     - [Upload video file with timer](notebooks/cloud/aws/uploadvideo2bucket.ipynb)
+- [Get object from S3](notebooks/cloud/aws/getobject.ipynb)
 
 **Note:**
 
