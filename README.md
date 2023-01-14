@@ -640,6 +640,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Upload file with function upload_file or upload_fileobj](notebooks/cloud/aws/upload2bucket.ipynb)
     - [Upload video file](notebooks/cloud/aws/uploadvideo2bucket.ipynb)
     - [Upload video file with progress counter](notebooks/cloud/aws/uploadvideo2bucketwithprogress.ipynb)
+- [Upload multipart](notebooks/cloud/aws/uploadmultipart.ipynb)
 - [Get object from S3](notebooks/cloud/aws/getobject.ipynb)
 
 **Note:**
