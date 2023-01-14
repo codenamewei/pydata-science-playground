@@ -379,6 +379,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - The character used by the operating system to separate pathname components: `os.sep`
 - [Iterate through a path to get files/folders of all the subpaths](notebooks/filesystem/filewalk.ipynb)
 - [Readfile](notebooks/filesystem/readfile.ipynb)
+- [Flush out print](notebooks/filesystem/stdoutflush.ipynb)
 
   ```
   open(<path-to-file>, mode)
@@ -397,6 +398,8 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - Write file: `f.write(str)`
 - Check if path is a folder: `os.path.isdir(<path>)`
 - [Get file size](notebooks/filesystem/getfilesize.ipynb)
+    - `from pathlib import Path; outsize : int = Path(inputfilepath).stat().st_size`
+    - `import os; outsize : int = os.path.getsize(inputfilepath)`
 - Create folder: `os.mkdir(<path>`
 - Create folders recursively: `os.makedirs(<path>)`
 - Expand home directory: `os.path.expanduser('~')`
