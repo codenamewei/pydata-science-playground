@@ -379,12 +379,10 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - The character used by the operating system to separate pathname components: `os.sep`
 - [Iterate through a path to get files/folders of all the subpaths](notebooks/filesystem/filewalk.ipynb)
 - [Readfile](notebooks/filesystem/readfile.ipynb)
-- [Flush out print](notebooks/filesystem/stdoutflush.ipynb)
-
   ```
   open(<path-to-file>, mode)
   ```
-
+  <details>
   - `r`: Open for text file for reading text
   - `w`: Open a text file for writing text
   - `a`: Open a text file for appending text
@@ -394,8 +392,9 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
   - `read()` or `read(size)`: read all / size as one string.
   - `readline()`: read a single line from a text file and return the line as a string.
   - `readlines()`: read all the lines of the text file into a list of strings.
-
+  </details>
 - Write file: `f.write(str)`
+- [Flush out print](notebooks/filesystem/stdoutflush.ipynb)
 - Check if path is a folder: `os.path.isdir(<path>)`
 - [Get file size](notebooks/filesystem/getfilesize.ipynb)
     - `from pathlib import Path; outsize : int = Path(inputfilepath).stat().st_size`
