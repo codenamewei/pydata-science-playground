@@ -383,6 +383,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
   open(<path-to-file>, mode)
   ```
   <details>
+  
   - `r`: Open for text file for reading text
   - `w`: Open a text file for writing text
   - `a`: Open a text file for appending text
