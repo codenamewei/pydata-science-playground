@@ -295,6 +295,7 @@ conda env create -f config.yml
 - [Bytes -> Multimedia file (video/audio))](src/bytesops/readme.md)
 - [Check bytes encoding](notebooks/bytearrayops/checkbytesarrayencoding.ipynb)
 - To Bytes: `bytes(<value>)`
+- Get size of bytes object: `import sys;sys.getsizeof(bytesobject)`
 
 ## ByteArray
 
