@@ -306,7 +306,8 @@ conda env create -f config.yml
 - [Check bytes array encoding](notebooks/bytearrayops/checkbytesarrayencoding.ipynb)
 - To ByteArray: `bytearray(<value>)`
 
-**Notes:**  
+**Notes:**
+
 ```
 Difference between bytes() and bytearray() is that bytes() returns an object that cannot be modified (immutable), and bytearray() returns an object that can be modified (mutable).
 ```
@@ -384,8 +385,8 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - [Flush out print](notebooks/filesystem/stdoutflush.ipynb)
 - Check if path is a folder: `os.path.isdir(<path>)`
 - [Get file size](notebooks/filesystem/getfilesize.ipynb)
-    - `from pathlib import Path; outsize : int = Path(inputfilepath).stat().st_size`
-    - `import os; outsize : int = os.path.getsize(inputfilepath)`
+  - `from pathlib import Path; outsize : int = Path(inputfilepath).stat().st_size`
+  - `import os; outsize : int = os.path.getsize(inputfilepath)`
 - Create folder: `os.mkdir(<path>`
 - Create folders recursively: `os.makedirs(<path>)`
 - Expand home directory: `os.path.expanduser('~')`
@@ -403,10 +404,11 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - [Unzip file](notebooks/filesystem/uncompresszip.ipynb)
 - [Readfile](notebooks/filesystem/readfile.ipynb)
   <details>
-  
+
   ```
   open(<path-to-file>, mode)
   ```
+
   - `r`: Open for text file for reading text
   - `w`: Open a text file for writing text
   - `a`: Open a text file for appending text
@@ -417,6 +419,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
   - `readline()`: read a single line from a text file and return the line as a string.
   - `readlines()`: read all the lines of the text file into a list of strings.
   </details>
+
 ## System
 
 - [Get system input](notebooks/system/sysinput.py)
@@ -533,12 +536,17 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ## Performance
 
 - [Dataframe - column-major, Numpy - row-major](notebooks/performance/df_numpy_major.ipynb)
-  
+
+### Multiprocessing
+
+- [Create workera according to number of cores](src/multiprocess_ops/readme.md)
+
 ## Time
+
 - [Measure time prior and after](notebooks/performance/count_time.ipynb)
 - Add delay to execution of the program by pausing: `import time;time.sleep(seconds)`
   - Note: stops the execution of current thread only
-  
+
 ## Logging
 
 ### Built-In Logging
@@ -633,25 +641,26 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ## Cloud
 
 ### AWS
+
 - [Postgres connect to AWS RDS](notebooks/postgresql-python/notebooks/aws-rds)
 
 #### [S3: Scalable Storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/tutorials.html)
 
 - [List buckets in AWS S3](notebooks/cloud/aws/getbucketlist.ipynb)
 - [Upload file with function upload_file or upload_fileobj](notebooks/cloud/aws/upload2bucket.ipynb)
-    - [Upload video file](notebooks/cloud/aws/uploadvideo2bucket.ipynb)
-    - [Upload video file with progress counter](notebooks/cloud/aws/uploadvideo2bucketwithprogress.ipynb)
+  - [Upload video file](notebooks/cloud/aws/uploadvideo2bucket.ipynb)
+  - [Upload video file with progress counter](notebooks/cloud/aws/uploadvideo2bucketwithprogress.ipynb)
 - [Upload multipart](notebooks/cloud/aws/uploadmultipart.ipynb)
 - [Get object from S3](notebooks/cloud/aws/getobject.ipynb)
 
 **Note:**
 
 - **What is a bucket in S3**
-  <details> 
-  
-  A bucket is a container for objects stored in Amazon S3 which can contains files and folders. 
+  <details>
+
+  A bucket is a container for objects stored in Amazon S3 which can contains files and folders.
   You can store any number of objects in a bucket and can have up to 100 buckets in your account
-   
+
   </details>
 
 ## Medium Posts
