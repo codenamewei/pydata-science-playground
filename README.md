@@ -243,7 +243,7 @@ conda env create -f config.yml
 - Create a color image: `image = np.zeros((h,w,3), np.uint8)`
 - Read/Write image:
   - [As byte](notebooks/cv/image_as_byte.ipynb)
-  - [As Bytearray](notebooks/cv/image_as bytearray.ipynb)
+  - [As Bytearray](notebooks/cv/image_as_bytearray.ipynb)
   - [As base64](notebooks/cv/image_as_base64.ipynb)
 - Pause to display image or wait for an input: `cv2.waitKey(0)`
 - Save an image: `cv2.imwrite(pathtoimg : str, img : numpy.ndarray)`
