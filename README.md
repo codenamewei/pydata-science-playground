@@ -349,11 +349,12 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - [Iteration to dict to get keys and values](notebooks/dictionary/dict_iteration.ipynb)
 - Save/load dictionary to/from a file: [saveloaddict.ipynb](notebooks/dictionary/saveloaddict.ipynb)
 - Revert or inverse a dictionary mapping: `inv_map = {v: k for k, v in my_map.items()}`
+- [Copy by value](notebooks/dictionary/dict_copybyvalue.ipynb): `sampledict.copy()`
 
 ### Python Iterables (List, Set,...)
 
 - To identify if any items in the iterables has True/1 values: `any(sample_list) #returns single value True/False`
-- [Zip multiple iterables](notebooks/zipops/zipops.ipynb) 
+- [Zip multiple iterables](notebooks/zipops/zipops.ipynb)
 
 ## [Maths](notebooks/math)
 
@@ -435,6 +436,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 
 ## String
 
+- [Generate string with parameters](notebooks/string/paramwithstring.ipynb)
 - [Generate string with templates](notebooks/string/stringtemplate.ipynb)
 - Check if string is empty, len = 0: `if not strvar:`
 - Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
@@ -652,6 +654,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - [Upload video file](notebooks/cloud/aws/uploadvideo2bucket.ipynb)
   - [Upload video file with progress counter](notebooks/cloud/aws/uploadvideo2bucketwithprogress.ipynb)
 - [Upload multipart](notebooks/cloud/aws/uploadmultipart.ipynb)
+- [Upload multipart with multiple workers](src/cloud/aws/uploadmultipart_withworkers.py)
 - [Get object from S3](notebooks/cloud/aws/getobject.ipynb)
 
 **Note:**

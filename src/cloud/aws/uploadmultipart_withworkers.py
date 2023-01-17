@@ -8,12 +8,22 @@ import json
 import sys
 import threading
 
-filename = r"C:\Users\codenamewei\Documents\xboxgamebar\Captures\insanefood.mp4"
+filename = r"C:\Users\codenamewei\Documents\xboxgamebar\Captures\disney.mp4"
 bucketname = "hello-world-abc"
 basename = os.path.basename(filename)
 sizeperchunk = 10000000# roughly 10 mb parts
 
 configfilepath = r"C:\Users\codenamewei\Downloads\temp\awscredential.json"
+
+"""
+greyanatomy2.mp4 31MB
+by single process:  33.51532959938049s
+by multiple worker: 32.281418800354004s
+
+disney.mp4 225MB
+by single process:  152.05219435691833s
+by multiple worker: 127.70767831802368s
+"""
 
         
 #(param : dict) -> dict:
@@ -35,16 +45,13 @@ def worker_upload_file(param : dict) -> dict:
         bucket_name = param["bucketname"], object_key = param["objectname"], multipart_upload_id = param["uploadid"], part_number = param["partnumber"])
 
     uploadPartResponse = uploadPart.upload(
-        Body=piece,
+        Body=param["contents"],
     )
 
     #progress(sys.getsizeof(piece))
-    print(f"Complete part {part_number}")
-    part_number = part_number + 1
+    print(f'Completed part {param["partnumber"]}')
     
-    return {'PartNumber': part_number, 'ETag': uploadPartResponse['ETag']}
-
-    #return True
+    return {'PartNumber': param["partnumber"], 'ETag': uploadPartResponse['ETag']}
         
 if __name__ == "__main__":
     
@@ -68,8 +75,8 @@ if __name__ == "__main__":
     part_number = 1
     parts = []
 
-    filechunkbase = {aws_access_key_id: config["aws_access_key_id"], 
-                     aws_secret_access_key: config["aws_secret_access_key"], 
+    filechunkbase = {"aws_access_key_id": config["aws_access_key_id"], 
+                     "aws_secret_access_key": config["aws_secret_access_key"], 
                      "bucketname": bucketname, 
                      "objectname": basename}
 
@@ -85,9 +92,9 @@ if __name__ == "__main__":
                 break
             else:
 
-                thisfilechunk = filechunkbase
+                thisfilechunk = filechunkbase.copy()
                 thisfilechunk["uploadid"] = multipart_upload['UploadId']
-                thisfilechunk["fileid"] = fileidcounter
+                thisfilechunk["partnumber"] = fileidcounter
                 thisfilechunk["contents"] = piece
                 filechunks.append(thisfilechunk)
 
@@ -108,13 +115,13 @@ if __name__ == "__main__":
     
     ## To signal completion
 
-    # completeResult = s3client.complete_multipart_upload(
-    # Bucket=bucketname,
-    # Key=basename,
-    # MultipartUpload={
-    #     'Parts': parts
-    # },
-    # UploadId=multipart_upload['UploadId'],)
+    completeResult = s3client.complete_multipart_upload(
+    Bucket=bucketname,
+    Key=basename,
+    MultipartUpload={
+        'Parts': parts
+    },
+    UploadId=multipart_upload['UploadId'],)
 
     end = time.time()
 
