@@ -8,7 +8,7 @@ import json
 import sys
 import threading
 
-filename = r"C:\Users\codenamewei\Documents\xboxgamebar\Captures\disney.mp4"
+filename = r"C:\Users\codenamewei\Documents\xboxgamebar\Captures\greyanatomy2.mp4"
 bucketname = "hello-world-abc"
 basename = os.path.basename(filename)
 sizeperchunk = 10000000# roughly 10 mb parts
@@ -24,6 +24,10 @@ disney.mp4 225MB
 by single process:  152.05219435691833s
 by multiple worker: 127.70767831802368s
 """
+
+def chunked(source : bytes, chunk_size : int):
+    for i in range(0, len(source), chunk_size):
+        yield source[i:i+chunk_size]
 
 class ProgressPercentage(object):
 
@@ -101,7 +105,8 @@ if __name__ == "__main__":
     filechunkbase = {"aws_access_key_id": config["aws_access_key_id"], 
                      "aws_secret_access_key": config["aws_secret_access_key"], 
                      "bucketname": bucketname, 
-                     "objectname": basename}
+                     "objectname": basename, 
+                     "uploadid": multipart_upload['UploadId']}
 
     start = time.time()
 
@@ -109,19 +114,18 @@ if __name__ == "__main__":
     filechunks : list = []
 
     with open(filename, 'rb') as f:
-        while True:
-            piece = f.read(sizeperchunk) 
-            if piece == b'':
-                break
-            else:
+        
+        contents = f.read()
+        
+    chunklist = list(chunked(contents, sizeperchunk))
+        
+    for chunk in chunklist: 
+        thisfilechunk = filechunkbase.copy()
+        thisfilechunk["partnumber"] = fileidcounter
+        thisfilechunk["contents"] = chunk
+        filechunks.append(thisfilechunk)
 
-                thisfilechunk = filechunkbase.copy()
-                thisfilechunk["uploadid"] = multipart_upload['UploadId']
-                thisfilechunk["partnumber"] = fileidcounter
-                thisfilechunk["contents"] = piece
-                filechunks.append(thisfilechunk)
-
-                fileidcounter += 1
+        fileidcounter += 1
 
     parts = []
 
