@@ -353,6 +353,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 ### Python Iterables (List, Set,...)
 
 - To identify if any items in the iterables has True/1 values: `any(sample_list) #returns single value True/False`
+- [Zip multiple iterables](notebooks/zipops/zipops.ipynb) 
 
 ## [Maths](notebooks/math)
 
@@ -539,7 +540,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 ### Multiprocessing
 
-- [Create workera according to number of cores](src/multiprocess_ops/readme.md)
+- [Create workers according to number of cores](src/multiprocess_ops/readme.md)
 
 ## Time
 

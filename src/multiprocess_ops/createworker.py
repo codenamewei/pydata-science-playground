@@ -33,10 +33,17 @@ if __name__ == "__main__":
     worker_id_list = list(range(0,  WORKERS))
     print(f"Number of workers: {WORKERS}") #Maps to the number of cores in a node
 
+
     print(f"Using {WORKERS} multiprocessing workers\n")
 
     buffer = []
     with Pool(WORKERS) as p:
-
+            
+        #https://superfastpython.com/multiprocessing-pool-imap/
+        """
+        The built-in map() function allows you to apply a function to each item in an iterable.         A problem with this function is that it converts the provided iterable of items into a         list and submits all items as tasks to the process pool then blocks until all tasks are        complete.
+        
+        The imap() function is a lazier version of them map() function where we submit tasks           one-by-one to the process pool and retrieve results for tasks as they complete
+        """
         for result in p.imap(worker, filelist):
             buffer.append(result)
