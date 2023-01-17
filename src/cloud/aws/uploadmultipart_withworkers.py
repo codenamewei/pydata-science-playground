@@ -25,10 +25,29 @@ by single process:  152.05219435691833s
 by multiple worker: 127.70767831802368s
 """
 
+class ProgressPercentage(object):
+
+    def __init__(self, filename):
+        self._filename = filename
+        self._size = float(os.path.getsize(filename))
+        self._seen_so_far = 0
+        self._lock = threading.Lock()
+
+    def __call__(self, bytes_amount):
+        # To simplify, assume this is hooked up to a single filename
+        with self._lock:
+            self._seen_so_far += bytes_amount
+            percentage = (self._seen_so_far / self._size) * 100
+            sys.stdout.write(
+                "\r%s  %s / %s  (%.2f%%)" % (
+                    self._filename, self._seen_so_far, self._size,
+                    percentage))
+            sys.stdout.flush()
         
 #(param : dict) -> dict:
 def worker_upload_file(param : dict) -> dict:
     """
+    param:
     (KEY) aws_access_key_id <> value : str
     (KEY) aws_secret_access_key <> value : str
     (KEY) bucketname <> value : str
@@ -36,6 +55,12 @@ def worker_upload_file(param : dict) -> dict:
     (KEY) uploadid <> value : int
     (KEY) partnumber <> value : int
     (KEY) contents <> value : bytes
+
+    returning value: dict:
+    part: <> value : dict
+        - to later signal completion of upload
+    contents_size <> value : int
+        - to cue progress 
     """
 
     s3resource = boto3.resource('s3', aws_access_key_id=param["aws_access_key_id"], aws_secret_access_key= param["aws_secret_access_key"])
@@ -47,11 +72,8 @@ def worker_upload_file(param : dict) -> dict:
     uploadPartResponse = uploadPart.upload(
         Body=param["contents"],
     )
-
-    #progress(sys.getsizeof(piece))
-    print(f'Completed part {param["partnumber"]}')
     
-    return {'PartNumber': param["partnumber"], 'ETag': uploadPartResponse['ETag']}
+    return {"part": {'PartNumber': param["partnumber"], 'ETag': uploadPartResponse['ETag']}, 'contents_size': sys.getsizeof(param["contents"])}
         
 if __name__ == "__main__":
     
@@ -62,8 +84,7 @@ if __name__ == "__main__":
         config = json.load(openfile)
 
         s3client = boto3.client('s3', aws_access_key_id=config["aws_access_key_id"], aws_secret_access_key= config["aws_secret_access_key"])
-    
-    
+        
      #https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.create_multipart_upload
     multipart_upload = s3client.create_multipart_upload(
         ACL='private',
@@ -71,6 +92,8 @@ if __name__ == "__main__":
         ContentType='video/mp4',
         Key=basename,
     )
+
+    progresschecker = ProgressPercentage(filename)
 
     part_number = 1
     parts = []
@@ -106,12 +129,12 @@ if __name__ == "__main__":
     WORKERS = len(filechunks) if (cpu_count() > len(filechunks)) else cpu_count() 
     print(f"Using {WORKERS} multiprocessing workers\n")
 
-    #filechunks = list(range(0, WORKERS))
-
     with Pool(WORKERS) as p:
 
         for result in p.imap(worker_upload_file, filechunks):
-            parts.append(result)
+            
+            parts.append(result["part"])
+            progresschecker(result["contents_size"])
     
     ## To signal completion
 
