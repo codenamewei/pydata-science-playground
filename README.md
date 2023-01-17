@@ -296,6 +296,7 @@ conda env create -f config.yml
 - [Check bytes encoding](notebooks/bytearrayops/checkbytesarrayencoding.ipynb)
 - To Bytes: `bytes(<value>)`
 - Get size of bytes object: `import sys;sys.getsizeof(bytesobject)`
+- [Split bytes to chunks](notebooks/bytesops/bytestochunk.ipynb)
 
 ## ByteArray
 
