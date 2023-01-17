@@ -243,7 +243,7 @@ conda env create -f config.yml
 - Create a color image: `image = np.zeros((h,w,3), np.uint8)`
 - Read/Write image:
   - [As byte](notebooks/cv/image_as_byte.ipynb)
-  - [As Bytearray](notebooks/cv/image_as bytearray.ipynb)
+  - [As Bytearray](notebooks/cv/image_as_bytearray.ipynb)
   - [As base64](notebooks/cv/image_as_base64.ipynb)
 - Pause to display image or wait for an input: `cv2.waitKey(0)`
 - Save an image: `cv2.imwrite(pathtoimg : str, img : numpy.ndarray)`
@@ -295,6 +295,7 @@ conda env create -f config.yml
 - [Bytes -> Multimedia file (video/audio))](src/bytesops/readme.md)
 - [Check bytes encoding](notebooks/bytearrayops/checkbytesarrayencoding.ipynb)
 - To Bytes: `bytes(<value>)`
+- Get size of bytes object: `import sys;sys.getsizeof(bytesobject)`
 
 ## ByteArray
 
@@ -305,7 +306,8 @@ conda env create -f config.yml
 - [Check bytes array encoding](notebooks/bytearrayops/checkbytesarrayencoding.ipynb)
 - To ByteArray: `bytearray(<value>)`
 
-**Notes:**  
+**Notes:**
+
 ```
 Difference between bytes() and bytearray() is that bytes() returns an object that cannot be modified (immutable), and bytearray() returns an object that can be modified (mutable).
 ```
@@ -347,10 +349,12 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - [Iteration to dict to get keys and values](notebooks/dictionary/dict_iteration.ipynb)
 - Save/load dictionary to/from a file: [saveloaddict.ipynb](notebooks/dictionary/saveloaddict.ipynb)
 - Revert or inverse a dictionary mapping: `inv_map = {v: k for k, v in my_map.items()}`
+- [Copy by value](notebooks/dictionary/dict_copybyvalue.ipynb): `sampledict.copy()`
 
 ### Python Iterables (List, Set,...)
 
 - To identify if any items in the iterables has True/1 values: `any(sample_list) #returns single value True/False`
+- [Zip multiple iterables](notebooks/zipops/zipops.ipynb)
 
 ## [Maths](notebooks/math)
 
@@ -378,25 +382,13 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 
 - The character used by the operating system to separate pathname components: `os.sep`
 - [Iterate through a path to get files/folders of all the subpaths](notebooks/filesystem/filewalk.ipynb)
-- [Readfile](notebooks/filesystem/readfile.ipynb)
-
-  ```
-  open(<path-to-file>, mode)
-  ```
-
-  - `r`: Open for text file for reading text
-  - `w`: Open a text file for writing text
-  - `a`: Open a text file for appending text
-  - [`b`: Open to read/write as bytes](notebooks/cv/image_as_byte.ipynb)
-    Read file has 3 functions
-
-  - `read()` or `read(size)`: read all / size as one string.
-  - `readline()`: read a single line from a text file and return the line as a string.
-  - `readlines()`: read all the lines of the text file into a list of strings.
-
 - Write file: `f.write(str)`
+- print without new line: `print(..., end="")
+- [Flush out print](notebooks/filesystem/stdoutflush.ipynb)
 - Check if path is a folder: `os.path.isdir(<path>)`
 - [Get file size](notebooks/filesystem/getfilesize.ipynb)
+  - `from pathlib import Path; outsize : int = Path(inputfilepath).stat().st_size`
+  - `import os; outsize : int = os.path.getsize(inputfilepath)`
 - Create folder: `os.mkdir(<path>`
 - Create folders recursively: `os.makedirs(<path>)`
 - Expand home directory: `os.path.expanduser('~')`
@@ -412,6 +404,23 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - Deletes a directory and all its contents: `shutil.rmtree()`
 - [Copy a file to another path](notebooks/filesystem/copyfile.ipynb)
 - [Unzip file](notebooks/filesystem/uncompresszip.ipynb)
+- [Readfile](notebooks/filesystem/readfile.ipynb)
+  <details>
+
+  ```
+  open(<path-to-file>, mode)
+  ```
+
+  - `r`: Open for text file for reading text
+  - `w`: Open a text file for writing text
+  - `a`: Open a text file for appending text
+  - [`b`: Open to read/write as bytes](notebooks/cv/image_as_byte.ipynb)
+    Read file has 3 functions
+
+  - `read()` or `read(size)`: read all / size as one string.
+  - `readline()`: read a single line from a text file and return the line as a string.
+  - `readlines()`: read all the lines of the text file into a list of strings.
+  </details>
 
 ## System
 
@@ -427,6 +436,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 
 ## String
 
+- [Generate string with parameters](notebooks/string/paramwithstring.ipynb)
 - [Generate string with templates](notebooks/string/stringtemplate.ipynb)
 - Check if string is empty, len = 0: `if not strvar:`
 - Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
@@ -529,12 +539,17 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ## Performance
 
 - [Dataframe - column-major, Numpy - row-major](notebooks/performance/df_numpy_major.ipynb)
-  
+
+### Multiprocessing
+
+- [Create workers according to number of cores](src/multiprocess_ops/readme.md)
+
 ## Time
+
 - [Measure time prior and after](notebooks/performance/count_time.ipynb)
 - Add delay to execution of the program by pausing: `import time;time.sleep(seconds)`
   - Note: stops the execution of current thread only
-  
+
 ## Logging
 
 ### Built-In Logging
@@ -567,6 +582,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - [dataclass hello world](notebooks/decorator/dataclass_helloworld.ipynb)
 - [Abstract class with ABCMeta and @abstractmethod](notebooks/decorator/abstractmethod.py)
 - [Property Setting](notebooks/decorator/property.ipynb)
+- [@property to prevent setting value](notebooks/decorator/property_notsetvalue.ipynb)
   1. Native Verbose Method
   2. Using built-in property function
   3. Using decorator
@@ -628,22 +644,27 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ## Cloud
 
 ### AWS
+
 - [Postgres connect to AWS RDS](notebooks/postgresql-python/notebooks/aws-rds)
 
 #### [S3: Scalable Storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/tutorials.html)
 
 - [List buckets in AWS S3](notebooks/cloud/aws/getbucketlist.ipynb)
 - [Upload file with function upload_file or upload_fileobj](notebooks/cloud/aws/upload2bucket.ipynb)
-    - [Upload video file with timer](notebooks/cloud/aws/uploadvideo2bucket.ipynb)
+  - [Upload video file](notebooks/cloud/aws/uploadvideo2bucket.ipynb)
+  - [Upload video file with progress counter](notebooks/cloud/aws/uploadvideo2bucketwithprogress.ipynb)
+- [Upload multipart](notebooks/cloud/aws/uploadmultipart.ipynb)
+- [Upload multipart with multiple workers](src/cloud/aws/uploadmultipart_withworkers.py)
+- [Get object from S3](notebooks/cloud/aws/getobject.ipynb)
 
 **Note:**
 
 - **What is a bucket in S3**
-  <details> 
-  
-  A bucket is a container for objects stored in Amazon S3 which can contains files and folders. 
+  <details>
+
+  A bucket is a container for objects stored in Amazon S3 which can contains files and folders.
   You can store any number of objects in a bucket and can have up to 100 buckets in your account
-   
+
   </details>
 
 ## Medium Posts
