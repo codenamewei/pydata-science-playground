@@ -434,6 +434,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - [Generate unique identifer UUID](notebooks/uuid/uuidops.ipynb)
 - [Validate if a string is UUID](notebooks/uuid/uuidops.ipynb)
 - [Compare if both UUID are the same](notebooks/uuid/uuidops.ipynb)
+- UUID to string: `str(uuidparam)`
 
 ## String
 
