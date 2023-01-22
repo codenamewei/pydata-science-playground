@@ -581,7 +581,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Static Method](notebooks/decorator/staticmethod.py)
 - dataclass
   - [dataclass hello world](notebooks/decorator/dataclass_helloworld.ipynb)
-- [Abstract class with ABCMeta and @abstractmethod](notebooks/decorator/abstractmethod.py)
+- [Abstract class with ABCMeta and @abstractmethod](notebooks/decorator/abstractmethod.ipynb)
 - [Property Setting](notebooks/decorator/property.ipynb)
 - [@property to prevent setting value](notebooks/decorator/property_notsetvalue.ipynb)
   1. Native Verbose Method
