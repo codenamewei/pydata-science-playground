@@ -460,6 +460,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - Replace string/character with intended string/character: `strout = strin.replace(" ", "_")`
 - [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
 - [Generate random string](https://pynative.com/python-generate-random-string/)
+- List to string: ` <separators>.join(list) example: ', '.join(listbuffer)`
 
 ## [Regular Expression (Regex)](notebooks/regex)
 
