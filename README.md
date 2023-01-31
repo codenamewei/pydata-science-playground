@@ -651,7 +651,8 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 #### [S3: Scalable Storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/tutorials.html)
 
-- [List buckets in AWS S3](notebooks/cloud/aws/getbucketlist.ipynb)
+- [List name of buckets](notebooks/cloud/aws/getbucketlist.ipynb)
+- [List objects in a specific bucket](notebooks/cloud/aws/getobjectinbucketlist.ipynb)
 - [Upload file with function upload_file or upload_fileobj](notebooks/cloud/aws/upload2bucket.ipynb)
   - [Upload video file](notebooks/cloud/aws/uploadvideo2bucket.ipynb)
   - [Upload video file with progress counter](notebooks/cloud/aws/uploadvideo2bucketwithprogress.ipynb)
