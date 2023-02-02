@@ -483,6 +483,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - [Disjunction](notebooks/regex/disjunction.ipynb)
   - To match a series of patterns with parenthesis.
 - [Extract hashtags](notebooks/regex/filterhashtag.ipynb)
+- [Extract numbers from string](notebooks/regex/extractnumbersfromstr.ipynb)
 
 ## Collections Module
 
