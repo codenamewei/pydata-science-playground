@@ -434,6 +434,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - [Generate unique identifer UUID](notebooks/uuid/uuidops.ipynb)
 - [Validate if a string is UUID](notebooks/uuid/uuidops.ipynb)
 - [Compare if both UUID are the same](notebooks/uuid/uuidops.ipynb)
+- UUID to string: `str(uuidparam)`
 
 ## String
 
@@ -459,6 +460,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - Replace string/character with intended string/character: `strout = strin.replace(" ", "_")`
 - [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
 - [Generate random string](https://pynative.com/python-generate-random-string/)
+- List to string: ` <separators>.join(list) example: ', '.join(listbuffer)`
 
 ## [Regular Expression (Regex)](notebooks/regex)
 
@@ -581,7 +583,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Static Method](notebooks/decorator/staticmethod.py)
 - dataclass
   - [dataclass hello world](notebooks/decorator/dataclass_helloworld.ipynb)
-- [Abstract class with ABCMeta and @abstractmethod](notebooks/decorator/abstractmethod.py)
+- [Abstract class with ABCMeta and @abstractmethod](notebooks/decorator/abstractmethod.ipynb)
 - [Property Setting](notebooks/decorator/property.ipynb)
 - [@property to prevent setting value](notebooks/decorator/property_notsetvalue.ipynb)
   1. Native Verbose Method
@@ -650,7 +652,8 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 #### [S3: Scalable Storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/tutorials.html)
 
-- [List buckets in AWS S3](notebooks/cloud/aws/getbucketlist.ipynb)
+- [List name of buckets](notebooks/cloud/aws/getbucketlist.ipynb)
+- [List objects in a specific bucket](notebooks/cloud/aws/getobjectinbucketlist.ipynb)
 - [Upload file with function upload_file or upload_fileobj](notebooks/cloud/aws/upload2bucket.ipynb)
   - [Upload video file](notebooks/cloud/aws/uploadvideo2bucket.ipynb)
   - [Upload video file with progress counter](notebooks/cloud/aws/uploadvideo2bucketwithprogress.ipynb)
