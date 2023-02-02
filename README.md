@@ -338,7 +338,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - Iteration of list with index: `for index, value in enumerate(inlist):`
 - Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]```
 - [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
-- Get maximum value in a list of integers: `max(samplelist)`
+- Get maximum value in a list of numbers (even strings): `max(samplelist)`
 
 ### [Dictionary](notebooks/dictionary)
 
