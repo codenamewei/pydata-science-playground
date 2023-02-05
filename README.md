@@ -393,6 +393,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
   - `import os; outsize : int = os.path.getsize(inputfilepath)`
 - Create folder: `os.mkdir(<path>`
 - Create folders recursively: `os.makedirs(<path>)`
+- Get folder path out of given path with filename: `os.path.dirname(<path-to-file>)`
 - Expand home directory: `os.path.expanduser('~')`
 - Get current running script path: `os.getcwd()`
 - Get the list of all files and directories in the specified directory (does not expand to items in the child folder: `os.listdir(<path>)`
