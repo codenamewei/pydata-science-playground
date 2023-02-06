@@ -621,6 +621,9 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [FileNotFoundError: when a file or directory is requested but doesn’t exist](notebooks/error_handling/error_types/filenotfounderror.ipynb)
 - [NotImplementedError: commonly raised when an abstract method is not implemented in a derived class](notebooks/error_handling/error_types/notimplementederror.ipynb)
 
+### Others
+- [Kill after x amount of time if process not complete](src/error_handling/timeout)
+
 ## Concurrency
 
 ### Built-in Concurrency Library: Asyncio
