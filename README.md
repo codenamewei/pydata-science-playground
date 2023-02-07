@@ -275,6 +275,7 @@ conda env create -f config.yml
 - [Read in stream from camera](src/cv/save2video.py)
 - [video arrays (in opencv) -> bytes -> np.array -> video arrays (in opencv)](src/cv/video2bytes2nparray.py)
 - [Merge audio with video](src/cv/savevideowithaudio)
+- [Split audio from video](src/cv/splitaudiofromvideo.py)
 
 #### Other
 
@@ -400,6 +401,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - Get the list of all files and directories in the specified directory (does not expand to items in the child folder: `os.listdir(<path>)`
 - Get current file path (getcwd will point to the running script(main) path, this will get individually py path): `os.path.dirname(os.path.abspath(__file__))`
 - Get filename from path: `os.path.basename(configfilepath)`
+- Split extension from rest of path(Including .): `filename, ext = os.path.splitext(path)`
 - Append certain path: `sys.path.append(<path>)`
 - Check if path exist: `os.path.exists(<path>)`
 - Remove a file: `os.remove()`
