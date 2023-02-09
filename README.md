@@ -274,9 +274,12 @@ conda env create -f config.yml
 - [Read in video stream from a file](src/cv/readvideostream.py)
 - [Read in stream from camera](src/cv/save2video.py)
 - [video arrays (in opencv) -> bytes -> np.array -> video arrays (in opencv)](src/cv/video2bytes2nparray.py)
+- [Merge audio with video](src/cv/savevideowithaudio)
+- [Split audio from video](src/cv/splitaudiofromvideo.py)
 
 #### Other
 
+- [Overlay image](src/cv/replaceroi.py)
 - Resizing frame: `outframe = cv2.resize(frame, (w, h))`
 - [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
 - Color to gray image: `gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`
@@ -338,6 +341,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - Iteration of list with index: `for index, value in enumerate(inlist):`
 - Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]```
 - [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
+- Get maximum value in a list of numbers (even strings): `max(samplelist)`
 
 ### [Dictionary](notebooks/dictionary)
 
@@ -392,11 +396,13 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
   - `import os; outsize : int = os.path.getsize(inputfilepath)`
 - Create folder: `os.mkdir(<path>`
 - Create folders recursively: `os.makedirs(<path>)`
+- Get folder path out of given path with filename: `os.path.dirname(<path-to-file>)`
 - Expand home directory: `os.path.expanduser('~')`
 - Get current running script path: `os.getcwd()`
 - Get the list of all files and directories in the specified directory (does not expand to items in the child folder: `os.listdir(<path>)`
 - Get current file path (getcwd will point to the running script(main) path, this will get individually py path): `os.path.dirname(os.path.abspath(__file__))`
 - Get filename from path: `os.path.basename(configfilepath)`
+- Split extension from rest of path(Including .): `filename, ext = os.path.splitext(path)`
 - Append certain path: `sys.path.append(<path>)`
 - Check if path exist: `os.path.exists(<path>)`
 - Remove a file: `os.remove()`
@@ -446,6 +452,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - Capitalize a string: `strvar.capitalize()`
 - Uppercase a string: `strvar.upper()`
 - Lowercase a string: `strvar.lower()`
+- Get substring from a string: `strvar[<begin-index>:<end-index>]` / `strvar[<begin-index>:]` / `strvar[:<end-index>]`
 - Remove white spaces in the beginning and end: `strvar.strip()`
 - Swap existing upper and lower case: `strvar.swapcase()`
 - Capitalize every first letter of a word: `strvar.title()`
@@ -482,6 +489,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - [Disjunction](notebooks/regex/disjunction.ipynb)
   - To match a series of patterns with parenthesis.
 - [Extract hashtags](notebooks/regex/filterhashtag.ipynb)
+- [Extract numbers from string](notebooks/regex/extractnumbersfromstr.ipynb)
 
 ## Collections Module
 
@@ -617,6 +625,10 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [FileNotFoundError: when a file or directory is requested but doesn’t exist](notebooks/error_handling/error_types/filenotfounderror.ipynb)
 - [NotImplementedError: commonly raised when an abstract method is not implemented in a derived class](notebooks/error_handling/error_types/notimplementederror.ipynb)
 
+### Others
+
+- [Kill after x amount of time if process not complete](src/error_handling/timeout)
+
 ## Concurrency
 
 ### Built-in Concurrency Library: Asyncio
@@ -640,9 +652,14 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 ### FastAPI
 
+- [Form Data](src/rest/fastapi/formdataexample)
 - [Send image via UploadFile](notebooks/postgresql-python/notebooks/image2postgres/server.py)
 - [Client upload file to FastAPI Uploadfile and get response](notebooks/rest/fastapi/clientsendfile.ipynb)
 - [Return content from url and write image](notebooks/postgresql-python/notebooks/image2postgres/client.py)
+
+### Requests
+
+- [Get data from url](notebooks/rest/requests/download_from_url.ipynb)
 
 ## Cloud
 
