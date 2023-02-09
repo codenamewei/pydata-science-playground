@@ -279,6 +279,7 @@ conda env create -f config.yml
 
 #### Other
 
+- [Overlay image](src/cv/replaceroi.py)
 - Resizing frame: `outframe = cv2.resize(frame, (w, h))`
 - [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
 - Color to gray image: `gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`
@@ -625,6 +626,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [NotImplementedError: commonly raised when an abstract method is not implemented in a derived class](notebooks/error_handling/error_types/notimplementederror.ipynb)
 
 ### Others
+
 - [Kill after x amount of time if process not complete](src/error_handling/timeout)
 
 ## Concurrency
@@ -654,6 +656,10 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Send image via UploadFile](notebooks/postgresql-python/notebooks/image2postgres/server.py)
 - [Client upload file to FastAPI Uploadfile and get response](notebooks/rest/fastapi/clientsendfile.ipynb)
 - [Return content from url and write image](notebooks/postgresql-python/notebooks/image2postgres/client.py)
+
+### Requests
+
+- [Get data from url](notebooks/rest/requests/download_from_url.ipynb)
 
 ## Cloud
 

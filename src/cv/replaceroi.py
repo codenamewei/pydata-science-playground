@@ -26,7 +26,7 @@ if __name__ == "__main__":
     mask = shapes.astype(bool)
 
     # option first
-    background[mask] = cv2.addWeighted(shapes, alpha, shapes, 1 - alpha, 0)[mask]
+    background[mask] = shapes[mask]
     cv2.imwrite('combined.png', background)
     
     print("complete")
