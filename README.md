@@ -275,6 +275,7 @@ conda env create -f config.yml
 - [Read in stream from camera](src/cv/save2video.py)
 - [video arrays (in opencv) -> bytes -> np.array -> video arrays (in opencv)](src/cv/video2bytes2nparray.py)
 - [Merge audio with video](src/cv/savevideowithaudio)
+- [Check if video comes with audio](notebooks/cv/check_video_with_audio.ipynb)
 - [Split audio from video](src/cv/splitaudiofromvideo.py)
 
 #### Other
