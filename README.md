@@ -616,15 +616,24 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ## Error Handling
 
 - [Native Catching Exception](notebooks/error_handling/catcherror.ipynb)
+- [Traceback](notebooks/error_handling/traceback.ipynb)
 
 ### [Types of Built-In Exceptions](https://docs.python.org/3/library/exceptions.html)
 
 - [ValueError: argument of the correct data type but an inappropriate value](notebooks/error_handling/error_types/valueerror.ipynb)
 - [TypeError: the data type of an object is incorrect](notebooks/error_handling/error_types/typeerror.ipynb)
+- [IndexError: Raised when a sequence subscript is out of range](notebooks/error_handling/error_types/indexerror.ipynb)
+- [KeyError: When key cannot be found](notebooks/error_handling/keyerror.ipynb)
 - [ZeroDivisionError: when a number is divided by zero](notebooks/error_handling/error_types/zerodivisionerror.ipynb)
 - [OSError: error from an os-specific function](notebooks/error_handling/error_types/oserror.ipynb)
 - [FileNotFoundError: when a file or directory is requested but doesn’t exist](notebooks/error_handling/error_types/filenotfounderror.ipynb)
 - [NotImplementedError: commonly raised when an abstract method is not implemented in a derived class](notebooks/error_handling/error_types/notimplementederror.ipynb)
+- [NameError: reference to some name (variable, function, class) that hasn’t been defined](notebooks/error_handling/error_types/nameerror.ipynb)
+- [AttributeError: reference to certain attribute in a class which does not exist](notebooks/error_handling/error_types/attributeerror.ipynb)
+- [ImportError: Trouble loading a module](notebooks/error_handling/metadata/importerror.jpg)
+    - Submodule
+        - ModuleNotFoundError: the module trying to import can’t be found or try to import something from a module that doesn’t exist in the module
+
 
 ### Others
 
