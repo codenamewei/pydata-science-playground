@@ -617,7 +617,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ## Error Handling
 
 - [Native Catching Exception](notebooks/error_handling/catcherror.ipynb)
-- [Traceback](notebooks/error_handling/traceback.ipynb)
+- [Traceback](notebooks/error_handling/traceback)
 - [Suppress and log error](notebooks/error_handling/suppress_error)
 
 ### [Types of Built-In Exceptions](https://docs.python.org/3/library/exceptions.html)
