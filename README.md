@@ -575,6 +575,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Advanced configuration log to stdout](notebooks/logging/builtinlogging/log2stdout.ipynb)
 - [Advanced configuration log to file](notebooks/logging/builtinlogging/log2file.ipynb)
 - Log with variables: `logging.error(f"Keys {a} is missing")`
+- [Log exception](notebooks/error_handling/suppress_error/urlcaller_logger.py)
 
 ### Logging
 
@@ -617,6 +618,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 - [Native Catching Exception](notebooks/error_handling/catcherror.ipynb)
 - [Traceback](notebooks/error_handling/traceback.ipynb)
+- [Suppress and log error](notebooks/error_handling/suppress_error)
 
 ### [Types of Built-In Exceptions](https://docs.python.org/3/library/exceptions.html)
 
@@ -631,9 +633,8 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [NameError: reference to some name (variable, function, class) that hasn’t been defined](notebooks/error_handling/error_types/nameerror.ipynb)
 - [AttributeError: reference to certain attribute in a class which does not exist](notebooks/error_handling/error_types/attributeerror.ipynb)
 - [ImportError: Trouble loading a module](notebooks/error_handling/metadata/importerror.jpg)
-    - Submodule
-        - ModuleNotFoundError: the module trying to import can’t be found or try to import something from a module that doesn’t exist in the module
-
+  - Submodule
+    - ModuleNotFoundError: the module trying to import can’t be found or try to import something from a module that doesn’t exist in the module
 
 ### Others
 
