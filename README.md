@@ -330,6 +330,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - List with range of values: `list(range(...))`
 - Split str to list of str: `arr.split(" ")`
 - Check for empty list: `if not mylist:`
+- Find if a value in a list: `if value in mylist:` / `if value not in mylist:`
 - Sort an array in place: `arr.sort()` / Return a sorted array: `sorted(arr)`
 - Get index of a value: `arr.index(value)`
 - Add one more value to existing list: `arr.append(value)`
