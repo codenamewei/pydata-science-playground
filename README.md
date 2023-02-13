@@ -390,7 +390,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - The character used by the operating system to separate pathname components: `os.sep`
 - [Iterate through a path to get files/folders of all the subpaths](notebooks/filesystem/filewalk.ipynb)
 - Write file: `f.write(str)`
-- print without new line: `print(..., end="")
+- print without new line: `print(..., end="")`
 - [Flush out print](notebooks/filesystem/stdoutflush.ipynb)
 - Check if path is a folder: `os.path.isdir(<path>)`
 - [Get file size](notebooks/filesystem/getfilesize.ipynb)
@@ -427,8 +427,10 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
     Read file has 3 functions
 
   - `read()` or `read(size)`: read all / size as one string.
-  - `readline()`: read a single line from a text file and return the line as a string.
+  - `readline()`: read **a single line** from a text file and return the line as a string.
   - `readlines()`: read all the lines of the text file into a list of strings.
+  - `write(<param> : str)`: write in param. Need to explicitly add `\n` to split line.
+  - `.close()`: close file iterator
   </details>
 
 ## System
