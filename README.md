@@ -545,7 +545,11 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 ## ConfigParser
 
-- Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
+- [Read from config file:](notebooks/configparser/testconfig.ipynb)
+
+
+## XML Parser
+- [Read from xml file:](notebooks/xmlparser)
 
 ## URL
 
