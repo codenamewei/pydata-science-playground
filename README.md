@@ -390,6 +390,8 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - [Iterate through a path to get files/folders of all the subpaths](notebooks/filesystem/filewalk.ipynb)
 - Write file: `f.write(str)`
 - print without new line: `print(..., end="")
+- Get environment path (second param is optional)
+  - `import os; os.getenv(<PATH_NAME> : str, <alternative-return-value>: str)`
 - [Flush out print](notebooks/filesystem/stdoutflush.ipynb)
 - Check if path is a folder: `os.path.isdir(<path>)`
 - [Get file size](notebooks/filesystem/getfilesize.ipynb)
