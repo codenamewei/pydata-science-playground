@@ -647,6 +647,11 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 - [Kill after x amount of time if process not complete](src/error_handling/timeout)
 
+## Networking
+  
+- Get IP from domain name: `import socket;socker.gethostbyname("www.google.com");"
+  
+
 ## Concurrency
 
 ### Built-in Concurrency Library: Asyncio
