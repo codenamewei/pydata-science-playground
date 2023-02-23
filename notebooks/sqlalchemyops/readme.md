@@ -23,9 +23,14 @@
     Text
     Time
    ```
-
+- if commit() is not called, the effect of any data manipulation will be lost.
+  Alternatively, set `autocommit` mode
+- `cursor.rollback()`
+    - It restores the database to last your last COMMIT. You can also use it with SAVEPOINT command to jump to a savepoint in a ongoing transaction.
+    - works when autocommit != True
 
 ### References
-- [SQL API](https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_core_connecting_to_database.htm)
-- https://towardsdatascience.com/here-is-the-reason-why-sqlalchemy-is-so-popular-43b489d3fb00
 - https://dev.to/spaceofmiah/sqlalchemy-hello-world-3aif
+- https://www.geeksforgeeks.org/how-to-update-sqlalchemy-row-entry/
+- https://docs-sqlalchemy.readthedocs.io/ko/latest/core/connections.html
+- https://4geeks.com/lesson/everything-you-need-to-start-using-sqlalchemy
