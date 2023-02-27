@@ -284,6 +284,7 @@ conda env create -f config.yml
 - Resizing frame: `outframe = cv2.resize(frame, (w, h))`
 - [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
 - Color to gray image: `gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`
+- [Add channel to image](https://stackoverflow.com/questions/32290096/python-opencv-add-alpha-channel-to-rgb-image)
 
 ## [Audio](notebooks/audio)
 
