@@ -452,9 +452,10 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - UUID to string: `str(uuidparam)`
 
 ## String
-
-- [Generate string with parameters](notebooks/string/paramwithstring.ipynb)
-- [Generate string with templates](notebooks/string/stringtemplate.ipynb)
+- Generate string with parameter
+  - [Using template literal](notebooks/string/paramwithstring.ipynb): `print(f'Completed part {id}')
+  - [Generate string with templates](notebooks/string/stringtemplate.ipynb)
+  - String formatting method: `print('Completed part {part_id}'.format(part_id))`
 - Check if string is empty, len = 0: `if not strvar:`
 - Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
 - Check file extension: [notebooks/string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
