@@ -30,7 +30,7 @@
     - works when autocommit != True
 
 ### References
+- **https://docs-sqlalchemy.readthedocs.io/ko/latest/core/connections.html**
 - https://dev.to/spaceofmiah/sqlalchemy-hello-world-3aif
 - https://www.geeksforgeeks.org/how-to-update-sqlalchemy-row-entry/
-- https://docs-sqlalchemy.readthedocs.io/ko/latest/core/connections.html
 - https://4geeks.com/lesson/everything-you-need-to-start-using-sqlalchemy
