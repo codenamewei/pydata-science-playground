@@ -245,6 +245,7 @@ conda env create -f config.yml
   - [As byte](notebooks/cv/image_as_byte.ipynb)
   - [As Bytearray](notebooks/cv/image_as_bytearray.ipynb)
   - [As base64](notebooks/cv/image_as_base64.ipynb)
+- [Read image from url](notebooks/cv/read_image_from_url.ipynb)
 - Pause to display image or wait for an input: `cv2.waitKey(0)`
 - Save an image: `cv2.imwrite(pathtoimg : str, img : numpy.ndarray)`
 - Show an image in window: `cv2.imshow(windowname : str, frame : np.array)`
@@ -284,6 +285,7 @@ conda env create -f config.yml
 - Resizing frame: `outframe = cv2.resize(frame, (w, h))`
 - [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
 - Color to gray image: `gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`
+- [Remove background](notebooks/cv/remove_bg.ipynb)
 - [Add channel to image](https://stackoverflow.com/questions/32290096/python-opencv-add-alpha-channel-to-rgb-image)
 
 ## [Audio](notebooks/audio)
@@ -331,6 +333,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - List with range of values: `list(range(...))`
 - Split str to list of str: `arr.split(" ")`
 - Check for empty list: `if not mylist:`
+- Find if a value in a list: `if value in mylist:` / `if value not in mylist:`
 - Sort an array in place: `arr.sort()` / Return a sorted array: `sorted(arr)`
 - Get index of a value: `arr.index(value)`
 - Add one more value to existing list: `arr.append(value)`
@@ -392,7 +395,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - Write file: `f.write(str)`
 - print without new line: `print(..., end="")
 - Get environment path (second param is optional)
-  - `import os; os.getenv(<PATH_NAME> : str, <alternative-return-value>: str)`
+  - `import os; os.getenv(<PATH_NAME> : str, <alternative-return-value>: str)
 - [Flush out print](notebooks/filesystem/stdoutflush.ipynb)
 - Check if path is a folder: `os.path.isdir(<path>)`
 - [Get file size](notebooks/filesystem/getfilesize.ipynb)
@@ -429,8 +432,10 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
     Read file has 3 functions
 
   - `read()` or `read(size)`: read all / size as one string.
-  - `readline()`: read a single line from a text file and return the line as a string.
+  - `readline()`: read **a single line** from a text file and return the line as a string.
   - `readlines()`: read all the lines of the text file into a list of strings.
+  - `write(<param> : str)`: write in param. Need to explicitly add `\n` to split line.
+  - `.close()`: close file iterator
   </details>
 
 ## System
@@ -511,6 +516,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
   - [dataclass 1](notebooks/class/dataclass/dataclass_helloworld_1.ipynb)
   - [dataclass 2](notebooks/class/dataclass/dataclass_helloworld_2.ipynb)
 - [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
+- [Serialize class object](notebooks/class/classobj.ipynb)
 
 ### Magic Method
 
@@ -545,7 +551,11 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 ## ConfigParser
 
-- Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
+- [Read from config file:](notebooks/configparser/testconfig.ipynb)
+
+
+## XML Parser
+- [Read from xml file:](notebooks/xmlparser)
 
 ## URL
 
@@ -642,6 +652,11 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ### Others
 
 - [Kill after x amount of time if process not complete](src/error_handling/timeout)
+
+## Networking
+  
+- Get IP from domain name: `import socket;socker.gethostbyname("www.google.com");"
+  
 
 ## Concurrency
 
