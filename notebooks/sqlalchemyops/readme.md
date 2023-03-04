@@ -23,14 +23,27 @@
     Text
     Time
    ```
-- if commit() is not called, the effect of any data manipulation will be lost.
-  Alternatively, set `autocommit` mode
-- `cursor.rollback()`
-    - It restores the database to last your last COMMIT. You can also use it with SAVEPOINT command to jump to a savepoint in a ongoing transaction.
-    - works when autocommit != True
+- There's a need to install database driver for the database to connect 
+  `db+driver://user:password@host/dbname`
+  Example:
+  ```
+  mysql+pymysql://<username>:<password>@<host>/<dbname>
+  postgresql+psycopg://{db_username}:{db_password}@{db_host}:{db_port}
+  ```
+- SQLAlchemy is presented as two distinct APIs.
+  - **Core**
+  - **ORM** (ORM building on top of Core for **object relational mapping** capabilities
+    - This includes
+        - additional configuration layer to map user-defined Python classes to database tables
+        - object persistence mechanism as **Session**
+        - also extends Core to perform queries
+- What is Session?
+  ```
+  ```
+
 
 ### References
-- **https://docs-sqlalchemy.readthedocs.io/ko/latest/core/connections.html**
+- **[SQL Alchemy Tutorial](https://docs.sqlalchemy.org/en/20/)**
 - https://dev.to/spaceofmiah/sqlalchemy-hello-world-3aif
 - https://www.geeksforgeeks.org/how-to-update-sqlalchemy-row-entry/
 - https://4geeks.com/lesson/everything-you-need-to-start-using-sqlalchemy
