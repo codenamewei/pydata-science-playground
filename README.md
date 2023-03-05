@@ -452,10 +452,12 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - UUID to string: `str(uuidparam)`
 
 ## String
+
 - Generate string with parameter
   - [Using template literal](notebooks/string/paramwithstring.ipynb): `print(f'Completed part {id}')
   - [Generate string with templates](notebooks/string/stringtemplate.ipynb)
   - String formatting method: `print('Completed part {part_id}'.format(part_id))`
+  - create string in the raw format `varname="world"; print(f"Hello {varname!r}")
 - Check if string is empty, len = 0: `if not strvar:`
 - Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
 - Check file extension: [notebooks/string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
@@ -526,6 +528,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - `__eq__` compare the instances of the class: `def __eq__(self, other):`
   - [Define **eq** function in class 1](notebooks/class/eq_function.ipynb)
   - [Define **eq** function in class 2](notebooks/class/dataclass_helloworld_1.ipynb)
+- [`__repr__`: represent a class's objects as a string](notebooks/class/magic_repr.ipynb)
 
 ### Inheritance
 
