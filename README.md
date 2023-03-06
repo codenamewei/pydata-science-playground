@@ -518,6 +518,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - Define dataclass
   - [dataclass 1](notebooks/class/dataclass/dataclass_helloworld_1.ipynb)
   - [dataclass 2](notebooks/class/dataclass/dataclass_helloworld_2.ipynb)
+    - Magic methods `__repr__` and `__dict__` are created when define class with dataclass
 - [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
 - [Serialize class object](notebooks/class/classobj.ipynb)
 
