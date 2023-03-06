@@ -1,3 +1,16 @@
+### Installation
+- Install with```pip install sqlalchemy``` 
+
+- There's a need to install database driver for the database to connect 
+  `db+driver://user:password@host/dbname`
+  Example:
+  ```
+  mysql+pymysql://<username>:<password>@<host>/<dbname>
+  postgresql+psycopg://{db_username}:{db_password}@{db_host}:{db_port}
+  ```
+  
+### Overview
+
 - For Object Relational Mapping, use SQLAlchemy to connect to database
   ```
     Firebird
@@ -8,7 +21,6 @@
     SQLite
     Sybase
   ```
-- Install ```pip install sqlalchemy``` 
 - SQLAlchemy matches Python data to the best possible generic column data types defined in it. Some of the generic data types are −
   ```
     BigInteger
@@ -23,16 +35,10 @@
     Text
     Time
    ```
-- There's a need to install database driver for the database to connect 
-  `db+driver://user:password@host/dbname`
-  Example:
-  ```
-  mysql+pymysql://<username>:<password>@<host>/<dbname>
-  postgresql+psycopg://{db_username}:{db_password}@{db_host}:{db_port}
-  ```
+
 - SQLAlchemy is presented as two distinct APIs.
   - **Core**
-  - **ORM** (ORM building on top of Core for **object relational mapping** capabilities
+  - **ORM** (ORM building on top of Core for **object relational mapping** capabilities)
     - This includes
         - additional configuration layer to map user-defined Python classes to database tables
         - object persistence mechanism as **Session**
@@ -50,9 +56,14 @@
   Establish Connectivitity. This should be a global param declare only one time
   ```
 - **Session**
-  ```
-   One of the core concepts in SQLAlchemy is the Session . A Session establishes and maintains all conversations between your program and the databases. It represents an intermediary zone for all the Python model objects you have loaded in it
-  ```
+    - One of the core concepts in SQLAlchemy is the Session . A Session establishes and maintains all conversations between your program and the databases. It represents an intermediary zone for all the Python model objects you have loaded in it
+    - When using the ORM, the Session object is responsible for constructing Insert constructs and emitting them as INSERT statements within the ongoing transaction. The way we instruct the Session to do so is by adding object entries to it; the Session then makes sure these new entries will be emitted to the database when they are needed, using a process known as a flush. 
+  
+- **Metadata**
+     - Having a single MetaData object for an entire application is the most common case
+     - There can be multiple MetaData collections as well; Table objects can refer to Table objects in other collections without restrictions. However, for groups of Table objects that are related to each other, it is in practice much more straightforward to have them set up within a single MetaData collection
+     - Example: metadata hooked to engine to write new tables
+     
 - **Result**
   - `Result.all()`: return a list of all Row objects (iterable)
     - Row object can be access in a few methods
@@ -88,9 +99,6 @@
                     x = dict_row["x"]
                     y = dict_row["y"
               ```
- - **Metadata**
-     - Having a single MetaData object for an entire application is the most common case
-     - There can be multiple MetaData collections as well; Table objects can refer to Table objects in other collections without restrictions. However, for groups of Table objects that are related to each other, it is in practice much more straightforward to have them set up within a single MetaData collection
 - **Table**: database table
 - **Column**: 
     - a column in database table
@@ -121,9 +129,9 @@
              - `id: Mapped[int] = mapped_column(primary_key=True)`
              - `user_id= mapped_column(ForeignKey("user_account.id"))` (Typing annotation can choose to be omitted because its declared elsewhere)
              - `email_addresss: Mapped[str]`: Only declare typing annotation when there are no further info to add
-- **Data Definition Language (DDL) 
+- **Data Definition Language (DDL)**
     - An acronym for Data Definition Language. DDL is the subset of SQL that relational databases use to configure tables, constraints, and other permanent objects within a database schema. SQLAlchemy provides a rich API for constructing and emitting DDL expressions.
-
+    - Lament terms, DDL is the command to talk to database instead of native SQL query
 
 ### More to read
 - [Table Configuration with Declarative](https://docs.sqlalchemy.org/en/20/orm/declarative_tables.html#orm-declarative-mapped-column)
