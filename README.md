@@ -528,7 +528,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - `__eq__` compare the instances of the class: `def __eq__(self, other):`
   - [Define **eq** function in class 1](notebooks/class/eq_function.ipynb)
   - [Define **eq** function in class 2](notebooks/class/dataclass_helloworld_1.ipynb)
-- [`__repr__`: represent a class's objects as a string](notebooks/class/magic_repr.ipynb)
+- [`__repr__`: represent a class's objects as a string. Call object with `repr(obj)`](notebooks/class/magic_repr.ipynb)
 
 ### Inheritance
 
