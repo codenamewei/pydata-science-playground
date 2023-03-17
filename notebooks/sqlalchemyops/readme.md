@@ -1,3 +1,7 @@
+Use ORM and Session as advised
+
+<img src="medata/workflow.png" width="800">
+
 ### Installation
 - Install with```pip install sqlalchemy``` 
 
