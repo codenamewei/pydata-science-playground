@@ -662,12 +662,15 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   
 - Get IP from domain name: `import socket;socker.gethostbyname("www.google.com");"
   
-
 ## Concurrency
 
 ### Built-in Concurrency Library: Asyncio
 
 - [Simple example with asyncio](notebooks/concurrency/asyncio/asyncio_wait.py)
+
+## Hashing 
+ 
+- [Password hashing with library bcrypt - saltround)(notebooks/hashing/bcrypt_password_hashing.ipynb)
 
 ## Web
 
