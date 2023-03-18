@@ -39,7 +39,7 @@ Use ORM and Session as advised
     Text
     Time
    ```
-
+   - [Postgresql data types](https://docs.sqlalchemy.org/en/20/dialects/postgresql.html#postgresql-data-types)
 - SQLAlchemy is presented as two distinct APIs.
   - **Core**
   - **ORM** (ORM building on top of Core for **object relational mapping** capabilities)
