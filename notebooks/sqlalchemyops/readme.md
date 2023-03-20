@@ -1,10 +1,7 @@
-Use ORM and Session as advised
-```
-For an introduction to writing SQL for ORM objects in the 2.0 style, start with the SQLAlchemy Unified Tutorial. Additional reference for 2.0 style querying is at ORM Querying Guide.
+## **[Important]** Use ORM and Session as advised
 
-- [SQLAlchemy Unified Tutorial](https://docs.sqlalchemy.org/en/20/tutorial/index.html#unified-tutorial)
-- [ORM Querying Guide]()
-```
+For an introduction to writing SQL for ORM objects in the 2.0 style, start with the [SQLAlchemy Unified Tutorial](https://docs.sqlalchemy.org/en/20/tutorial/index.html#unified-tutorial)
+
 <img src="medata/workflow.png" width="800">
 
 ### Installation
