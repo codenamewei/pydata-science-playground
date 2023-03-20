@@ -453,8 +453,11 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 
 ## String
 
-- [Generate string with parameters](notebooks/string/paramwithstring.ipynb)
-- [Generate string with templates](notebooks/string/stringtemplate.ipynb)
+- Generate string with parameter
+  - [Using template literal](notebooks/string/paramwithstring.ipynb): `print(f'Completed part {id}')
+  - [Generate string with templates](notebooks/string/stringtemplate.ipynb)
+  - String formatting method: `print('Completed part {part_id}'.format(part_id))`
+  - create string in the raw format `varname="world"; print(f"Hello {varname!r}")
 - Check if string is empty, len = 0: `if not strvar:`
 - Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
 - Check file extension: [notebooks/string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
@@ -515,6 +518,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - Define dataclass
   - [dataclass 1](notebooks/class/dataclass/dataclass_helloworld_1.ipynb)
   - [dataclass 2](notebooks/class/dataclass/dataclass_helloworld_2.ipynb)
+    - Magic methods `__repr__` and `__dict__` are created when define class with dataclass
 - [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
 - [Serialize class object](notebooks/class/classobj.ipynb)
 
@@ -525,6 +529,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - `__eq__` compare the instances of the class: `def __eq__(self, other):`
   - [Define **eq** function in class 1](notebooks/class/eq_function.ipynb)
   - [Define **eq** function in class 2](notebooks/class/dataclass_helloworld_1.ipynb)
+- [`__repr__`: represent a class's objects as a string. Call object with `repr(obj)`](notebooks/class/magic_repr.ipynb)
 
 ### Inheritance
 
@@ -657,18 +662,23 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   
 - Get IP from domain name: `import socket;socker.gethostbyname("www.google.com");"
   
-
 ## Concurrency
 
 ### Built-in Concurrency Library: Asyncio
 
 - [Simple example with asyncio](notebooks/concurrency/asyncio/asyncio_wait.py)
 
+## Hashing 
+ 
+- [Password hashing with library bcrypt - saltround)(notebooks/hashing/bcrypt_password_hashing.ipynb)
+
 ## Web
 
 - [Webhook](src/web/webhook)
 
 ## Database
+
+- [Connect to db with sqlalchemy](notebooks/sqlalchemyops/readme.md)
 
 ### [PostgreSQL](notebooks/postgresql-python/readme.md)
 
