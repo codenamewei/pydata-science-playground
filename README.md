@@ -351,6 +351,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 
 - [Define dict with str keys](notebooks/dictionary/definedict.ipynb)
 - Add new key value pair: `dict.update({"key2":"value2"})`
+- Remove key<> value pair by referring to specific key: `del sampledict[samplekey]`
 - Get keys as list: `list(lut.keys())`
 - Get values as list: `list(lut.values())`
 - Create dict from list: `{i: 0 for i in arr}`
