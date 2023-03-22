@@ -322,7 +322,6 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 
 ## Formatting
 
-- datetime: [datetime.ipynb](notebooks/formatting/datetime.ipynb)
 - Format floating value to n decimal: `"%.2f" % floating_var`
 
 ## Data Structure
@@ -450,6 +449,10 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - [Validate if a string is UUID](notebooks/uuid/uuidops.ipynb)
 - [Compare if both UUID are the same](notebooks/uuid/uuidops.ipynb)
 - UUID to string: `str(uuidparam)`
+
+## Datetime
+- datetime: [datetime.ipynb](notebooks/formatting/datetime.ipynb)
+- [find differences of two datetime: use divmod](https://stackoverflow.com/questions/1345827/how-do-i-find-the-time-difference-between-two-datetime-objects-in-python)
 
 ## String
 
