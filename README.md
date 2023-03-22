@@ -528,7 +528,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 
 ### Magic Method
 
-- `__dict__` return all attributes of the obj: `obj.__dict__`
+- [`__dict__` return all attributes of an object(only those defined in __init__): `obj.__dict__`](notebooks/class/values_in_dict.ipynb)
 - `__str__` return string representation of the obj: `def __str__(self):`
 - `__eq__` compare the instances of the class: `def __eq__(self, other):`
   - [Define **eq** function in class 1](notebooks/class/eq_function.ipynb)
