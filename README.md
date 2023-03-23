@@ -12,10 +12,36 @@
 
 # Environment Setup
 
+### Create environment (Only for the first time)
+
 ```
-cd <path-to>/data-science-playground
+cd <path-to>/pyplayground
 conda env create -f config.yml
 ```
+
+### Activate environment
+
+`conda activate pyplayground`
+
+### Install package
+
+#### Install package with pip
+
+`pip install <package-name>`
+
+Example  
+`pip install numpy`
+
+- For more pip commands, check out [pip guidelines document](pip-guidelines.md)
+
+#### Install package with conda
+
+`conda install <package-name>`
+
+Example  
+`conda install numpy`
+
+- For more conda commands, check out [conda guidelines document](conda-guidelines.md)
 
 # Gist
 
