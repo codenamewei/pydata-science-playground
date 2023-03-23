@@ -245,6 +245,7 @@ conda env create -f config.yml
   - [As byte](notebooks/cv/image_as_byte.ipynb)
   - [As Bytearray](notebooks/cv/image_as_bytearray.ipynb)
   - [As base64](notebooks/cv/image_as_base64.ipynb)
+- [Read image from url](notebooks/cv/read_image_from_url.ipynb)
 - Pause to display image or wait for an input: `cv2.waitKey(0)`
 - Save an image: `cv2.imwrite(pathtoimg : str, img : numpy.ndarray)`
 - Show an image in window: `cv2.imshow(windowname : str, frame : np.array)`
@@ -284,6 +285,8 @@ conda env create -f config.yml
 - Resizing frame: `outframe = cv2.resize(frame, (w, h))`
 - [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
 - Color to gray image: `gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`
+- [Remove background](notebooks/cv/remove_bg.ipynb)
+- [Add channel to image](https://stackoverflow.com/questions/32290096/python-opencv-add-alpha-channel-to-rgb-image)
 
 ## [Audio](notebooks/audio)
 
@@ -319,7 +322,6 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 
 ## Formatting
 
-- datetime: [datetime.ipynb](notebooks/formatting/datetime.ipynb)
 - Format floating value to n decimal: `"%.2f" % floating_var`
 
 ## Data Structure
@@ -330,6 +332,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - List with range of values: `list(range(...))`
 - Split str to list of str: `arr.split(" ")`
 - Check for empty list: `if not mylist:`
+- Find if a value in a list: `if value in mylist:` / `if value not in mylist:`
 - Sort an array in place: `arr.sort()` / Return a sorted array: `sorted(arr)`
 - Get index of a value: `arr.index(value)`
 - Add one more value to existing list: `arr.append(value)`
@@ -348,6 +351,7 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 
 - [Define dict with str keys](notebooks/dictionary/definedict.ipynb)
 - Add new key value pair: `dict.update({"key2":"value2"})`
+- [Remove key<> value pair by referring to specific key](notebooks/dictionary/remove_key.ipynb)
 - Get keys as list: `list(lut.keys())`
 - Get values as list: `list(lut.values())`
 - Create dict from list: `{i: 0 for i in arr}`
@@ -390,6 +394,8 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - [Iterate through a path to get files/folders of all the subpaths](notebooks/filesystem/filewalk.ipynb)
 - Write file: `f.write(str)`
 - print without new line: `print(..., end="")
+- Get environment path (second param is optional)
+  - `import os; os.getenv(<PATH_NAME> : str, <alternative-return-value>: str)
 - [Flush out print](notebooks/filesystem/stdoutflush.ipynb)
 - Check if path is a folder: `os.path.isdir(<path>)`
 - [Get file size](notebooks/filesystem/getfilesize.ipynb)
@@ -426,8 +432,10 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
     Read file has 3 functions
 
   - `read()` or `read(size)`: read all / size as one string.
-  - `readline()`: read a single line from a text file and return the line as a string.
+  - `readline()`: read **a single line** from a text file and return the line as a string.
   - `readlines()`: read all the lines of the text file into a list of strings.
+  - `write(<param> : str)`: write in param. Need to explicitly add `\n` to split line.
+  - `.close()`: close file iterator
   </details>
 
 ## System
@@ -443,10 +451,17 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - [Compare if both UUID are the same](notebooks/uuid/uuidops.ipynb)
 - UUID to string: `str(uuidparam)`
 
+## Datetime
+- datetime: [datetime.ipynb](notebooks/formatting/datetime.ipynb)
+- [find differences of two datetime: use divmod](https://stackoverflow.com/questions/1345827/how-do-i-find-the-time-difference-between-two-datetime-objects-in-python)
+
 ## String
 
-- [Generate string with parameters](notebooks/string/paramwithstring.ipynb)
-- [Generate string with templates](notebooks/string/stringtemplate.ipynb)
+- Generate string with parameter
+  - [Using template literal](notebooks/string/paramwithstring.ipynb): `print(f'Completed part {id}')
+  - [Generate string with templates](notebooks/string/stringtemplate.ipynb)
+  - String formatting method: `print('Completed part {part_id}'.format(part_id))`
+  - create string in the raw format `varname="world"; print(f"Hello {varname!r}")
 - Check if string is empty, len = 0: `if not strvar:`
 - Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
 - Check file extension: [notebooks/string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
@@ -507,15 +522,18 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 - Define dataclass
   - [dataclass 1](notebooks/class/dataclass/dataclass_helloworld_1.ipynb)
   - [dataclass 2](notebooks/class/dataclass/dataclass_helloworld_2.ipynb)
+    - Magic methods `__repr__` and `__dict__` are created when define class with dataclass
 - [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
+- [Serialize class object](notebooks/class/classobj.ipynb)
 
 ### Magic Method
 
-- `__dict__` return all attributes of the obj: `obj.__dict__`
+- [`__dict__` return all attributes of an object(only those defined in __init__): `obj.__dict__`](notebooks/class/values_in_dict.ipynb)
 - `__str__` return string representation of the obj: `def __str__(self):`
 - `__eq__` compare the instances of the class: `def __eq__(self, other):`
   - [Define **eq** function in class 1](notebooks/class/eq_function.ipynb)
   - [Define **eq** function in class 2](notebooks/class/dataclass_helloworld_1.ipynb)
+- [`__repr__`: represent a class's objects as a string. Call object with `repr(obj)`](notebooks/class/magic_repr.ipynb)
 
 ### Inheritance
 
@@ -542,7 +560,11 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 ## ConfigParser
 
-- Read from config file: [configparser/testconfig.ipynb](notebooks/configparser/testconfig.ipynb)
+- [Read from config file:](notebooks/configparser/testconfig.ipynb)
+
+
+## XML Parser
+- [Read from xml file:](notebooks/xmlparser)
 
 ## URL
 
@@ -640,17 +662,27 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 - [Kill after x amount of time if process not complete](src/error_handling/timeout)
 
+## Networking
+  
+- Get IP from domain name: `import socket;socker.gethostbyname("www.google.com");"
+  
 ## Concurrency
 
 ### Built-in Concurrency Library: Asyncio
 
 - [Simple example with asyncio](notebooks/concurrency/asyncio/asyncio_wait.py)
 
+## Hashing 
+ 
+- [Password hashing with library bcrypt - saltround)(notebooks/hashing/bcrypt_password_hashing.ipynb)
+
 ## Web
 
 - [Webhook](src/web/webhook)
 
 ## Database
+
+- [Connect to db with sqlalchemy](notebooks/sqlalchemyops/readme.md)
 
 ### [PostgreSQL](notebooks/postgresql-python/readme.md)
 
