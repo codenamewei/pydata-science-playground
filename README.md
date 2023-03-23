@@ -37,16 +37,16 @@ conda env create -f config.yml
 
 - For more conda commands, check out [conda guidelines document](conda-guidelines.md)
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Basic
 
 ### Comment
 - Single Line Comment: `//sample text`
 - Multi Lines Comment:
   ```
-  """
-  Hello World!
-  Nice to meet all of you cookie monsters!
-  """
+   """
+   Hello World!
+   Nice to meet all of you cookie monsters!
+   """
   ```
 
 ### Boolean Operator
@@ -55,6 +55,81 @@ conda env create -f config.yml
 - [X or Y](notebooks/boolean_operator/boolean_options.ipynb)
 - [if not X](notebooks/boolean_operator/boolean_options.ipynb)
 - [custom object boolean](notebooks/boolean_operator/boolean_for_object.ipynb)
+
+
+## [Maths](notebooks/math)
+
+- [Define Nan, Infinite](notebooks/math/define_nan_infinite.ipynb)
+- Sum up an array: `sum(arr)`
+- Round up a number to a certain decimal point: `round(value, 1)`
+- [Calculate percentile](notebooks/math/percentile.ipynb)
+- Power of a number: `pow(base_number, exponent_number`
+- Square root of a number: `sqrt(number)`
+- Logarithm / Log
+  - Log to the base of 2:
+    - Numpy: `import numpy as np; np.log2(10)`
+    - Math: `import math; math.log2(10)`
+    - [Plotting of log to the to the base of 2](notebooks/math/logn_plotting.ipynb)
+    
+## Data Types
+    
+### Floating Value (float, double)
+
+- Format floating value to n decimal: `"%.2f" % floating_var`
+
+## Data Structure
+
+### [List](notebooks/list)
+
+- List of str to int: `list(map(int, arr))`
+- List with range of values: `list(range(...))`
+- Split str to list of str: `arr.split(" ")`
+- Check for empty list: `if not mylist:`
+- Find if a value in a list: `if value in mylist:` / `if value not in mylist:`
+- Sort an array in place: `arr.sort()` / Return a sorted array: `sorted(arr)`
+- Get index of a value: `arr.index(value)`
+- Add one more value to existing list: `arr.append(value)`
+- Extend list with values in another list: `arr.extend(arr2)`
+- Remove an item from the list: `arr.remove(item)`
+- Check for empty list: `arr = []; if not arr: #empty list`
+- Check all items in a list(subset) if exist in another list, returns boolean: `set(b).issubset(v)`
+- Build list of same values: `['100'] * 20 # 20 items of the value '100'`
+- Change values of list with **List Comprehension**: `[func(a) for a in sample_list]`
+- Iteration of list with index: `for index, value in enumerate(inlist):`
+- Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]```
+- [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
+- Get maximum value in a list of numbers (even strings): `max(samplelist)`
+
+### [Dictionary](notebooks/dictionary)
+
+- [Define dict with str keys](notebooks/dictionary/definedict.ipynb)
+- Add new key value pair: `dict.update({"key2":"value2"})`
+- [Remove key<> value pair by referring to specific key](notebooks/dictionary/remove_key.ipynb)
+- Get keys as list: `list(lut.keys())`
+- Get values as list: `list(lut.values())`
+- Create dict from list: `{i: 0 for i in arr}`
+- [Handling missing items in dict](notebooks/dictionary/nativedict_handlemissingkey.ipynb)
+- [Iteration to dict to get keys and values](notebooks/dictionary/dict_iteration.ipynb)
+- Save/load dictionary to/from a file: [saveloaddict.ipynb](notebooks/dictionary/saveloaddict.ipynb)
+- Revert or inverse a dictionary mapping: `inv_map = {v: k for k, v in my_map.items()}`
+- [Copy by value](notebooks/dictionary/dict_copybyvalue.ipynb): `sampledict.copy()`
+
+### Python Iterables (List, Set,...)
+
+- To identify if any items in the iterables has True/1 values: `any(sample_list) #returns single value True/False`
+- [Zip multiple iterables](notebooks/zipops/zipops.ipynb)
+
+### Numpy
+
+- [Numpy basic](notebooks/numpy/npbasic.ipynb)
+- Get numpy shape: `nparray.shape`
+- Numpy array to list: `nparray.tolist()`
+- Change datatype: `nparray = nparray.astype(<dtype>)` Example: `nparray = nparray.astype("uint8")`
+- Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
+- Numpy multiply by a value: `nparray = nparray * 255`
+- [Numpy array to image](notebooks/pytorch/torchtensor2image.ipynb)
+- [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
+- [Use of `numpy.where`](notebooks/cv/blur_region.ipynb)
 
 ### [Pandas](https://pandas.pydata.org/docs/reference/)
 
@@ -183,144 +258,9 @@ conda env create -f config.yml
 
 - [Random dataframe and database table generator](https://github.com/tirthajyoti/pydbgen)
 
-## Numpy
+## Intermediate
 
-- [Numpy basic](notebooks/numpy/npbasic.ipynb)
-- Get numpy shape: `nparray.shape`
-- Numpy array to list: `nparray.tolist()`
-- Change datatype: `nparray = nparray.astype(<dtype>)` example: `nparray = nparray.astype("uint8")`
-- Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
-- Numpy multiply by a value: `nparray = nparray * 255`
-- [Numpy array to image](notebooks/pytorch/torchtensor2image.ipynb)
-- [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
-- [Use of `numpy.where`](src/cv/blur_region.ipynb)
-
-## Pytorch
-
-- Check if cuda is available - `import torch; torch.cuda.is_available()`
-- [Softmax](notebooks/pytorch/torch_softmax.ipynb)
-
-### Torch Tensor
-
-#### Torch Tensor Creation
-
-- Create tensor of **zeros** with shape like another tensor: `torch.zeros_like(another_tensor)`
-- Create tensor of **zeros** with shape (tuple): `torch.zeros(shape_in_tuple)`
-- Create tensor of **ones** with shape like another tensor: `torch.ones_like(another_tensor)`
-- Create tensor of **ones** with shape (tuple): `torch.ones(shape_in_tuple)`
-- Create tensor of **random floating value** between 0-1 with shape like another tensor:  
-  `torch.rand_like(another_tensor, dtype = torch.float)`
-- Create tensor of **random floating value** between 0-1 with shape (tuple):  
-  `torch.rand(shape_in_tuple)`
-
-#### Torch Tensor Info Extraction
-
-- Given torch.tensor `buffer = tensor(4)`, get the value by - `id = buffer.item()`
-- Given torch.tensor, get the argmax of each row - `torch.argmax(buffer, dim=<(int)dimension_to_reduce>)`
-- Tensor to cuda - `inputs = inputs.to("cuda")`
-- Tensor shape - `tensor.shape`
-- Tensor data types - `tensor.dtype`
-- Device tensor is stored on - `tensor.device`
-- Torch tensor(single value) to value: `tensorarray.item()`
-- Retrieve subset of torch tensor by row index: `tensor[<row_number>, :]` / `tensor[<row_number_from>:<row_number_to>, :]`
-- Retrieve subset of torch tensor by column index: `tensor[:, <column_number_from>:<column_number_to>]`
-
-#### Torch Tensor Conversion
-
-- List to torch tensor - `torch.tensor(listimp)`
-- Numpy array to torch tensor - `torch.from_numpy(np_array)`
-- [Image to torch tensor](notebooks/pytorch/torchtensor2image.ipynb)
-- [Torch tensor to image](notebooks/pytorch/torchtensor2image.ipynb)
-
-#### Torch Tensor Operation
-
-- [Torch tensor value change by indexing and conditions](notebooks/pytorch/tensorvalue_manipulation.ipynb)
-- [Concatenate tensor according to dimension (0 for adding rows, 1 for adding columns)](notebooks/pytorch/tensorvalue_manipulation_0.ipynb):  
-  `torch.cat([<tensor_1>, <tensor_2>, ...], dim = <dimension_number>`
-
-### Dataset Loader, Iterator
-
-- `torch.utils.data.DataLoader`: stores the samples and their corresponding labels,
-- `torch.utils.data.Dataset`: wraps an iterable around the Dataset to enable easy access to the samples
-
-#### Torch Tensor In/Out
-
-- [Save torch tensor to file](notebooks/pytorch/save_write_torch.ipynb): `torch.save(x : torch.tensor, tensorfile :str)`
-- [Load torch tensor from file](notebooks/pytorch/save_write_torch.ipynb): `torch.load(tensorfile :str)`
-
-### Dataset
-
-- [Image Datasets](https://pytorch.org/vision/stable/datasets.html)
-
-  - Fashion MNIST [Torch](https://github.com/pytorch/vision/blob/main/torchvision/datasets/mnist.py)
-      <details>
-
-    Fashion-MNIST is a dataset of Zalando’s article images consisting of 60,000 training examples and 10,000 test examples.
-    Each example comprises a 28×28 grayscale image and an associated label from one of 10 classes.
-
-      </details>
-
-- [Text Datasets](https://pytorch.org/text/stable/datasets.html)
-- [Audio Datasets](https://pytorch.org/audio/stable/datasets.html)
-
-## Huggingface
-
-- Send model to cuda - `model.to('cuda:0')` or `model.cuda()`
-- [Overview of DatasetDict](notebooks/huggingface/datasetdict_intro.ipynb)
-- [DatasetDict from Pandas Dataframe](https://stackoverflow.com/questions/71618974/convert-pandas-dataframe-to-datasetdict)
-
-## OpenCV / Computer Vision
-
-### Basic
-
-- Get image shape: `img.shape`
-- Create a color image: `image = np.zeros((h,w,3), np.uint8)`
-- Read/Write image:
-  - [As byte](notebooks/cv/image_as_byte.ipynb)
-  - [As Bytearray](notebooks/cv/image_as_bytearray.ipynb)
-  - [As base64](notebooks/cv/image_as_base64.ipynb)
-- [Read image from url](notebooks/cv/read_image_from_url.ipynb)
-- Pause to display image or wait for an input: `cv2.waitKey(0)`
-- Save an image: `cv2.imwrite(pathtoimg : str, img : numpy.ndarray)`
-- Show an image in window: `cv2.imshow(windowname : str, frame : np.array)`
-- Show an image in Jupyter notebok
-  ```
-  from IPython.display import Image
-  Image(filename=pathtoimg : str)
-  ```
-- Flip image: `frame = cv2.flip(frame, flipcode : int)`
-  - Positive flip code for flip on y axis (left right flip)
-  - 0 for flip on x axis (up down)
-  - Negative for flipping around both axes
-
-### Intermediate
-
-### Filter
-
-- [Blur](https://docs.opencv.org/4.x/d4/d86/group__imgproc__filter.html#ga8c45db9afe636703801b0b2e440fce37) with averaging mask: `cv2.blur(img,(5,5))`
-- GaussianBlur: `blur = cv2.GaussianBlur(img,(5,5),0)`
-  - Note: Kernel size `(5, 5)` to be positive and odd. Read more [here](https://plantcv.readthedocs.io/en/v2.0/gaussian_blur/) on how kernel size influence the degree of blurring.
-- [Blurring region of image](notebooks/cv/blur_region.ipynb)
-
-### Video Stream
-
-- Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
-- [Save stream to video output](src/cv/save2video.py)
-- [Read in video stream from a file](src/cv/readvideostream.py)
-- [Read in stream from camera](src/cv/save2video.py)
-- [video arrays (in opencv) -> bytes -> np.array -> video arrays (in opencv)](src/cv/video2bytes2nparray.py)
-- [Merge audio with video](src/cv/savevideowithaudio)
-- [Check if video comes with audio](notebooks/cv/check_video_with_audio.ipynb)
-- [Split audio from video](src/cv/splitaudiofromvideo.py)
-
-#### Other
-
-- [Overlay image](src/cv/replaceroi.py)
-- Resizing frame: `outframe = cv2.resize(frame, (w, h))`
-- [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
-- Color to gray image: `gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`
-- [Remove background](notebooks/cv/remove_bg.ipynb)
-- [Add channel to image](https://stackoverflow.com/questions/32290096/python-opencv-add-alpha-channel-to-rgb-image)
+## Advanced
 
 ## [Audio](notebooks/audio)
 
@@ -354,65 +294,7 @@ conda env create -f config.yml
 Difference between bytes() and bytearray() is that bytes() returns an object that cannot be modified (immutable), and bytearray() returns an object that can be modified (mutable).
 ```
 
-## Formatting
 
-- Format floating value to n decimal: `"%.2f" % floating_var`
-
-## Data Structure
-
-### [List](notebooks/list)
-
-- List of str to int: `list(map(int, arr))`
-- List with range of values: `list(range(...))`
-- Split str to list of str: `arr.split(" ")`
-- Check for empty list: `if not mylist:`
-- Find if a value in a list: `if value in mylist:` / `if value not in mylist:`
-- Sort an array in place: `arr.sort()` / Return a sorted array: `sorted(arr)`
-- Get index of a value: `arr.index(value)`
-- Add one more value to existing list: `arr.append(value)`
-- Extend list with values in another list: `arr.extend(arr2)`
-- Remove an item from the list: `arr.remove(item)`
-- Check for empty list: `arr = []; if not arr: #empty list`
-- Check all items in a list(subset) if exist in another list, returns boolean: `set(b).issubset(v)`
-- Build list of same values: `['100'] * 20 # 20 items of the value '100'`
-- Change values of list with **List Comprehension**: `[func(a) for a in sample_list]`
-- Iteration of list with index: `for index, value in enumerate(inlist):`
-- Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]```
-- [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
-- Get maximum value in a list of numbers (even strings): `max(samplelist)`
-
-### [Dictionary](notebooks/dictionary)
-
-- [Define dict with str keys](notebooks/dictionary/definedict.ipynb)
-- Add new key value pair: `dict.update({"key2":"value2"})`
-- [Remove key<> value pair by referring to specific key](notebooks/dictionary/remove_key.ipynb)
-- Get keys as list: `list(lut.keys())`
-- Get values as list: `list(lut.values())`
-- Create dict from list: `{i: 0 for i in arr}`
-- [Handling missing items in dict](notebooks/dictionary/nativedict_handlemissingkey.ipynb)
-- [Iteration to dict to get keys and values](notebooks/dictionary/dict_iteration.ipynb)
-- Save/load dictionary to/from a file: [saveloaddict.ipynb](notebooks/dictionary/saveloaddict.ipynb)
-- Revert or inverse a dictionary mapping: `inv_map = {v: k for k, v in my_map.items()}`
-- [Copy by value](notebooks/dictionary/dict_copybyvalue.ipynb): `sampledict.copy()`
-
-### Python Iterables (List, Set,...)
-
-- To identify if any items in the iterables has True/1 values: `any(sample_list) #returns single value True/False`
-- [Zip multiple iterables](notebooks/zipops/zipops.ipynb)
-
-## [Maths](notebooks/math)
-
-- [Define Nan, Infinite](notebooks/math/define_nan_infinite.ipynb)
-- Sum up an array: `sum(arr)`
-- Round up a number to a certain decimal point: `round(value, 1)`
-- [Calculate percentile](notebooks/math/percentile.ipynb)
-- Power of a number: `pow(base_number, exponent_number`
-- Square root of a number: `sqrt(number)`
-- Logarithm / Log
-  - Log to the base of 2:
-    - Numpy: `import numpy as np; np.log2(10)`
-    - Math: `import math; math.log2(10)`
-    - [Plotting of log to the to the base of 2](notebooks/math/logn_plotting.ipynb)
 
 ### Random
 
@@ -698,7 +580,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 ## Networking
   
-- Get IP from domain name: `import socket;socker.gethostbyname("www.google.com");"
+- Get IP from domain name: `import socket;socker.gethostbyname("www.google.com");`
   
 ## Concurrency
 
@@ -764,6 +646,133 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   You can store any number of objects in a bucket and can have up to 100 buckets in your account
 
   </details>
+
+## Pytorch
+
+- Check if cuda is available - `import torch; torch.cuda.is_available()`
+- [Softmax](notebooks/pytorch/torch_softmax.ipynb)
+
+### Torch Tensor
+
+#### Torch Tensor Creation
+
+- Create tensor of **zeros** with shape like another tensor: `torch.zeros_like(another_tensor)`
+- Create tensor of **zeros** with shape (tuple): `torch.zeros(shape_in_tuple)`
+- Create tensor of **ones** with shape like another tensor: `torch.ones_like(another_tensor)`
+- Create tensor of **ones** with shape (tuple): `torch.ones(shape_in_tuple)`
+- Create tensor of **random floating value** between 0-1 with shape like another tensor:  
+  `torch.rand_like(another_tensor, dtype = torch.float)`
+- Create tensor of **random floating value** between 0-1 with shape (tuple):  
+  `torch.rand(shape_in_tuple)`
+
+#### Torch Tensor Info Extraction
+
+- Given torch.tensor `buffer = tensor(4)`, get the value by - `id = buffer.item()`
+- Given torch.tensor, get the argmax of each row - `torch.argmax(buffer, dim=<(int)dimension_to_reduce>)`
+- Tensor to cuda - `inputs = inputs.to("cuda")`
+- Tensor shape - `tensor.shape`
+- Tensor data types - `tensor.dtype`
+- Device tensor is stored on - `tensor.device`
+- Torch tensor(single value) to value: `tensorarray.item()`
+- Retrieve subset of torch tensor by row index: `tensor[<row_number>, :]` / `tensor[<row_number_from>:<row_number_to>, :]`
+- Retrieve subset of torch tensor by column index: `tensor[:, <column_number_from>:<column_number_to>]`
+
+#### Torch Tensor Conversion
+
+- List to torch tensor - `torch.tensor(listimp)`
+- Numpy array to torch tensor - `torch.from_numpy(np_array)`
+- [Image to torch tensor](notebooks/pytorch/torchtensor2image.ipynb)
+- [Torch tensor to image](notebooks/pytorch/torchtensor2image.ipynb)
+
+#### Torch Tensor Operation
+
+- [Torch tensor value change by indexing and conditions](notebooks/pytorch/tensorvalue_manipulation.ipynb)
+- [Concatenate tensor according to dimension (0 for adding rows, 1 for adding columns)](notebooks/pytorch/tensorvalue_manipulation_0.ipynb):  
+  `torch.cat([<tensor_1>, <tensor_2>, ...], dim = <dimension_number>`
+
+### Dataset Loader, Iterator
+
+- `torch.utils.data.DataLoader`: stores the samples and their corresponding labels,
+- `torch.utils.data.Dataset`: wraps an iterable around the Dataset to enable easy access to the samples
+
+#### Torch Tensor In/Out
+
+- [Save torch tensor to file](notebooks/pytorch/save_write_torch.ipynb): `torch.save(x : torch.tensor, tensorfile :str)`
+- [Load torch tensor from file](notebooks/pytorch/save_write_torch.ipynb): `torch.load(tensorfile :str)`
+
+### Dataset
+
+- [Image Datasets](https://pytorch.org/vision/stable/datasets.html)
+
+  - Fashion MNIST [Torch](https://github.com/pytorch/vision/blob/main/torchvision/datasets/mnist.py)
+      <details>
+
+    Fashion-MNIST is a dataset of Zalando’s article images consisting of 60,000 training examples and 10,000 test examples.
+    Each example comprises a 28×28 grayscale image and an associated label from one of 10 classes.
+
+      </details>
+
+- [Text Datasets](https://pytorch.org/text/stable/datasets.html)
+- [Audio Datasets](https://pytorch.org/audio/stable/datasets.html)
+
+## Huggingface
+
+- Send model to cuda - `model.to('cuda:0')` or `model.cuda()`
+- [Overview of DatasetDict](notebooks/huggingface/datasetdict_intro.ipynb)
+- [DatasetDict from Pandas Dataframe](https://stackoverflow.com/questions/71618974/convert-pandas-dataframe-to-datasetdict)
+
+## OpenCV / Computer Vision
+
+### Basic
+
+- Get image shape: `img.shape`
+- Create a color image: `image = np.zeros((h,w,3), np.uint8)`
+- Read/Write image:
+  - [As byte](notebooks/cv/image_as_byte.ipynb)
+  - [As Bytearray](notebooks/cv/image_as_bytearray.ipynb)
+  - [As base64](notebooks/cv/image_as_base64.ipynb)
+- [Read image from url](notebooks/cv/read_image_from_url.ipynb)
+- Pause to display image or wait for an input: `cv2.waitKey(0)`
+- Save an image: `cv2.imwrite(pathtoimg : str, img : numpy.ndarray)`
+- Show an image in window: `cv2.imshow(windowname : str, frame : np.array)`
+- Show an image in Jupyter notebok
+  ```
+  from IPython.display import Image
+  Image(filename=pathtoimg : str)
+  ```
+- Flip image: `frame = cv2.flip(frame, flipcode : int)`
+  - Positive flip code for flip on y axis (left right flip)
+  - 0 for flip on x axis (up down)
+  - Negative for flipping around both axes
+
+### Intermediate
+
+### Filter
+
+- [Blur](https://docs.opencv.org/4.x/d4/d86/group__imgproc__filter.html#ga8c45db9afe636703801b0b2e440fce37) with averaging mask: `cv2.blur(img,(5,5))`
+- GaussianBlur: `blur = cv2.GaussianBlur(img,(5,5),0)`
+  - Note: Kernel size `(5, 5)` to be positive and odd. Read more [here](https://plantcv.readthedocs.io/en/v2.0/gaussian_blur/) on how kernel size influence the degree of blurring.
+- [Blurring region of image](notebooks/cv/blur_region.ipynb)
+
+### Video Stream
+
+- Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
+- [Save stream to video output](src/cv/save2video.py)
+- [Read in video stream from a file](src/cv/readvideostream.py)
+- [Read in stream from camera](src/cv/save2video.py)
+- [video arrays (in opencv) -> bytes -> np.array -> video arrays (in opencv)](src/cv/video2bytes2nparray.py)
+- [Merge audio with video](src/cv/savevideowithaudio)
+- [Check if video comes with audio](notebooks/cv/check_video_with_audio.ipynb)
+- [Split audio from video](src/cv/splitaudiofromvideo.py)
+
+#### Other
+
+- [Overlay image](src/cv/replaceroi.py)
+- Resizing frame: `outframe = cv2.resize(frame, (w, h))`
+- [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
+- Color to gray image: `gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`
+- [Remove background](notebooks/cv/remove_bg.ipynb)
+- [Add channel to image](https://stackoverflow.com/questions/32290096/python-opencv-add-alpha-channel-to-rgb-image)
 
 ## Medium Posts
 
