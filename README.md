@@ -43,10 +43,10 @@ conda env create -f config.yml
 - Single Line Comment: `//sample text`
 - Multi Lines Comment:
   ```
-      """
-      Hello World!
-      Nice to meet all of you cookie monsters!
-      """
+  """
+  Hello World!
+  Nice to meet all of you cookie monsters!
+  """
   ```
 
 ### Boolean Operator
