@@ -57,7 +57,7 @@ conda env create -f config.yml
 - [custom object boolean](notebooks/boolean_operator/boolean_for_object.ipynb)
 
 
-## [Maths](notebooks/math)
+### [Maths](notebooks/math)
 
 - [Define Nan, Infinite](notebooks/math/define_nan_infinite.ipynb)
 - Sum up an array: `sum(arr)`
@@ -71,15 +71,15 @@ conda env create -f config.yml
     - Math: `import math; math.log2(10)`
     - [Plotting of log to the to the base of 2](notebooks/math/logn_plotting.ipynb)
     
-## Data Types
+### Data Types
     
-### Floating Value (float, double)
+#### Floating Value (float, double)
 
 - Format floating value to n decimal: `"%.2f" % floating_var`
 
-## Data Structure
+### Data Structure
 
-### [List](notebooks/list)
+#### [List](notebooks/list)
 
 - List of str to int: `list(map(int, arr))`
 - List with range of values: `list(range(...))`
@@ -100,7 +100,7 @@ conda env create -f config.yml
 - [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
 - Get maximum value in a list of numbers (even strings): `max(samplelist)`
 
-### [Dictionary](notebooks/dictionary)
+#### [Dictionary](notebooks/dictionary)
 
 - [Define dict with str keys](notebooks/dictionary/definedict.ipynb)
 - Add new key value pair: `dict.update({"key2":"value2"})`
