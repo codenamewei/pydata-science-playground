@@ -39,16 +39,26 @@ conda env create -f config.yml
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Boolean Operator
+### Comment
+- Single Line Comment: `//sample text`
+- Multi Lines Comment:
+  ```
+      """
+      Hello World!
+      Nice to meet all of you cookie monsters!
+      """
+  ```
+
+### Boolean Operator
 
 - [X and Y](notebooks/boolean_operator/boolean_options.ipynb)
 - [X or Y](notebooks/boolean_operator/boolean_options.ipynb)
 - [if not X](notebooks/boolean_operator/boolean_options.ipynb)
 - [custom object boolean](notebooks/boolean_operator/boolean_for_object.ipynb)
 
-## [Pandas](https://pandas.pydata.org/docs/reference/)
+### [Pandas](https://pandas.pydata.org/docs/reference/)
 
-### Infos
+#### Panda Infos
 
 - [Dataframe basic](notebooks/pandas/info_basic.ipynb)
   - Get # rows and columns
@@ -62,11 +72,15 @@ conda env create -f config.yml
 - Check if a column name exist in dataframe - `if 'code' in df.columns:`
 - [Iteration of each rows in a dataframe](notebooks/pandas/iterrows.ipynb)
 
-### Operations
+#### Panda Operations
 
-- Check if dataframe is empty - `df.empty #return boolean`
+- Check if dataframe is empty: `df.empty #return boolean`
 - [Get dataframe from list](notebooks/pandas/list2df.ipynb)
-- Build dataframe with columns name - `column_list = ["a", "b"] df = pd.DataFrame(columns = column_list)`
+- Build dataframe with columns name
+  ```
+  column_list = ["a", "b"]
+  df = pd.DataFrame(columns = column_list)
+  ```
 - [Build a new dataframe from a subset of columns from another dataframe](notebooks/pandas/series_subset.ipynb)
 - [Get subset of dataframe, sample columns with specific criteria](notebooks/pandas/sample_df.ipynb)
   - Sample by percentage
@@ -77,32 +91,32 @@ conda env create -f config.yml
 - [Referring to dataframe column by key or by string](notebooks/pandas/refer_column_name.ipynb)
 - [Concatenate dataframe](notebooks/pandas/concat_df.ipynb)
   - Concatenate by adding rows
-- [Append string to all rows of a column](notebooks/pandas/append_value_to_rows.ipynb)
-- Reset index without creating new (index) column - `df.reset_index(drop=True)`
+- [Append string to all rows of a column](notebooks/pandas/append_value_to_row.ipynb)
+- Reset index without creating new (index) column: `df.reset_index(drop=True)`
 - Assign df by copy instead of reference - [`df.copy()`](notebooks/pandas/copybyvalue.ipynb)
 - Shuffle rows of df: `df = df.sample(frac=1).reset_index(drop=True)`
 - [Pandas with multiple index](notebooks/pandas/pd_multiple_index.ipynb)
 
-### Type
+#### Panda Type
 
 - [Change column type](notebooks/pandas/change_column_type.ipynb)
 - [Rename column name if exist](notebooks/pandas/rename_column.ipynb)
 - [Compare column type](notebooks/pandas/comparecoltype.ipynb)
 
-### Series
+#### Panda Series
 
 - [Series to value](notebooks/pandas/series_to_values.ipynb)
-- Series/Dataframe to numpy array - `input.to_numpy()`
+- Series/Dataframe to numpy array: `input.to_numpy()`
 - Series iteration: `for index, item in seriesf.items():`
 - Series to dict: `seriesf.to_dict()`
 
-### Assign values
+#### Panda Assign values
 
 - [Create new column and assign value according to another column](notebooks/pandas/assign_column.ipynb)
 - [Assign values by lambda and df.assign](notebooks/pandas/dfassign.ipynb)
 - [Dataframe append rows](notebooks/pandas/df_append_rows.ipynb)
 
-### Remove/drop values
+#### Panda Remove/drop values
 
 - [Drop duplicates for df / subset, keep one copy and remove all](notebooks/pandas/drop_duplicate.ipynb)
 - [Remove/drop rows where specific column matched value](notebooks/pandas/remove_with_matching_value.ipynb)
@@ -110,13 +124,13 @@ conda env create -f config.yml
 - [Drop rows by index](notebooks/pandas/drop_row_by_index.ipynb)
 - Drop rows/columns with np.NaN: `df3 = df3.dropna(axis = 1) #row`
 
-### SQL-like functions
+#### Panda SQL-like functions
 
 - pivot table - tbd
   - Drawback: Not able to do filtering selection
 - [Merge two dataframes based on certain column values](notebooks/pandas/pdmerge.ipynb)
 
-### Filtering
+#### Panda Filtering
 
 - [Filter with function isin()](notebooks/pandas/isin.ipynb)
 - [Filter df with item not in list](notebooks/pandas/filtervaluenotinlist.ipynb)
@@ -130,7 +144,7 @@ conda env create -f config.yml
 - [Count items and filter by counter values](notebooks/pandas/filter&valuecount.ipynb)
 - [Retrieve columns name which match specific str](notebooks/pandas/filterbysubsetname.ipynb)
 
-### Excel In/Out
+#### Panda Excel In/Out
 
 - Read in excel with specific sheet name: `pd.read_excel(<url>, sheet_name = "Sheet1", engine = "openpyxl")`
   - Note: Install engine by `pip install openpyxl`
@@ -138,7 +152,7 @@ conda env create -f config.yml
 - Save excel: `df.to_excel('file_name', index = False) `
 - [Write to multiple sheets](notebooks/pandas/write_to_multiple_sheets_excel.ipynb)
 
-### CSV In/Out
+#### Panda CSV In/Out
 
 - Read csv with other delimiter `pd.read_csv(<path-to-file>, delimiter = '\x01')`
 - Read csv with bad lines `pd.read_csv(<path-to-file>, on_bad_lines='skip')`
@@ -148,24 +162,24 @@ conda env create -f config.yml
   - Note: Put `index = False` is important to prevent an extra column of index being saved.
 - Save to csv with encoding `df.to_csv('file name', encoding = 'utf-8')`
 
-### JSON In/Out
+#### Panda JSON In/Out
 
 - [Read in json](notebooks/json/readfromjson.ipynb)
 - [Write to json](notebooks/json/write2json.ipynb)
 
-### [Parquet In/Out](notebooks/pandas/readwriteparquet.ipynb)
+#### Panda [Parquet In/Out](notebooks/pandas/readwriteparquet.ipynb)
 
 - Read in parquet: `pd.read_parquet(...)`
 - Write to parquet: `pd.to_parquet(...)`
 
-### Pickle In/Out
+#### Panda Pickle In/Out
 
 **Note: Pickle have security risk and slow in serialization (even to csv and json). Dont use**
 
 - Read in pickle to dataframe: `df = pd.read_pickle(<file_name>) # ends with .pkl`
 - Save to pickle: `df.to_pickle(<file_name>)`
 
-### Dataframe Others
+#### Panda Dataframe Others
 
 - [Random dataframe and database table generator](https://github.com/tirthajyoti/pydbgen)
 
