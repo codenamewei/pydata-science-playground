@@ -4,6 +4,10 @@ For an introduction to writing SQL for ORM objects in the 2.0 style, start with 
 
 <img src="medata/workflow.png" width="800">
 
+### Select Guidelines
+- [Overall select](https://docs.sqlalchemy.org/en/20/tutorial/data_select.html)
+- [ORM select](https://docs.sqlalchemy.org/en/20/orm/queryguide/select.html#orm-queryguide-select-columns)
+
 ### Installation
 - Install with```pip install sqlalchemy``` 
 
