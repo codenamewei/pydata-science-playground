@@ -10,40 +10,34 @@
 
 </p>
 
-# Environment Setup
+## Environment Setup
 
-### Create environment (Only for the first time)
+**Create environment (Only for the first time)**
 
 ```
-cd <path-to>/pyplayground
+git clone https://github.com/codenamewei/pydata-science-playground.git
+cd <path-to>/pydata-science-playground
 conda env create -f config.yml
 ```
 
-### Activate environment
+**Activate environment**
 
 `conda activate pyplayground`
 
-### Install package
+## Package Installation
 
-#### Install package with pip
-
-`pip install <package-name>`
-
-Example  
-`pip install numpy`
+**Install package with pip**  
+`pip install <package-name>`. Example:`pip install numpy`
 
 - For more pip commands, check out [pip guidelines document](pip-guidelines.md)
 
-#### Install package with conda
+**Install package with conda**
 
-`conda install <package-name>`
-
-Example  
-`conda install numpy`
+`conda install <package>`. Example: `conda install numpy`
 
 - For more conda commands, check out [conda guidelines document](conda-guidelines.md)
 
-# Gist
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Boolean Operator
 
