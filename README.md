@@ -41,9 +41,9 @@ conda env create -f config.yml
 
 - [Basic](#basic)
 - [Intermediate](#intermediate)
-- [Advanced]
-- [Software Development]
-- [Machine Learning]
+- [Advanced](#advanced)
+- [Software Development](#software-development)
+- [Machine Learning](#machine-learning)
 
 ## Basic
 
