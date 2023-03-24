@@ -506,11 +506,11 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 ### ConfigParser
 
-- [Read from config file:](notebooks/configparser/testconfig.ipynb)
+- [Read from config file](notebooks/configparser/testconfig.ipynb)
 
 
 ### XML Parser
-- [Read from xml file:](notebooks/xmlparser)
+- [Read from xml file](notebooks/xmlparser)
 
 ### URL
 
@@ -524,11 +524,9 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 - [Create workers according to number of cores](src/multiprocess_ops/readme.md)
 
+### Logging
 
-
-## Logging
-
-### Built-In Logging
+#### Built-In Logging
 
 - Basic:
   ```
@@ -541,7 +539,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - Log with variables: `logging.error(f"Keys {a} is missing")`
 - [Log exception](notebooks/error_handling/suppress_error/urlcaller_logger.py)
 
-### Logging
+#### Logging Others
 
 - [Logging with module _icecream_](notebooks/logging/icecream)
 
