@@ -428,6 +428,29 @@ and bytearray() returns an object that can be modified (mutable).
 
 ## Advanced
 
+### Class
+
+- [Effective way to view object address and object](notebooks/class/class_object_view.ipynb)
+- [Reserved methods in class](notebooks/class/reservedMethod.py)
+- [The magic variable \*args and \*\*kwargs](notebooks/class/kwargsimp.py)
+- [Check if object is of specified type](notebooks/class/isinstanceimp.ipynb): `isinstance(obj, MyClass)` / `isinstance(obj, (type1, type2) : tuple)`
+- [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
+  - Copy list by value: `list_cp = list_ori[:]` (Note: `list_cp = list_ori` copy by reference)
+- Define dataclass
+  - [dataclass 1](notebooks/class/dataclass/dataclass_helloworld_1.ipynb)
+  - [dataclass 2](notebooks/class/dataclass/dataclass_helloworld_2.ipynb)
+    - Magic methods `__repr__` and `__dict__` are created when define class with dataclass
+- [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
+- [Serialize class object](notebooks/class/serialize_classobj.ipynb)
+
+#### Magic Method
+
+- [`__dict__` return all attributes of an object(only those defined in __init__): `obj.__dict__`](notebooks/class/values_in_dict.ipynb)
+- `__str__` return string representation of the obj: `def __str__(self):`
+- `__eq__` compare the instances of the class: `def __eq__(self, other):`
+  - [Define **eq** function in class 1](notebooks/class/eq_function.ipynb)
+  - [Define **eq** function in class 2](notebooks/class/dataclass_helloworld_1.ipynb)
+- [`__repr__`: represent a class's objects as a string. Call object with `repr(obj)`](notebooks/class/magic_repr.ipynb)
 
 ## [Regular Expression (Regex)](notebooks/regex)
 
@@ -451,29 +474,7 @@ and bytearray() returns an object that can be modified (mutable).
 - [Extract hashtags](notebooks/regex/filterhashtag.ipynb)
 - [Extract numbers from string](notebooks/regex/extractnumbersfromstr.ipynb)
 
-## Class
 
-- [Effective way to view object address and object](notebooks/class/class_object_view.ipynb)
-- [Reserved methods in class](notebooks/class/reservedMethod.py)
-- [The magic variable \*args and \*\*kwargs](notebooks/class/kwargsimp.py)
-- [Check if object is of specified type](notebooks/class/isinstanceimp.ipynb): `isinstance(obj, MyClass)` / `isinstance(obj, (type1, type2) : tuple)`
-- [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
-  - Copy list by value: `list_cp = list_ori[:]` (Note: `list_cp = list_ori` copy by reference)
-- Define dataclass
-  - [dataclass 1](notebooks/class/dataclass/dataclass_helloworld_1.ipynb)
-  - [dataclass 2](notebooks/class/dataclass/dataclass_helloworld_2.ipynb)
-    - Magic methods `__repr__` and `__dict__` are created when define class with dataclass
-- [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
-- [Serialize class object](notebooks/class/classobj.ipynb)
-
-### Magic Method
-
-- [`__dict__` return all attributes of an object(only those defined in __init__): `obj.__dict__`](notebooks/class/values_in_dict.ipynb)
-- `__str__` return string representation of the obj: `def __str__(self):`
-- `__eq__` compare the instances of the class: `def __eq__(self, other):`
-  - [Define **eq** function in class 1](notebooks/class/eq_function.ipynb)
-  - [Define **eq** function in class 2](notebooks/class/dataclass_helloworld_1.ipynb)
-- [`__repr__`: represent a class's objects as a string. Call object with `repr(obj)`](notebooks/class/magic_repr.ipynb)
 
 ### Inheritance
 
