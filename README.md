@@ -202,7 +202,10 @@ and bytearray() returns an object that can be modified (mutable).
 - Revert or inverse a dictionary mapping: `inv_map = {v: k for k, v in my_map.items()}`
 - [Copy by value](notebooks/dictionary/dict_copybyvalue.ipynb): `sampledict.copy()`
   
-### Python Iterables (List, Set,...)
+#### Named Tuple
+- [NamedTuple](notebooks/collections_imp/namedtupleimp.ipynb)
+
+#### Applicable to Python Iterables (List, Set,...)
 
 - To identify if any items in the iterables has True/1 values: `any(sample_list) #returns single value True/False`
 - [Zip multiple iterables](notebooks/zipops/zipops.ipynb)
@@ -447,10 +450,6 @@ and bytearray() returns an object that can be modified (mutable).
   - To match a series of patterns with parenthesis.
 - [Extract hashtags](notebooks/regex/filterhashtag.ipynb)
 - [Extract numbers from string](notebooks/regex/extractnumbersfromstr.ipynb)
-
-## Collections Module
-
-- [NamedTuple](notebooks/collections_imp/namedtupleimp.ipynb)
 
 ## Class
 
