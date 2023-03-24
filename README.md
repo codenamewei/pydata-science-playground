@@ -610,33 +610,36 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   
 ## Software Development  
 
-### Database
+### REST
 
-- [Connect to db with sqlalchemy](notebooks/sqlalchemyops/readme.md)
-
-#### [PostgreSQL](notebooks/postgresql-python/readme.md)
-
-- [Postgres connect to AWS RDS](notebooks/postgresql-python/notebooks/aws-rds)
-- [Local Node](notebooks/postgresql-python/notebooks/local)
-- [Save and load image between REST and Postgres](notebooks/postgresql-python/notebooks/restimage2postgres)
-- [Save and load video between REST and Postgres](notebooks/postgresql-python/notebooks/restvideo2postgres)
-
-## REST
-
-### FastAPI
+#### FastAPI
 
 - [Form Data](src/rest/fastapi/formdataexample)
 - [Send image via UploadFile](notebooks/postgresql-python/notebooks/image2postgres/server.py)
 - [Client upload file to FastAPI Uploadfile and get response](notebooks/rest/fastapi/clientsendfile.ipynb)
 - [Return content from url and write image](notebooks/postgresql-python/notebooks/image2postgres/client.py)
 
-### Requests
+#### Requests
 
 - [Get data from url](notebooks/rest/requests/download_from_url.ipynb)
 
-## Cloud
+### Database
+  
+  
+- [Connect to db with sqlalchemy](notebooks/sqlalchemyops/readme.md)
 
-### AWS
+#### [PostgreSQL](notebooks/postgresql-python/readme.md)
+
+- [Postgres connect to AWS RDS](notebooks/postgresql-python/notebooks/aws-rds)
+- [Local Node](notebooks/postgresql-python/notebooks/local)
+- ~[Save and load image between REST and Postgres](notebooks/postgresql-python/notebooks/restimage2postgres)~ `Obsolete: large files (including image) should be saved to storage`
+- ~[Save and load video between REST and Postgres](notebooks/postgresql-python/notebooks/restvideo2postgres)~ `Obsolete: large files (including image) should be saved to storage`
+
+
+
+### Cloud
+
+#### AWS
 
 - [Postgres connect to AWS RDS](notebooks/postgresql-python/notebooks/aws-rds)
 
