@@ -170,6 +170,7 @@ and bytearray() returns an object that can be modified (mutable).
 ### [Pandas](https://pandas.pydata.org/docs/reference/)
 
 <details>
+ 
 #### Panda Infos
 
 - [Dataframe basic](notebooks/pandas/info_basic.ipynb)
@@ -294,7 +295,9 @@ and bytearray() returns an object that can be modified (mutable).
 #### Panda Dataframe Others
 
 - [Random dataframe and database table generator](https://github.com/tirthajyoti/pydbgen)
-  
+
+</details>
+
 ### Random
 
 - Generate random integer within (min, max): `from random import randint; randint(0, 100) #within 0 and 100`
