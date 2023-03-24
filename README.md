@@ -94,6 +94,19 @@ and bytearray() returns an object that can be modified (mutable).
 - Get size of bytes object: `import sys;sys.getsizeof(bytesobject)`
 - [Split bytes to chunks](notebooks/bytesops/bytestochunk.ipynb)
 
+#### Numpy
+
+- [Numpy basic](notebooks/numpy/npbasic.ipynb)
+- Get numpy shape: `nparray.shape`
+- Numpy array to list: `nparray.tolist()`
+- Change datatype: `nparray = nparray.astype(<dtype>)` Example: `nparray = nparray.astype("uint8")`
+- Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
+- Numpy multiply by a value: `nparray = nparray * 255`
+- [Numpy array to image](notebooks/pytorch/torchtensor2image.ipynb)
+- [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
+- [Use of `numpy.where`](notebooks/cv/blur_region.ipynb)
+ 
+  
 #### ByteArray
 **Notes:**
 
@@ -151,28 +164,8 @@ and bytearray() returns an object that can be modified (mutable).
 - To identify if any items in the iterables has True/1 values: `any(sample_list) #returns single value True/False`
 - [Zip multiple iterables](notebooks/zipops/zipops.ipynb)
 
-### Numpy
-
-- [Numpy basic](notebooks/numpy/npbasic.ipynb)
-- Get numpy shape: `nparray.shape`
-- Numpy array to list: `nparray.tolist()`
-- Change datatype: `nparray = nparray.astype(<dtype>)` Example: `nparray = nparray.astype("uint8")`
-- Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
-- Numpy multiply by a value: `nparray = nparray * 255`
-- [Numpy array to image](notebooks/pytorch/torchtensor2image.ipynb)
-- [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
-- [Use of `numpy.where`](notebooks/cv/blur_region.ipynb)
-
-### Random
-
-- Generate random integer within (min, max): `from random import randint; randint(0, 100) #within 0 and 100`
-- Generate random floating value: `from random import random; random()`
-- Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
-- Generate list with random number: `import random; random.sample(range(10, 30), 5)`
-  - Example shown where 5 random numbers are generated in between 10 to 30
-  
 ### [Pandas](https://pandas.pydata.org/docs/reference/)
-
+<details>
 #### Panda Infos
 
 - [Dataframe basic](notebooks/pandas/info_basic.ipynb)
@@ -297,7 +290,16 @@ and bytearray() returns an object that can be modified (mutable).
 #### Panda Dataframe Others
 
 - [Random dataframe and database table generator](https://github.com/tirthajyoti/pydbgen)
+  
+</details>
 
+### Random
+
+- Generate random integer within (min, max): `from random import randint; randint(0, 100) #within 0 and 100`
+- Generate random floating value: `from random import random; random()`
+- Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
+- Generate list with random number: `import random; random.sample(range(10, 30), 5)`
+  - Example shown where 5 random numbers are generated in between 10 to 30
 
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Intermediate
