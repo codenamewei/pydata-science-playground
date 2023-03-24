@@ -127,7 +127,7 @@ and bytearray() returns an object that can be modified (mutable).
 #### String
 
 - Generate string with parameter
-  - [Using template literal](notebooks/string/paramwithstring.ipynb): `print(f'Completed part {id}')1
+  - [Using template literal](notebooks/string/paramwithstring.ipynb): `print(f'Completed part {id}')`
   - [Generate string with templates](notebooks/string/stringtemplate.ipynb)
   - String formatting method: `print('Completed part {part_id}'.format(part_id))`
   - create string in the raw format: `varname="world"; print(f"Hello {varname!r}")
