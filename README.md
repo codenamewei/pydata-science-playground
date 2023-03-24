@@ -449,7 +449,7 @@ and bytearray() returns an object that can be modified (mutable).
 - `__str__` return string representation of the obj: `def __str__(self):`
 - `__eq__` compare the instances of the class: `def __eq__(self, other):`
   - [Define **eq** function in class 1](notebooks/class/eq_function.ipynb)
-  - [Define **eq** function in class 2](notebooks/class/dataclass_helloworld_1.ipynb)
+  - [Define **eq** function in class 2](notebooks/class/dataclass/dataclass_helloworld_1.ipynb)
 - [`__repr__`: represent a class's objects as a string. Call object with `repr(obj)`](notebooks/class/magic_repr.ipynb)
 
 ## [Regular Expression (Regex)](notebooks/regex)
