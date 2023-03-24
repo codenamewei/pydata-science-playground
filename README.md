@@ -42,39 +42,42 @@ conda env create -f config.yml
 ### Comment
 
 <details>
-- Single Line Comment: `//sample text`
-- Multi Lines Comment:
-  ```
-   """
-   Hello World!
-   Nice to meet all of you cookie monsters!
-   """
+  
+  - Single Line Comment: `//sample text`
+  - Multi Lines Comment:
+    ```
+     """
+     Hello World!
+     Nice to meet all of you cookie monsters!
+     """
   ```
 </details>
 
 ### Boolean Operator
 
 <details>
-- [X and Y](notebooks/boolean_operator/boolean_options.ipynb)
-- [X or Y](notebooks/boolean_operator/boolean_options.ipynb)
-- [if not X](notebooks/boolean_operator/boolean_options.ipynb)
-- [custom object boolean](notebooks/boolean_operator/boolean_for_object.ipynb)
+  
+  - [X and Y](notebooks/boolean_operator/boolean_options.ipynb)
+  - [X or Y](notebooks/boolean_operator/boolean_options.ipynb)
+  - [if not X](notebooks/boolean_operator/boolean_options.ipynb)
+  - [custom object boolean](notebooks/boolean_operator/boolean_for_object.ipynb)
+  
 </details>
 
 ### [Maths](notebooks/math)
 
 <details>
-- [Define Nan, Infinite](notebooks/math/define_nan_infinite.ipynb)
-- Sum up an array: `sum(arr)`
-- Round up a number to a certain decimal point: `round(value, 1)`
-- [Calculate percentile](notebooks/math/percentile.ipynb)
-- Power of a number: `pow(base_number, exponent_number`
-- Square root of a number: `sqrt(number)`
-- Logarithm / Log
-  - Log to the base of 2:
-    - Numpy: `import numpy as np; np.log2(10)`
-    - Math: `import math; math.log2(10)`
-    - [Plotting of log to the to the base of 2](notebooks/math/logn_plotting.ipynb)
+  - [Define Nan, Infinite](notebooks/math/define_nan_infinite.ipynb)
+  - Sum up an array: `sum(arr)`
+  - Round up a number to a certain decimal point: `round(value, 1)`
+  - [Calculate percentile](notebooks/math/percentile.ipynb)
+  - Power of a number: `pow(base_number, exponent_number`
+  - Square root of a number: `sqrt(number)`
+  - Logarithm / Log
+    - Log to the base of 2:
+      - Numpy: `import numpy as np; np.log2(10)`
+      - Math: `import math; math.log2(10)`
+      - [Plotting of log to the to the base of 2](notebooks/math/logn_plotting.ipynb)
 </details>
 
 ### Data Types
