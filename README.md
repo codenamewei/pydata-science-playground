@@ -1,3 +1,13 @@
+# ARCHIVED
+
+🔥🔥🔥  
+🔥🔥🔥  
+THIS REPOSITORY IS NOW ARCHIVED AND CONTINUE UPDATING AT   
+https://github.com/whitepawglobal/bite-size-python  
+🔥🔥🔥  
+🔥🔥🔥
+
+
 # Snippets of Code for Data Science Operations in Python
 
 <div align="center">
