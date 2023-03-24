@@ -426,6 +426,12 @@ and bytearray() returns an object that can be modified (mutable).
 - Check operating system: `import platform; platform.system()`
 - [Check if port is open/close](notebooks/system/check_port_open.ipynb)
 
+### Time
+
+- [Measure time prior and after](notebooks/performance/count_time.ipynb)
+- Add delay to execution of the program by pausing: `import time;time.sleep(seconds)`
+  - Note: stops the execution of current thread only
+  
 ## Advanced
 
 ### Class
@@ -474,7 +480,7 @@ and bytearray() returns an object that can be modified (mutable).
 - [Extract hashtags](notebooks/regex/filterhashtag.ipynb)
 - [Extract numbers from string](notebooks/regex/extractnumbersfromstr.ipynb)
 
-### Advanced Collections - Processing iterables with a functional style
+### Data Structure - Processing iterables with a functional style
 
 - [Produce a new iterable with map()](notebooks/functional/mapimp.ipynb)
 - [Generate a new iterable with Boolean-return function with filter()](notebooks/functional/filterimp.ipynb)
@@ -498,19 +504,19 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Filename as argument](notebooks/command_line/fileargparse.py)
 
 
-## ConfigParser
+### ConfigParser
 
 - [Read from config file:](notebooks/configparser/testconfig.ipynb)
 
 
-## XML Parser
+### XML Parser
 - [Read from xml file:](notebooks/xmlparser)
 
-## URL
+### URL
 
 - [Download URL to local file and checksum](notebooks/url/downloadurl.ipynb)
 
-## Performance
+### Performance
 
 - [Dataframe - column-major, Numpy - row-major](notebooks/performance/df_numpy_major.ipynb)
 
@@ -518,11 +524,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 - [Create workers according to number of cores](src/multiprocess_ops/readme.md)
 
-## Time
 
-- [Measure time prior and after](notebooks/performance/count_time.ipynb)
-- Add delay to execution of the program by pausing: `import time;time.sleep(seconds)`
-  - Note: stops the execution of current thread only
 
 ## Logging
 
