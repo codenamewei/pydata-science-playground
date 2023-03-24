@@ -44,6 +44,8 @@ conda env create -f config.yml
 - [Advanced](#advanced)
 - [Software Development](#software-development)
 - [Machine Learning](#machine-learning)
+- [Medium Posts](#medium-posts)
+
 
 ## Basic
 
@@ -635,8 +637,6 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - ~[Save and load image between REST and Postgres](notebooks/postgresql-python/notebooks/restimage2postgres)~ `Obsolete: large files (including image) should be saved to storage`
 - ~[Save and load video between REST and Postgres](notebooks/postgresql-python/notebooks/restvideo2postgres)~ `Obsolete: large files (including image) should be saved to storage`
 
-
-
 ### Cloud
 
 #### AWS
@@ -664,14 +664,16 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
   </details>
 
-## Pytorch
+## Machine Learning
+  
+### Pytorch
 
 - Check if cuda is available - `import torch; torch.cuda.is_available()`
 - [Softmax](notebooks/pytorch/torch_softmax.ipynb)
 
-### Torch Tensor
+#### Torch Tensor
 
-#### Torch Tensor Creation
+**Torch Tensor Creation**
 
 - Create tensor of **zeros** with shape like another tensor: `torch.zeros_like(another_tensor)`
 - Create tensor of **zeros** with shape (tuple): `torch.zeros(shape_in_tuple)`
@@ -682,7 +684,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - Create tensor of **random floating value** between 0-1 with shape (tuple):  
   `torch.rand(shape_in_tuple)`
 
-#### Torch Tensor Info Extraction
+**Torch Tensor Info Extraction**
 
 - Given torch.tensor `buffer = tensor(4)`, get the value by - `id = buffer.item()`
 - Given torch.tensor, get the argmax of each row - `torch.argmax(buffer, dim=<(int)dimension_to_reduce>)`
@@ -694,30 +696,30 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - Retrieve subset of torch tensor by row index: `tensor[<row_number>, :]` / `tensor[<row_number_from>:<row_number_to>, :]`
 - Retrieve subset of torch tensor by column index: `tensor[:, <column_number_from>:<column_number_to>]`
 
-#### Torch Tensor Conversion
+**Torch Tensor Conversion**
 
 - List to torch tensor - `torch.tensor(listimp)`
 - Numpy array to torch tensor - `torch.from_numpy(np_array)`
 - [Image to torch tensor](notebooks/pytorch/torchtensor2image.ipynb)
 - [Torch tensor to image](notebooks/pytorch/torchtensor2image.ipynb)
 
-#### Torch Tensor Operation
+**Torch Tensor Operation**
 
 - [Torch tensor value change by indexing and conditions](notebooks/pytorch/tensorvalue_manipulation.ipynb)
 - [Concatenate tensor according to dimension (0 for adding rows, 1 for adding columns)](notebooks/pytorch/tensorvalue_manipulation_0.ipynb):  
   `torch.cat([<tensor_1>, <tensor_2>, ...], dim = <dimension_number>`
 
-### Dataset Loader, Iterator
+**Dataset Loader, Iterator**
 
 - `torch.utils.data.DataLoader`: stores the samples and their corresponding labels,
 - `torch.utils.data.Dataset`: wraps an iterable around the Dataset to enable easy access to the samples
 
-#### Torch Tensor In/Out
+**Torch Tensor In/Out**
 
 - [Save torch tensor to file](notebooks/pytorch/save_write_torch.ipynb): `torch.save(x : torch.tensor, tensorfile :str)`
 - [Load torch tensor from file](notebooks/pytorch/save_write_torch.ipynb): `torch.load(tensorfile :str)`
 
-### Dataset
+#### Torch Dataset
 
 - [Image Datasets](https://pytorch.org/vision/stable/datasets.html)
 
@@ -732,15 +734,15 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Text Datasets](https://pytorch.org/text/stable/datasets.html)
 - [Audio Datasets](https://pytorch.org/audio/stable/datasets.html)
 
-## Huggingface
+### Huggingface
 
 - Send model to cuda - `model.to('cuda:0')` or `model.cuda()`
 - [Overview of DatasetDict](notebooks/huggingface/datasetdict_intro.ipynb)
 - [DatasetDict from Pandas Dataframe](https://stackoverflow.com/questions/71618974/convert-pandas-dataframe-to-datasetdict)
 
-## OpenCV / Computer Vision
+### Computer Vision
 
-### Basic
+#### Computer Vision - Basic
 
 - Get image shape: `img.shape`
 - Create a color image: `image = np.zeros((h,w,3), np.uint8)`
@@ -762,16 +764,16 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - 0 for flip on x axis (up down)
   - Negative for flipping around both axes
 
-### Intermediate
+#### Computer Vision - Intermediate
 
-### Filter
+**Computer Vision - Filter**
 
 - [Blur](https://docs.opencv.org/4.x/d4/d86/group__imgproc__filter.html#ga8c45db9afe636703801b0b2e440fce37) with averaging mask: `cv2.blur(img,(5,5))`
 - GaussianBlur: `blur = cv2.GaussianBlur(img,(5,5),0)`
   - Note: Kernel size `(5, 5)` to be positive and odd. Read more [here](https://plantcv.readthedocs.io/en/v2.0/gaussian_blur/) on how kernel size influence the degree of blurring.
 - [Blurring region of image](notebooks/cv/blur_region.ipynb)
 
-### Computer Vision - Video Stream
+**Computer Vision - Video Stream**
 
 - Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
 - [Save stream to video output](src/cv/save2video.py)
@@ -782,7 +784,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Check if video comes with audio](notebooks/cv/check_video_with_audio.ipynb)
 - [Split audio from video](src/cv/splitaudiofromvideo.py)
 
-#### Computer Vision - Other
+**Computer Vision - Other**
 
 - [Overlay image](src/cv/replaceroi.py)
 - Resizing frame: `outframe = cv2.resize(frame, (w, h))`
@@ -791,13 +793,13 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Remove background](notebooks/cv/remove_bg.ipynb)
 - [Add channel to image](https://stackoverflow.com/questions/32290096/python-opencv-add-alpha-channel-to-rgb-image)
 
-## [Audio](notebooks/audio)
+### [Audio](notebooks/audio)
 
 - [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
 - [Get sampling rate of an audio file](notebooks/audio/getsamplingrate.ipynb)
 - [Audio file <> Numpy Array](notebooks/audio/audiofile2array.ipynb)
   
-## Medium Posts
+### Medium Posts
 
 - [Ctrl + c, Ctrl + v — Replicating Data Science Conda Environment](https://codenamewei.medium.com/ctrl-c-ctrl-v-replicating-data-science-conda-environment-c190ad0d93fd)
   - [Conda Commands Cheatsheet](miniconda-guidelines.md)
