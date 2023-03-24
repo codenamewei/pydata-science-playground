@@ -50,7 +50,7 @@ conda env create -f config.yml
      Hello World!
      Nice to meet all of you cookie monsters!
      """
-  ```
+    ```
 </details>
 
 ### Boolean Operator
