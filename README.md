@@ -282,7 +282,7 @@ and bytearray() returns an object that can be modified (mutable).
 
 #### Panda SQL-like functions
 
-- pivot table - tbd
+- pivot table: `:TODO`
   - Drawback: Not able to do filtering selection
 - [Merge two dataframes based on certain column values](notebooks/pandas/pdmerge.ipynb)
 
@@ -474,22 +474,7 @@ and bytearray() returns an object that can be modified (mutable).
 - [Extract hashtags](notebooks/regex/filterhashtag.ipynb)
 - [Extract numbers from string](notebooks/regex/extractnumbersfromstr.ipynb)
 
-
-
-### Inheritance
-
-- [from abs import ABC](notebooks/error_handling/error_types/notimplementederror.ipynb)
-- [from abs import ABCMeta](notebooks/decorator/abstractmethod.py)
-- [Difference between importance ABC or ABCMeta](https://stackoverflow.com/questions/33335005/is-there-any-difference-between-using-abc-vs-abcmeta)
-  - TLDR: ABC is a wrapper of ABCMeta, both serves the purpose where former easy to write.
-
-## Passing variables in from command line
-
-- [Unnamed arguments](notebooks/command_line/sysarg.py)
-- Named arguments: TBD
-- [Filename as argument](notebooks/command_line/fileargparse.py)
-
-## Processing iterables with a functional style
+### Advanced Collections - Processing iterables with a functional style
 
 - [Produce a new iterable with map()](notebooks/functional/mapimp.ipynb)
 - [Generate a new iterable with Boolean-return function with filter()](notebooks/functional/filterimp.ipynb)
@@ -498,6 +483,20 @@ and bytearray() returns an object that can be modified (mutable).
 - [Multiple function declaration with singledispatch)](notebooks/functional/singledispatchimp.ipynb)
 
 _Note: Functional style can be replaced with **list comprehension** or **generator expressions**_
+
+### Inheritance
+
+- [from abs import ABC](notebooks/error_handling/error_types/notimplementederror.ipynb)
+- [from abs import ABCMeta](notebooks/decorator/abstractmethod.py)
+- [Difference between importance ABC or ABCMeta](https://stackoverflow.com/questions/33335005/is-there-any-difference-between-using-abc-vs-abcmeta)
+  - TLDR: ABC is a wrapper of ABCMeta, both serves the purpose where former easy to write.
+
+### Passing variables in from command line
+
+- [Unnamed arguments](notebooks/command_line/sysarg.py)
+- Named arguments: `:TODO`
+- [Filename as argument](notebooks/command_line/fileargparse.py)
+
 
 ## ConfigParser
 
