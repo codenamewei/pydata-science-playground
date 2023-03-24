@@ -142,7 +142,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Create dict from list: `{i: 0 for i in arr}`
 - [Handling missing items in dict](notebooks/dictionary/nativedict_handlemissingkey.ipynb)
 - [Iteration to dict to get keys and values](notebooks/dictionary/dict_iteration.ipynb)
-- Save/load dictionary to/from a file: [saveloaddict.ipynb](notebooks/dictionary/saveloaddict.ipynb)
+- [Save/load dictionary to/from a file](notebooks/dictionary/saveloaddict.ipynb)
 - Revert or inverse a dictionary mapping: `inv_map = {v: k for k, v in my_map.items()}`
 - [Copy by value](notebooks/dictionary/dict_copybyvalue.ipynb): `sampledict.copy()`
 
