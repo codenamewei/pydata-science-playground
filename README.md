@@ -382,7 +382,7 @@ and bytearray() returns an object that can be modified (mutable).
   ```
   open(<path-to-file>, mode)
   ```
-
+  <details>
   - `r`: Open for text file for reading text
   - `w`: Open a text file for writing text
   - `a`: Open a text file for appending text
@@ -394,6 +394,7 @@ and bytearray() returns an object that can be modified (mutable).
   - `readlines()`: read all the lines of the text file into a list of strings.
   - `write(<param> : str)`: write in param. Need to explicitly add `\n` to split line.
   - `.close()`: close file iterator
+  </details>
 
 ### System
 
