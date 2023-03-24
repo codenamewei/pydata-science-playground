@@ -353,9 +353,8 @@ and bytearray() returns an object that can be modified (mutable).
 - The character used by the operating system to separate pathname components: `os.sep`
 - [Iterate through a path to get files/folders of all the subpaths](notebooks/filesystem/filewalk.ipynb)
 - Write file: `f.write(str)`
-- print without new line: `print(..., end="")
-- Get environment path (second param is optional)
-  - `import os; os.getenv(<PATH_NAME> : str, <alternative-return-value>: str)
+- print without new line: `print(..., end="")`
+- Get environment path (second param is optional): `import os; os.getenv(<PATH_NAME> : str, <alternative-return-value>: str)`
 - [Flush out print](notebooks/filesystem/stdoutflush.ipynb)
 - Check if path is a folder: `os.path.isdir(<path>)`
 - [Get file size](notebooks/filesystem/getfilesize.ipynb)
