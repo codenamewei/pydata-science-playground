@@ -124,6 +124,35 @@ and bytearray() returns an object that can be modified (mutable).
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
 - [Use of `numpy.where`](notebooks/cv/blur_region.ipynb)
   
+#### String
+
+- Generate string with parameter
+  - [Using template literal](notebooks/string/paramwithstring.ipynb): `print(f'Completed part {id}')1
+  - [Generate string with templates](notebooks/string/stringtemplate.ipynb)
+  - String formatting method: `print('Completed part {part_id}'.format(part_id))`
+  - create string in the raw format: `varname="world"; print(f"Hello {varname!r}")
+- Check if string is empty, len = 0: `if not strvar:`
+- Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
+- Check file extension: [notebooks/string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
+- Capitalize a string: `strvar.capitalize()`
+- Uppercase a string: `strvar.upper()`
+- Lowercase a string: `strvar.lower()`
+- Get substring from a string: `strvar[<begin-index>:<end-index>]` / `strvar[<begin-index>:]` / `strvar[:<end-index>]`
+- Remove white spaces in the beginning and end: `strvar.strip()`
+- Swap existing upper and lower case: `strvar.swapcase()`
+- Capitalize every first letter of a word: `strvar.title()`
+- Splitting string:
+  - Split a string based on separator: `strvar.split(separator)` Example: `strvar.split("x")`
+  - Split on white space: `strvar.split()`
+  - If split with every character, do this instead: `[*"ABCDE"]` Result: `["A", "B", "C", "D", "E"]`
+- Check if string starts with a substring: `strvar.startswith(<substring>)`
+- Check if string ends with a substring: `strvar.endswith(<substring>)`
+- Check if string have substring/specific character. Returns -1 if not found: `strvar.find(<substring>)`
+- String get substring with index: `str[startindex:endindex]`
+- Replace string/character with intended string/character: `strout = strin.replace(" ", "_")`
+- [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
+- [Generate random string](https://pynative.com/python-generate-random-string/)
+- List to string: ` <separators>.join(list) example: ', '.join(listbuffer)`
 
 ### Data Structure
 
@@ -391,35 +420,7 @@ and bytearray() returns an object that can be modified (mutable).
 - datetime: [datetime.ipynb](notebooks/formatting/datetime.ipynb)
 - [find differences of two datetime: use divmod](https://stackoverflow.com/questions/1345827/how-do-i-find-the-time-difference-between-two-datetime-objects-in-python)
 
-## String
 
-- Generate string with parameter
-  - [Using template literal](notebooks/string/paramwithstring.ipynb): `print(f'Completed part {id}')
-  - [Generate string with templates](notebooks/string/stringtemplate.ipynb)
-  - String formatting method: `print('Completed part {part_id}'.format(part_id))`
-  - create string in the raw format `varname="world"; print(f"Hello {varname!r}")
-- Check if string is empty, len = 0: `if not strvar:`
-- Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
-- Check file extension: [notebooks/string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
-- Capitalize a string: `strvar.capitalize()`
-- Uppercase a string: `strvar.upper()`
-- Lowercase a string: `strvar.lower()`
-- Get substring from a string: `strvar[<begin-index>:<end-index>]` / `strvar[<begin-index>:]` / `strvar[:<end-index>]`
-- Remove white spaces in the beginning and end: `strvar.strip()`
-- Swap existing upper and lower case: `strvar.swapcase()`
-- Capitalize every first letter of a word: `strvar.title()`
-- Splitting string:
-  - Split a string based on separator: `strvar.split(separator)` Example: `strvar.split("x")`
-  - Split on white space `strvar.split()`
-  - If split with every character, do this instead: `[*"ABCDE"]` Result: `["A", "B", "C", "D", "E"]`
-- Check if string starts with a substring: `strvar.startswith(<substring>)`
-- Check if string ends with a substring: `strvar.endswith(<substring>)`
-- Check if string have substring/specific character. Returns -1 if not found. : `strvar.find(<substring>)`
-- String get substring with index: `str[startindex:endindex]`
-- Replace string/character with intended string/character: `strout = strin.replace(" ", "_")`
-- [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
-- [Generate random string](https://pynative.com/python-generate-random-string/)
-- List to string: ` <separators>.join(list) example: ', '.join(listbuffer)`
 
 ## [Regular Expression (Regex)](notebooks/regex)
 
