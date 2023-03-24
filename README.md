@@ -77,6 +77,38 @@ conda env create -f config.yml
 
 - Format floating value to n decimal: `"%.2f" % floating_var`
 
+#### Bytes
+**Notes:**
+
+```
+Difference between bytes() and bytearray() is that bytes() returns an object that cannot be modified (immutable), 
+and bytearray() returns an object that can be modified (mutable).
+```
+
+- [Numpy <> Bytes, Bytes <> Numpy](notebooks/numpy/np2bytes.ipynb)
+- [Bytes -> String](notebooks/string/bytes2string.ipynb): `bytesobj.decode("utf-8")`
+- String -> Bytes: `strobj.encode("utf-8")`
+- [Bytes -> Multimedia file (video/audio))](src/bytesops/readme.md)
+- [Check bytes encoding](notebooks/bytearrayops/checkbytesarrayencoding.ipynb)
+- To Bytes: `bytes(<value>)`
+- Get size of bytes object: `import sys;sys.getsizeof(bytesobject)`
+- [Split bytes to chunks](notebooks/bytesops/bytestochunk.ipynb)
+
+#### ByteArray
+**Notes:**
+
+```
+Difference between bytes() and bytearray() is that bytes() returns an object that cannot be modified (immutable), 
+and bytearray() returns an object that can be modified (mutable).
+```
+
+- [Integer to Bytearray](notebooks/bytearrayops/bytearraybasic.ipynb)
+- [Native Array to Bytearray](notebooks/bytearrayops/bytearraybasic.ipynb)
+- [Numpy Array to Bytearray](notebooks/bytearrayops/bytearraybasic.ipynb)
+- [Image as Bytearray](notebooks/cv/image_as bytearray.ipynb)
+- [Check bytes array encoding](notebooks/bytearrayops/checkbytesarrayencoding.ipynb)
+- To ByteArray: `bytearray(<value>)`
+
 ### Data Structure
 
 #### [List](notebooks/list)
@@ -131,6 +163,14 @@ conda env create -f config.yml
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
 - [Use of `numpy.where`](notebooks/cv/blur_region.ipynb)
 
+### Random
+
+- Generate random integer within (min, max): `from random import randint; randint(0, 100) #within 0 and 100`
+- Generate random floating value: `from random import random; random()`
+- Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
+- Generate list with random number: `import random; random.sample(range(10, 30), 5)`
+  - Example shown where 5 random numbers are generated in between 10 to 30
+  
 ### [Pandas](https://pandas.pydata.org/docs/reference/)
 
 #### Panda Infos
@@ -258,6 +298,8 @@ conda env create -f config.yml
 
 - [Random dataframe and database table generator](https://github.com/tirthajyoti/pydbgen)
 
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Intermediate
 
 ## Advanced
@@ -268,41 +310,12 @@ conda env create -f config.yml
 - [Get sampling rate of an audio file](notebooks/audio/getsamplingrate.ipynb)
 - [Audio file <> Numpy Array](notebooks/audio/audiofile2array.ipynb)
 
-## Bytes
-
-- [Numpy <> Bytes, Bytes <> Numpy](notebooks/numpy/np2bytes.ipynb)
-- [Bytes -> String](notebooks/string/bytes2string.ipynb): `bytesobj.decode("utf-8")`
-- String -> Bytes: `strobj.encode("utf-8")`
-- [Bytes -> Multimedia file (video/audio))](src/bytesops/readme.md)
-- [Check bytes encoding](notebooks/bytearrayops/checkbytesarrayencoding.ipynb)
-- To Bytes: `bytes(<value>)`
-- Get size of bytes object: `import sys;sys.getsizeof(bytesobject)`
-- [Split bytes to chunks](notebooks/bytesops/bytestochunk.ipynb)
-
-## ByteArray
-
-- [Integer to Bytearray](notebooks/bytearrayops/bytearraybasic.ipynb)
-- [Native Array to Bytearray](notebooks/bytearrayops/bytearraybasic.ipynb)
-- [Numpy Array to Bytearray](notebooks/bytearrayops/bytearraybasic.ipynb)
-- [Image as Bytearray](notebooks/cv/image_as bytearray.ipynb)
-- [Check bytes array encoding](notebooks/bytearrayops/checkbytesarrayencoding.ipynb)
-- To ByteArray: `bytearray(<value>)`
-
-**Notes:**
-
-```
-Difference between bytes() and bytearray() is that bytes() returns an object that cannot be modified (immutable), and bytearray() returns an object that can be modified (mutable).
-```
 
 
 
-### Random
 
-- Generate random integer within (min, max): `from random import randint; randint(0, 100) #within 0 and 100`
-- Generate random floating value: `from random import random; random()`
-- Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
-- Generate list with random number: `import random; random.sample(range(10, 30), 5)`
-  - Example shown where 5 random numbers are generated in between 10 to 30
+
+
 
 ## [File System](notebooks/filesystem)
 
