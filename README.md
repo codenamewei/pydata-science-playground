@@ -37,6 +37,14 @@ conda env create -f config.yml
 
 - For more conda commands, check out [conda guidelines document](conda-guidelines.md)
 
+## Bite-Size Python
+
+- [Basic](#basic)
+- [Intermediate](#intermediate)
+- [Advanced]
+- [Software Development]
+- [Machine Learning]
+
 ## Basic
 
 ### Comment
@@ -582,29 +590,31 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 - [Kill after x amount of time if process not complete](src/error_handling/timeout)
 
-## Networking
+### Networking
   
 - Get IP from domain name: `import socket;socker.gethostbyname("www.google.com");`
   
-## Concurrency
+### Concurrency
 
-### Built-in Concurrency Library: Asyncio
+#### Built-in Concurrency Library: Asyncio
 
 - [Simple example with asyncio](notebooks/concurrency/asyncio/asyncio_wait.py)
 
-## Hashing 
+### Hashing 
  
-- [Password hashing with library bcrypt - saltround)(notebooks/hashing/bcrypt_password_hashing.ipynb)
+- [Password hashing with library bcrypt - saltround](notebooks/hashing/bcrypt_password_hashing.ipynb)
 
-## Web
+### Web
 
 - [Webhook](src/web/webhook)
+  
+## Software Development  
 
-## Database
+### Database
 
 - [Connect to db with sqlalchemy](notebooks/sqlalchemyops/readme.md)
 
-### [PostgreSQL](notebooks/postgresql-python/readme.md)
+#### [PostgreSQL](notebooks/postgresql-python/readme.md)
 
 - [Postgres connect to AWS RDS](notebooks/postgresql-python/notebooks/aws-rds)
 - [Local Node](notebooks/postgresql-python/notebooks/local)
