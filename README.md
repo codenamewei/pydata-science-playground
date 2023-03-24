@@ -40,6 +40,7 @@ conda env create -f config.yml
 ## Basic
 
 ### Comment
+<details>
 - Single Line Comment: `//sample text`
 - Multi Lines Comment:
   ```
@@ -48,17 +49,18 @@ conda env create -f config.yml
    Nice to meet all of you cookie monsters!
    """
   ```
+</details>
 
 ### Boolean Operator
-
+<details>
 - [X and Y](notebooks/boolean_operator/boolean_options.ipynb)
 - [X or Y](notebooks/boolean_operator/boolean_options.ipynb)
 - [if not X](notebooks/boolean_operator/boolean_options.ipynb)
 - [custom object boolean](notebooks/boolean_operator/boolean_for_object.ipynb)
-
+</details>
 
 ### [Maths](notebooks/math)
-
+<details>
 - [Define Nan, Infinite](notebooks/math/define_nan_infinite.ipynb)
 - Sum up an array: `sum(arr)`
 - Round up a number to a certain decimal point: `round(value, 1)`
@@ -70,7 +72,8 @@ conda env create -f config.yml
     - Numpy: `import numpy as np; np.log2(10)`
     - Math: `import math; math.log2(10)`
     - [Plotting of log to the to the base of 2](notebooks/math/logn_plotting.ipynb)
-    
+</details>
+
 ### Data Types
     
 #### Floating Value (float, double)
@@ -78,6 +81,7 @@ conda env create -f config.yml
 - Format floating value to n decimal: `"%.2f" % floating_var`
 
 #### Bytes
+<details>
 **Notes:**
 
 ```
@@ -93,21 +97,11 @@ and bytearray() returns an object that can be modified (mutable).
 - To Bytes: `bytes(<value>)`
 - Get size of bytes object: `import sys;sys.getsizeof(bytesobject)`
 - [Split bytes to chunks](notebooks/bytesops/bytestochunk.ipynb)
+</details>
 
-#### Numpy
-
-- [Numpy basic](notebooks/numpy/npbasic.ipynb)
-- Get numpy shape: `nparray.shape`
-- Numpy array to list: `nparray.tolist()`
-- Change datatype: `nparray = nparray.astype(<dtype>)` Example: `nparray = nparray.astype("uint8")`
-- Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
-- Numpy multiply by a value: `nparray = nparray * 255`
-- [Numpy array to image](notebooks/pytorch/torchtensor2image.ipynb)
-- [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
-- [Use of `numpy.where`](notebooks/cv/blur_region.ipynb)
- 
-  
 #### ByteArray
+<details>
+  
 **Notes:**
 
 ```
@@ -121,6 +115,21 @@ and bytearray() returns an object that can be modified (mutable).
 - [Image as Bytearray](notebooks/cv/image_as bytearray.ipynb)
 - [Check bytes array encoding](notebooks/bytearrayops/checkbytesarrayencoding.ipynb)
 - To ByteArray: `bytearray(<value>)`
+</details>
+  
+#### Numpy
+<details>
+- [Numpy basic](notebooks/numpy/npbasic.ipynb)
+- Get numpy shape: `nparray.shape`
+- Numpy array to list: `nparray.tolist()`
+- Change datatype: `nparray = nparray.astype(<dtype>)` Example: `nparray = nparray.astype("uint8")`
+- Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
+- Numpy multiply by a value: `nparray = nparray * 255`
+- [Numpy array to image](notebooks/pytorch/torchtensor2image.ipynb)
+- [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
+- [Use of `numpy.where`](notebooks/cv/blur_region.ipynb)
+</details>
+  
 
 ### Data Structure
 
