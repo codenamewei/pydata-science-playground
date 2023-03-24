@@ -40,45 +40,37 @@ conda env create -f config.yml
 ## Basic
 
 ### Comment
-
-<details>
   
-  - Single Line Comment: `//sample text`
-  - Multi Lines Comment:
-    ```
-     """
-     Hello World!
-     Nice to meet all of you cookie monsters!
-     """
-    ```
-</details>
+- Single Line Comment: `//sample text`
+- Multi Lines Comment:
+  ```
+   """
+   Hello World!
+   Nice to meet all of you cookie monsters!
+   """
+  ```
 
 ### Boolean Operator
 
-<details>
-  
-  - [X and Y](notebooks/boolean_operator/boolean_options.ipynb)
-  - [X or Y](notebooks/boolean_operator/boolean_options.ipynb)
-  - [if not X](notebooks/boolean_operator/boolean_options.ipynb)
-  - [custom object boolean](notebooks/boolean_operator/boolean_for_object.ipynb)
-  
-</details>
+- [X and Y](notebooks/boolean_operator/boolean_options.ipynb)
+- [X or Y](notebooks/boolean_operator/boolean_options.ipynb)
+- [if not X](notebooks/boolean_operator/boolean_options.ipynb)
+- [custom object boolean](notebooks/boolean_operator/boolean_for_object.ipynb)
 
 ### [Maths](notebooks/math)
 
-<details>
-  - [Define Nan, Infinite](notebooks/math/define_nan_infinite.ipynb)
-  - Sum up an array: `sum(arr)`
-  - Round up a number to a certain decimal point: `round(value, 1)`
-  - [Calculate percentile](notebooks/math/percentile.ipynb)
-  - Power of a number: `pow(base_number, exponent_number`
-  - Square root of a number: `sqrt(number)`
-  - Logarithm / Log
-    - Log to the base of 2:
-      - Numpy: `import numpy as np; np.log2(10)`
-      - Math: `import math; math.log2(10)`
-      - [Plotting of log to the to the base of 2](notebooks/math/logn_plotting.ipynb)
-</details>
+- [Define Nan, Infinite](notebooks/math/define_nan_infinite.ipynb)
+- Sum up an array: `sum(arr)`
+- Round up a number to a certain decimal point: `round(value, 1)`
+- [Calculate percentile](notebooks/math/percentile.ipynb)
+- Power of a number: `pow(base_number, exponent_number`
+- Square root of a number: `sqrt(number)`
+- Logarithm / Log
+  - Log to the base of 2:
+    - Numpy: `import numpy as np; np.log2(10)`
+    - Math: `import math; math.log2(10)`
+    - [Plotting of log to the to the base of 2](notebooks/math/logn_plotting.ipynb)
+
 
 ### Data Types
     
@@ -88,7 +80,6 @@ conda env create -f config.yml
 
 #### Bytes
 
-<details>
 **Notes:**
 
 ```
@@ -104,11 +95,8 @@ and bytearray() returns an object that can be modified (mutable).
 - To Bytes: `bytes(<value>)`
 - Get size of bytes object: `import sys;sys.getsizeof(bytesobject)`
 - [Split bytes to chunks](notebooks/bytesops/bytestochunk.ipynb)
-</details>
 
 #### ByteArray
-  
-<details>
   
 **Notes:**
 
@@ -123,11 +111,9 @@ and bytearray() returns an object that can be modified (mutable).
 - [Image as Bytearray](notebooks/cv/image_as bytearray.ipynb)
 - [Check bytes array encoding](notebooks/bytearrayops/checkbytesarrayencoding.ipynb)
 - To ByteArray: `bytearray(<value>)`
-</details>
   
 #### Numpy
   
-<details>
 - [Numpy basic](notebooks/numpy/npbasic.ipynb)
 - Get numpy shape: `nparray.shape`
 - Numpy array to list: `nparray.tolist()`
@@ -137,14 +123,12 @@ and bytearray() returns an object that can be modified (mutable).
 - [Numpy array to image](notebooks/pytorch/torchtensor2image.ipynb)
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
 - [Use of `numpy.where`](notebooks/cv/blur_region.ipynb)
-</details>
   
 
 ### Data Structure
 
 #### [List](notebooks/list)
   
-<details>
 - List of str to int: `list(map(int, arr))`
 - List with range of values: `list(range(...))`
 - Split str to list of str: `arr.split(" ")`
@@ -163,11 +147,9 @@ and bytearray() returns an object that can be modified (mutable).
 - Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]```
 - [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
 - Get maximum value in a list of numbers (even strings): `max(samplelist)`
-</details>
   
 #### [Dictionary](notebooks/dictionary)
   
-<details>
 - [Define dict with str keys](notebooks/dictionary/definedict.ipynb)
 - Add new key value pair: `dict.update({"key2":"value2"})`
 - [Remove key<> value pair by referring to specific key](notebooks/dictionary/remove_key.ipynb)
@@ -179,7 +161,6 @@ and bytearray() returns an object that can be modified (mutable).
 - [Save/load dictionary to/from a file](notebooks/dictionary/saveloaddict.ipynb)
 - Revert or inverse a dictionary mapping: `inv_map = {v: k for k, v in my_map.items()}`
 - [Copy by value](notebooks/dictionary/dict_copybyvalue.ipynb): `sampledict.copy()`
-</details>
   
 ### Python Iterables (List, Set,...)
 
@@ -314,8 +295,6 @@ and bytearray() returns an object that can be modified (mutable).
 
 - [Random dataframe and database table generator](https://github.com/tirthajyoti/pydbgen)
   
-</details>
-
 ### Random
 
 - Generate random integer within (min, max): `from random import randint; randint(0, 100) #within 0 and 100`
