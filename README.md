@@ -154,6 +154,17 @@ and bytearray() returns an object that can be modified (mutable).
 - [Generate random string](https://pynative.com/python-generate-random-string/)
 - List to string: ` <separators>.join(list) example: ', '.join(listbuffer)`
 
+#### Unique Identifer (UUID)
+
+- [Generate unique identifer UUID](notebooks/uuid/uuidops.ipynb)
+- [Validate if a string is UUID](notebooks/uuid/uuidops.ipynb)
+- [Compare if both UUID are the same](notebooks/uuid/uuidops.ipynb)
+- UUID to string: `str(uuidparam)`
+
+#### Datetime
+- datetime: [datetime.ipynb](notebooks/formatting/datetime.ipynb)
+- [find differences of two datetime: use divmod](https://stackoverflow.com/questions/1345827/how-do-i-find-the-time-difference-between-two-datetime-objects-in-python)
+
 ### Data Structure
 
 #### [List](notebooks/list)
@@ -335,25 +346,9 @@ and bytearray() returns an object that can be modified (mutable).
 - Generate list with random number: `import random; random.sample(range(10, 30), 5)`
   - Example shown where 5 random numbers are generated in between 10 to 30
 
-#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Intermediate
-
-## Advanced
-
-## [Audio](notebooks/audio)
-
-- [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
-- [Get sampling rate of an audio file](notebooks/audio/getsamplingrate.ipynb)
-- [Audio file <> Numpy Array](notebooks/audio/audiofile2array.ipynb)
-
-
-
-
-
-
-
-
-## [File System](notebooks/filesystem)
+  
+### [File System](notebooks/filesystem)
 
 - The character used by the operating system to separate pathname components: `os.sep`
 - [Iterate through a path to get files/folders of all the subpaths](notebooks/filesystem/filewalk.ipynb)
@@ -384,8 +379,6 @@ and bytearray() returns an object that can be modified (mutable).
 - [Copy a file to another path](notebooks/filesystem/copyfile.ipynb)
 - [Unzip file](notebooks/filesystem/uncompresszip.ipynb)
 - [Readfile](notebooks/filesystem/readfile.ipynb)
-  <details>
-
   ```
   open(<path-to-file>, mode)
   ```
@@ -401,24 +394,23 @@ and bytearray() returns an object that can be modified (mutable).
   - `readlines()`: read all the lines of the text file into a list of strings.
   - `write(<param> : str)`: write in param. Need to explicitly add `\n` to split line.
   - `.close()`: close file iterator
-  </details>
 
-## System
+### System
 
 - [Get system input](notebooks/system/sysinput.py)
 - Check operating system: `import platform; platform.system()`
 - [Check if port is open/close](notebooks/system/check_port_open.ipynb)
 
-## Unique Identifer (UUID)
+## Advanced
 
-- [Generate unique identifer UUID](notebooks/uuid/uuidops.ipynb)
-- [Validate if a string is UUID](notebooks/uuid/uuidops.ipynb)
-- [Compare if both UUID are the same](notebooks/uuid/uuidops.ipynb)
-- UUID to string: `str(uuidparam)`
+## [Audio](notebooks/audio)
 
-## Datetime
-- datetime: [datetime.ipynb](notebooks/formatting/datetime.ipynb)
-- [find differences of two datetime: use divmod](https://stackoverflow.com/questions/1345827/how-do-i-find-the-time-difference-between-two-datetime-objects-in-python)
+- [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
+- [Get sampling rate of an audio file](notebooks/audio/getsamplingrate.ipynb)
+- [Audio file <> Numpy Array](notebooks/audio/audiofile2array.ipynb)
+
+
+
 
 
 
