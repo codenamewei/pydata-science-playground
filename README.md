@@ -565,7 +565,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - setter: @{variable}.setter
   - deleter: @{variable}.deleter
 
-## Type Checking, Data Validation
+### Type Checking, Data Validation
 
 - [Module _typing_: Type hint & annotations](notebooks/type_checking/typingimp.ipynb)
   - [Dict](notebooks/type_checking/anyimp.ipynb)
@@ -574,7 +574,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - Set
   - [Any](notebooks/type_checking/anyimp.ipynb)
   - [Union](notebooks/type_checking/unionimp.ipynb)
-- Module _pydantic_: Data parsing and validation library: TBA
+- Module _pydantic_: Data parsing and validation library `:TODO`
 
 
 
