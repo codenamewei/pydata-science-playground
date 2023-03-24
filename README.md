@@ -802,7 +802,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ## Medium Posts
 
 - [Ctrl + c, Ctrl + v — Replicating Data Science Conda Environment](https://codenamewei.medium.com/ctrl-c-ctrl-v-replicating-data-science-conda-environment-c190ad0d93fd)
-  - [Conda Commands Cheatsheet](miniconda-guidelines.md)
+  - [Conda Commands Cheatsheet](conda-guidelines.md)
 - [Displaying visuals with Markdown](https://medium.com/geekculture/displaying-visuals-with-markdown-c39f2495e146)
-  - [Examples of displaying image in readme.md](https://github.com/codenamewei/pydata-science-playground/blob/main/notebooks/markdown/readme.md)
-  - [Examples of displaying image in Jupyter](https://github.com/codenamewei/pydata-science-playground/blob/main/notebooks/markdown/markdown_guidelines.ipynb)
+  - [Examples of displaying image in readme.md](notebooks/markdown/readme.md)
+  - [Examples of displaying image in Jupyter](notebooks/markdown/markdown_guidelines.ipynb)
