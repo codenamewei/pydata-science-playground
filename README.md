@@ -799,7 +799,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Get sampling rate of an audio file](notebooks/audio/getsamplingrate.ipynb)
 - [Audio file <> Numpy Array](notebooks/audio/audiofile2array.ipynb)
   
-### Medium Posts
+## Medium Posts
 
 - [Ctrl + c, Ctrl + v — Replicating Data Science Conda Environment](https://codenamewei.medium.com/ctrl-c-ctrl-v-replicating-data-science-conda-environment-c190ad0d93fd)
   - [Conda Commands Cheatsheet](miniconda-guidelines.md)
